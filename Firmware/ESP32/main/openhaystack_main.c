@@ -20,6 +20,8 @@
 #include "driver/gpio.h"
 #include "sdkconfig.h"
 
+#include "esp_timer.h"
+
 #include "uECC.h"
 
 #define CHECK_BIT(var,pos) ((var) & (1<<(7-pos)))
@@ -34,7 +36,7 @@
 #define BUF_SIZE (1024)
 
 // Set custom modem id before flashing:
-static const uint32_t modem_id = 0x42424242;
+static const uint32_t modem_id = 0x80008001;
 
 static const char* LOG_TAG = "findmy_modem";
 
@@ -195,6 +197,7 @@ void reset_advertising() {
 }
 
 void send_data_once_blocking(uint8_t* data_to_send, uint32_t len, uint32_t msg_id) {
+
     ESP_LOGI(LOG_TAG, "Data to send (msg_id: %d): %s", msg_id, data_to_send);
 
     uint8_t current_bit = 0;
@@ -216,6 +219,7 @@ void send_data_once_blocking(uint8_t* data_to_send, uint32_t len, uint32_t msg_i
             vTaskDelay(2);
         }
     }
+
     esp_ble_gap_stop_advertising();
 }
 
@@ -224,7 +228,7 @@ uint8_t* read_line_or_dismiss(int* len) {
     int size;
     uint8_t *ptr = line;
     while(1) {
-        size = uart_read_bytes(UART_PORT_NUM, (unsigned char *)ptr, 1, 20 / portTICK_RATE_MS);
+        size = uart_read_bytes(UART_PORT_NUM, (unsigned char *)ptr, 1, 20 / portTICK_PERIOD_MS);
         if (size == 1) {
             if (*ptr == '\n') {
                 *ptr = 0;
@@ -253,9 +257,56 @@ void init_serial() {
     ESP_ERROR_CHECK(uart_set_pin(UART_PORT_NUM, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE, TEST_RTS, TEST_CTS));
 }
 
+void generateAlphaSequence(int sequenceNumber, uint8_t *data_to_send) {
+    if (sequenceNumber < 0 || data_to_send == NULL) {
+        printf("Invalid input or output array\n");
+        return;
+    }
+
+    int base = 'A';  // ASCII value of 'A'
+    int numChars = 26; // Number of alphabet characters
+
+    // Calculate the first character
+    int firstChar = base + (sequenceNumber / numChars);
+
+    // Calculate the second character
+    int secondChar = base + (sequenceNumber % numChars);
+
+    // Check if the sequence number goes beyond 'Z'
+    if (secondChar > 'Z') {
+        secondChar = base + (secondChar % numChars);
+        firstChar++; // Increment the first character
+    }
+
+    data_to_send[0] = (uint8_t)firstChar;
+    data_to_send[1] = (uint8_t)secondChar;
+}
+
+static int64_t start_time_us = 0;
+static int64_t current_time_us = 0;
+
+static void program_start_timer_callback(void* arg)
+{
+    int64_t time_since_boot = esp_timer_get_time();
+    ESP_LOGI(LOG_TAG, "One-shot timer called, time since boot: %lld us", time_since_boot);
+}
 
 void app_main(void)
-{
+{  
+    
+    esp_timer_create_args_t start_timer_args = {
+        .callback = &program_start_timer_callback,
+        .arg = NULL,
+        .name = "BLE_packet_timer"
+    };
+    esp_timer_handle_t start_timer;
+
+    ESP_ERROR_CHECK(esp_timer_create(&start_timer_args, &start_timer));
+    ESP_ERROR_CHECK(esp_timer_start_once(start_timer, 50000000000));
+    ESP_LOGI(LOG_TAG, "Started timers, time since boot: %lld us", esp_timer_get_time());
+
+    const int NUM_MESSAGES = 20;
+
     ESP_ERROR_CHECK(nvs_flash_init());
     ESP_ERROR_CHECK(esp_bt_controller_mem_release(ESP_BT_MODE_CLASSIC_BT));
     esp_bt_controller_config_t bt_cfg = BT_CONTROLLER_INIT_CONFIG_DEFAULT();
@@ -266,7 +317,7 @@ void app_main(void)
     esp_bluedroid_enable();
 
     // Initial test message sent after boot
-    static uint8_t data_to_send[] = "TEST MESSAGE";
+    static uint8_t data_to_send[] = "__";
 
     esp_err_t status;
     //register the scan callback function to the gap module
@@ -279,31 +330,23 @@ void app_main(void)
     
     ESP_LOGI(LOG_TAG, "Sending initial default message: %s", data_to_send);
 
-    send_data_once_blocking(data_to_send, sizeof(data_to_send), current_message_id);
+    send_data_once_blocking(data_to_send, sizeof(data_to_send), current_message_id);    
 
-    ESP_LOGI(LOG_TAG, "Entering serial modem mode");
-    init_serial();
+    
+    for (uint32_t i = 0; i < NUM_MESSAGES; i++) {
+        generateAlphaSequence(i, data_to_send);
+        current_message_id++;
+        for (int j = 0; j < 1; j++) {
+            send_data_once_blocking(data_to_send, sizeof(data_to_send), current_message_id);
+            
+            current_time_us = esp_timer_get_time();
 
-    // UART test line
-    uart_write_bytes(UART_PORT_NUM, (const char *) "Serial activated. Waiting for text lines.\n", 42);
-
-    int len = sizeof(data_to_send);
-    uint8_t *data = data_to_send; // allocated by serial reader
-    uint8_t *new_data = 0;
-
-    while (1) {
-        if((new_data = read_line_or_dismiss(&len))) {
-            data = new_data;
-            current_message_id++;
-            ESP_LOGI(LOG_TAG, "Received line (len: %d): %s", len, data);
-        }
-        else {
-            ESP_LOGI(LOG_TAG, "No new input. Continuing sending old data");
-        }
-        if(data) { // should always be set
-            send_data_once_blocking(data, len, current_message_id);
+            ESP_LOGI(LOG_TAG, "TIME: %lld", current_time_us);
+            vTaskDelay(200);
         }
         vTaskDelay(200);
     }
+
     esp_ble_gap_stop_advertising();
+    ESP_ERROR_CHECK(esp_timer_delete(start_timer));
 }
