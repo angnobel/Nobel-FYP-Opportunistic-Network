@@ -2,6 +2,7 @@
 #include <string.h>
 #include <stdbool.h>
 #include <stdio.h>
+#include <time.h>
 
 #include "nvs_flash.h"
 #include "esp_partition.h"
@@ -23,8 +24,10 @@
 #include "esp_timer.h"
 #include "esp_wifi.h"
 #include "esp_system.h"
+#include "esp_sntp.h"
 #include "lwip/err.h"
 #include "lwip/sys.h"
+
 
 #define CHECK_BIT(var,pos) ((var) & (1<<(7-pos)))
 
@@ -327,6 +330,49 @@ void reset_advertising() {
     }
 }
 
+void generateAlphaSequence(int sequenceNumber, uint8_t *data_to_send) {
+    if (sequenceNumber < 0 || data_to_send == NULL) {
+        printf("Invalid input or output array\n");
+        return;
+    }
+    int base = 'A';
+    int numChars = 26;
+    int firstChar = base + (sequenceNumber / numChars);
+    int secondChar = base + (sequenceNumber % numChars);
+    if (secondChar > 'Z') {
+        secondChar = base + (secondChar % numChars);
+        firstChar++;
+    }
+    data_to_send[0] = (uint8_t)firstChar;
+    data_to_send[1] = (uint8_t)secondChar;
+}
+
+// For SNTP time sync
+void wait_for_sntp_sync() {
+    const int max_retry = 10;
+    int retry = 0;
+    time_t now = 0;
+
+    while (sntp_get_sync_status() == SNTP_SYNC_STATUS_RESET && ++retry < max_retry) {
+        vTaskDelay(1000 / portTICK_PERIOD_MS);
+    }
+
+    time(&now);
+}
+
+void initialize_sntp() {
+    sntp_setoperatingmode(SNTP_OPMODE_POLL);
+    sntp_setservername(0, "pool.ntp.org"); // You can use other NTP servers as well
+    sntp_init();
+}
+
+void log_current_unix_time() {
+    time_t current_time;
+    time(&current_time);
+
+    ESP_LOGI("TIMESTAMP", "Unix: %ld", (long) current_time);
+}
+
 void send_data_once_blocking(uint8_t* data_to_send, uint32_t len, uint32_t msg_id) {
 
     ESP_LOGI(LOG_TAG, "Data to send (msg_id: %d): %s", msg_id, data_to_send);
@@ -349,45 +395,19 @@ void send_data_once_blocking(uint8_t* data_to_send, uint32_t len, uint32_t msg_i
             reset_advertising();
             vTaskDelay(2);
         }
+        log_current_unix_time();        
     }
 
     esp_ble_gap_stop_advertising();
 }
 
-void generateAlphaSequence(int sequenceNumber, uint8_t *data_to_send) {
-    if (sequenceNumber < 0 || data_to_send == NULL) {
-        printf("Invalid input or output array\n");
-        return;
-    }
-    int base = 'A';
-    int numChars = 26;
-    int firstChar = base + (sequenceNumber / numChars);
-    int secondChar = base + (sequenceNumber % numChars);
-    if (secondChar > 'Z') {
-        secondChar = base + (secondChar % numChars);
-        firstChar++;
-    }
-    data_to_send[0] = (uint8_t)firstChar;
-    data_to_send[1] = (uint8_t)secondChar;
-}
-
-void configure_wifi() {
-    wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
-    ESP_ERROR_CHECK(esp_wifi_init(&cfg));
-
-    wifi_config_t wifi_config = {
-        .sta = {
-            .ssid = "TC Family",
-            .password = "63681745",
-        },
-    };
-
-    ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
-    ESP_ERROR_CHECK(esp_wifi_set_config(ESP_IF_WIFI_STA, &wifi_config));
-}
-
 void app_main(void)
 {  
+    const int NUM_MESSAGES = 0;
+    const int REPEAT_MESSAGE_TIMES = 1;
+    const int MESSAGE_DELAY = 200;
+
+
     // Init Flash and BT
     ESP_ERROR_CHECK(nvs_flash_init());
     ESP_ERROR_CHECK(esp_bt_controller_mem_release(ESP_BT_MODE_CLASSIC_BT));
@@ -400,9 +420,11 @@ void app_main(void)
     // Init WIFI
     ESP_LOGI(WIFI_TAG, "ESP_WIFI_MODE_STA");
     wifi_init_sta();
-    
-    const int NUM_MESSAGES = 0;
 
+    // Sync time
+    initialize_sntp();
+    wait_for_sntp_sync();    
+    
     // Initial test message sent after boot
     static uint8_t data_to_send[] = "__";
 
@@ -417,24 +439,23 @@ void app_main(void)
     
     ESP_LOGI(LOG_TAG, "Sending initial default message: %s", data_to_send);
 
-    send_data_once_blocking(data_to_send, sizeof(data_to_send), current_message_id);    
+    send_data_once_blocking(data_to_send, sizeof(data_to_send), current_message_id); 
 
     
     for (uint32_t i = 0; i < NUM_MESSAGES; i++) {
         generateAlphaSequence(i, data_to_send);
         current_message_id++;
-        for (int j = 0; j < 1; j++) {
+        for (int j = 0; j < REPEAT_MESSAGE_TIMES; j++) {
             send_data_once_blocking(data_to_send, sizeof(data_to_send), current_message_id);
-        
-            vTaskDelay(200);
+            
+            vTaskDelay(MESSAGE_DELAY);
         }
-        vTaskDelay(200);
+        vTaskDelay(MESSAGE_DELAY);
     }
 
+    // Wrap up and end
+    log_current_unix_time();
     esp_ble_gap_stop_advertising();
-    // Disconnect from Wi-Fi network
     esp_wifi_disconnect();
-
-    // Stop the Wi-Fi interface
     esp_wifi_stop();
 }
