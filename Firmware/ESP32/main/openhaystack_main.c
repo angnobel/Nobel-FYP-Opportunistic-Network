@@ -5,7 +5,6 @@
 
 #include "nvs_flash.h"
 #include "esp_partition.h"
-
 #include "esp_bt.h"
 #include "esp_gap_ble_api.h"
 #include "esp_gattc_api.h"
@@ -15,14 +14,17 @@
 #include "esp_log.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
-
+#include "freertos/event_groups.h"
 #include "driver/uart.h"
 #include "driver/gpio.h"
 #include "sdkconfig.h"
+#include "uECC.h"
 
 #include "esp_timer.h"
-
-#include "uECC.h"
+#include "esp_wifi.h"
+#include "esp_system.h"
+#include "lwip/err.h"
+#include "lwip/sys.h"
 
 #define CHECK_BIT(var,pos) ((var) & (1<<(7-pos)))
 
@@ -34,6 +36,135 @@
 #define TASK_STACK_SIZE    (2048)
 
 #define BUF_SIZE (1024)
+
+// For WIFI
+#define EXAMPLE_ESP_WIFI_SSID      CONFIG_ESP_WIFI_SSID
+#define EXAMPLE_ESP_WIFI_PASS      CONFIG_ESP_WIFI_PASSWORD
+#define EXAMPLE_ESP_MAXIMUM_RETRY  CONFIG_ESP_MAXIMUM_RETRY
+
+#if CONFIG_ESP_WPA3_SAE_PWE_HUNT_AND_PECK
+#define ESP_WIFI_SAE_MODE WPA3_SAE_PWE_HUNT_AND_PECK
+#define EXAMPLE_H2E_IDENTIFIER ""
+#elif CONFIG_ESP_WPA3_SAE_PWE_HASH_TO_ELEMENT
+#define ESP_WIFI_SAE_MODE WPA3_SAE_PWE_HASH_TO_ELEMENT
+#define EXAMPLE_H2E_IDENTIFIER CONFIG_ESP_WIFI_PW_ID
+#elif CONFIG_ESP_WPA3_SAE_PWE_BOTH
+#define ESP_WIFI_SAE_MODE WPA3_SAE_PWE_BOTH
+#define EXAMPLE_H2E_IDENTIFIER CONFIG_ESP_WIFI_PW_ID
+#endif
+#if CONFIG_ESP_WIFI_AUTH_OPEN
+#define ESP_WIFI_SCAN_AUTH_MODE_THRESHOLD WIFI_AUTH_OPEN
+#elif CONFIG_ESP_WIFI_AUTH_WEP
+#define ESP_WIFI_SCAN_AUTH_MODE_THRESHOLD WIFI_AUTH_WEP
+#elif CONFIG_ESP_WIFI_AUTH_WPA_PSK
+#define ESP_WIFI_SCAN_AUTH_MODE_THRESHOLD WIFI_AUTH_WPA_PSK
+#elif CONFIG_ESP_WIFI_AUTH_WPA2_PSK
+#define ESP_WIFI_SCAN_AUTH_MODE_THRESHOLD WIFI_AUTH_WPA2_PSK
+#elif CONFIG_ESP_WIFI_AUTH_WPA_WPA2_PSK
+#define ESP_WIFI_SCAN_AUTH_MODE_THRESHOLD WIFI_AUTH_WPA_WPA2_PSK
+#elif CONFIG_ESP_WIFI_AUTH_WPA3_PSK
+#define ESP_WIFI_SCAN_AUTH_MODE_THRESHOLD WIFI_AUTH_WPA3_PSK
+#elif CONFIG_ESP_WIFI_AUTH_WPA2_WPA3_PSK
+#define ESP_WIFI_SCAN_AUTH_MODE_THRESHOLD WIFI_AUTH_WPA2_WPA3_PSK
+#elif CONFIG_ESP_WIFI_AUTH_WAPI_PSK
+#define ESP_WIFI_SCAN_AUTH_MODE_THRESHOLD WIFI_AUTH_WAPI_PSK
+#endif
+
+static EventGroupHandle_t s_wifi_event_group;
+#define WIFI_CONNECTED_BIT BIT0
+#define WIFI_FAIL_BIT      BIT1
+
+static const char *WIFI_TAG = "WIFI";
+static int s_retry_num = 0;
+
+static void event_handler(void* arg, esp_event_base_t event_base,
+                                int32_t event_id, void* event_data)
+{
+    if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_START) {
+        esp_wifi_connect();
+    } else if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_DISCONNECTED) {
+        if (s_retry_num < EXAMPLE_ESP_MAXIMUM_RETRY) {
+            esp_wifi_connect();
+            s_retry_num++;
+            ESP_LOGI(WIFI_TAG, "retry to connect to the AP");
+        } else {
+            xEventGroupSetBits(s_wifi_event_group, WIFI_FAIL_BIT);
+        }
+        ESP_LOGI(WIFI_TAG,"connect to the AP fail");
+    } else if (event_base == IP_EVENT && event_id == IP_EVENT_STA_GOT_IP) {
+        ip_event_got_ip_t* event = (ip_event_got_ip_t*) event_data;
+        ESP_LOGI(WIFI_TAG, "got ip:" IPSTR, IP2STR(&event->ip_info.ip));
+        s_retry_num = 0;
+        xEventGroupSetBits(s_wifi_event_group, WIFI_CONNECTED_BIT);
+    }
+}
+
+void wifi_init_sta(void)
+{
+    s_wifi_event_group = xEventGroupCreate();
+
+    ESP_ERROR_CHECK(esp_netif_init());
+
+    ESP_ERROR_CHECK(esp_event_loop_create_default());
+    esp_netif_create_default_wifi_sta();
+
+    wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
+    ESP_ERROR_CHECK(esp_wifi_init(&cfg));
+
+    esp_event_handler_instance_t instance_any_id;
+    esp_event_handler_instance_t instance_got_ip;
+    ESP_ERROR_CHECK(esp_event_handler_instance_register(WIFI_EVENT,
+                                                        ESP_EVENT_ANY_ID,
+                                                        &event_handler,
+                                                        NULL,
+                                                        &instance_any_id));
+    ESP_ERROR_CHECK(esp_event_handler_instance_register(IP_EVENT,
+                                                        IP_EVENT_STA_GOT_IP,
+                                                        &event_handler,
+                                                        NULL,
+                                                        &instance_got_ip));
+
+    wifi_config_t wifi_config = {
+        .sta = {
+            .ssid = EXAMPLE_ESP_WIFI_SSID,
+            .password = EXAMPLE_ESP_WIFI_PASS,
+            /* Authmode threshold resets to WPA2 as default if password matches WPA2 standards (pasword len => 8).
+             * If you want to connect the device to deprecated WEP/WPA networks, Please set the threshold value
+             * to WIFI_AUTH_WEP/WIFI_AUTH_WPA_PSK and set the password with length and format matching to
+             * WIFI_AUTH_WEP/WIFI_AUTH_WPA_PSK standards.
+             */
+            .threshold.authmode = ESP_WIFI_SCAN_AUTH_MODE_THRESHOLD,
+            .sae_pwe_h2e = ESP_WIFI_SAE_MODE,
+            .sae_h2e_identifier = EXAMPLE_H2E_IDENTIFIER,
+        },
+    };
+    ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA) );
+    ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &wifi_config) );
+    ESP_ERROR_CHECK(esp_wifi_start() );
+
+    ESP_LOGI(WIFI_TAG, "wifi_init_sta finished.");
+
+    /* Waiting until either the connection is established (WIFI_CONNECTED_BIT) or connection failed for the maximum
+     * number of re-tries (WIFI_FAIL_BIT). The bits are set by event_handler() (see above) */
+    EventBits_t bits = xEventGroupWaitBits(s_wifi_event_group,
+            WIFI_CONNECTED_BIT | WIFI_FAIL_BIT,
+            pdFALSE,
+            pdFALSE,
+            portMAX_DELAY);
+
+    /* xEventGroupWaitBits() returns the bits before the call returned, hence we can test which event actually
+     * happened. */
+    if (bits & WIFI_CONNECTED_BIT) {
+        ESP_LOGI(WIFI_TAG, "connected to ap SSID:%s password:%s",
+                 EXAMPLE_ESP_WIFI_SSID, EXAMPLE_ESP_WIFI_PASS);
+    } else if (bits & WIFI_FAIL_BIT) {
+        ESP_LOGI(WIFI_TAG, "Failed to connect to SSID:%s, password:%s",
+                 EXAMPLE_ESP_WIFI_SSID, EXAMPLE_ESP_WIFI_PASS);
+    } else {
+        ESP_LOGE(WIFI_TAG, "UNEXPECTED EVENT");
+    }
+}
+
 
 // Set custom modem id before flashing:
 static const uint32_t modem_id = 0x80008001;
@@ -223,98 +354,54 @@ void send_data_once_blocking(uint8_t* data_to_send, uint32_t len, uint32_t msg_i
     esp_ble_gap_stop_advertising();
 }
 
-uint8_t* read_line_or_dismiss(int* len) {
-    uint8_t *line = (uint8_t *) malloc(BUF_SIZE);
-    int size;
-    uint8_t *ptr = line;
-    while(1) {
-        size = uart_read_bytes(UART_PORT_NUM, (unsigned char *)ptr, 1, 20 / portTICK_PERIOD_MS);
-        if (size == 1) {
-            if (*ptr == '\n') {
-                *ptr = 0;
-                *len = ptr-line;
-                return line;
-            }
-            ptr++;
-        }
-        else { free(line); ESP_LOGI(LOG_TAG, "Dismissing line"); return 0; }
-    }
-}
-
-void init_serial() {
-    uart_config_t uart_config = {
-        .baud_rate = UART_BAUD_RATE,
-        .data_bits = UART_DATA_8_BITS,
-        .parity    = UART_PARITY_DISABLE,
-        .stop_bits = UART_STOP_BITS_1,
-        .flow_ctrl = UART_HW_FLOWCTRL_DISABLE,
-        .source_clk = UART_SCLK_APB,
-    };
-    int intr_alloc_flags = 0;
-
-    ESP_ERROR_CHECK(uart_driver_install(UART_PORT_NUM, BUF_SIZE * 2, 0, 0, NULL, intr_alloc_flags));
-    ESP_ERROR_CHECK(uart_param_config(UART_PORT_NUM, &uart_config));
-    ESP_ERROR_CHECK(uart_set_pin(UART_PORT_NUM, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE, TEST_RTS, TEST_CTS));
-}
-
 void generateAlphaSequence(int sequenceNumber, uint8_t *data_to_send) {
     if (sequenceNumber < 0 || data_to_send == NULL) {
         printf("Invalid input or output array\n");
         return;
     }
-
-    int base = 'A';  // ASCII value of 'A'
-    int numChars = 26; // Number of alphabet characters
-
-    // Calculate the first character
+    int base = 'A';
+    int numChars = 26;
     int firstChar = base + (sequenceNumber / numChars);
-
-    // Calculate the second character
     int secondChar = base + (sequenceNumber % numChars);
-
-    // Check if the sequence number goes beyond 'Z'
     if (secondChar > 'Z') {
         secondChar = base + (secondChar % numChars);
-        firstChar++; // Increment the first character
+        firstChar++;
     }
-
     data_to_send[0] = (uint8_t)firstChar;
     data_to_send[1] = (uint8_t)secondChar;
 }
 
-static int64_t start_time_us = 0;
-static int64_t current_time_us = 0;
+void configure_wifi() {
+    wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
+    ESP_ERROR_CHECK(esp_wifi_init(&cfg));
 
-static void program_start_timer_callback(void* arg)
-{
-    int64_t time_since_boot = esp_timer_get_time();
-    ESP_LOGI(LOG_TAG, "One-shot timer called, time since boot: %lld us", time_since_boot);
+    wifi_config_t wifi_config = {
+        .sta = {
+            .ssid = "TC Family",
+            .password = "63681745",
+        },
+    };
+
+    ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
+    ESP_ERROR_CHECK(esp_wifi_set_config(ESP_IF_WIFI_STA, &wifi_config));
 }
 
 void app_main(void)
 {  
-    
-    esp_timer_create_args_t start_timer_args = {
-        .callback = &program_start_timer_callback,
-        .arg = NULL,
-        .name = "BLE_packet_timer"
-    };
-    esp_timer_handle_t start_timer;
-
-    ESP_ERROR_CHECK(esp_timer_create(&start_timer_args, &start_timer));
-    ESP_ERROR_CHECK(esp_timer_start_once(start_timer, 50000000000));
-    ESP_LOGI(LOG_TAG, "Started timers, time since boot: %lld us", esp_timer_get_time());
-
-    const int NUM_MESSAGES = 20;
-
+    // Init Flash and BT
     ESP_ERROR_CHECK(nvs_flash_init());
     ESP_ERROR_CHECK(esp_bt_controller_mem_release(ESP_BT_MODE_CLASSIC_BT));
     esp_bt_controller_config_t bt_cfg = BT_CONTROLLER_INIT_CONFIG_DEFAULT();
     esp_bt_controller_init(&bt_cfg);
     esp_bt_controller_enable(ESP_BT_MODE_BLE);
-
     esp_bluedroid_init();
     esp_bluedroid_enable();
+
+    // Init WIFI
+    ESP_LOGI(WIFI_TAG, "ESP_WIFI_MODE_STA");
+    wifi_init_sta();
+    
+    const int NUM_MESSAGES = 0;
 
     // Initial test message sent after boot
     static uint8_t data_to_send[] = "__";
@@ -338,15 +425,16 @@ void app_main(void)
         current_message_id++;
         for (int j = 0; j < 1; j++) {
             send_data_once_blocking(data_to_send, sizeof(data_to_send), current_message_id);
-            
-            current_time_us = esp_timer_get_time();
-
-            ESP_LOGI(LOG_TAG, "TIME: %lld", current_time_us);
+        
             vTaskDelay(200);
         }
         vTaskDelay(200);
     }
 
     esp_ble_gap_stop_advertising();
-    ESP_ERROR_CHECK(esp_timer_delete(start_timer));
+    // Disconnect from Wi-Fi network
+    esp_wifi_disconnect();
+
+    // Stop the Wi-Fi interface
+    esp_wifi_stop();
 }

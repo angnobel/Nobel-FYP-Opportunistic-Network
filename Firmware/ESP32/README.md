@@ -1,3 +1,14 @@
+## Setup Instructions
+1. Set device target to esp32c3, via built-in USB JTAC
+2. Set port to use
+3. Configure menuconfig
+    a. Turn on bluetooth
+    b. Turn on bluetooth 4.2
+    c. Set flash size to 4MB
+    d. Set partition table to custom
+    e. Change example config SSID and password
+4. Build, flash and run
+---
 # Send My Firmware for ESP32 (based on OpenHaystack)
 
 This project contains a PoC firmware for Espressif ESP32 chips that turns them into an (upload only) serial modem using the Find My Offline Finding network.
