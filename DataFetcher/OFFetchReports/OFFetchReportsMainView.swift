@@ -8,6 +8,7 @@
 //
 
 import SwiftUI
+import Dispatch
 
 struct OFFetchReportsMainView: View {
 
@@ -26,33 +27,57 @@ struct OFFetchReportsMainView: View {
   @State var keyPlistFile: Data?
 
   @State var showModemPrompt = false
+  @State var repeatTime: Int = 0
+  @State var numMessages: Int = 1
+  
+  @State var isRepeatingFetch: Bool = true
+  
+  @State private var timer: Timer?
 
   var modemIDView: some View {
-    VStack {
-      Spacer()
-      Text("Please insert the modem id that you want to fetch data for:")
-        HStack {
-        Spacer()
-        TextField("4 byte hex string, e.g. DE AD BE EF", text: self.$modemIDString).frame(width: 250)
-        
-      Button(
-        action: {
-            guard let parsedModemID = UInt32(self.modemIDString.replacingOccurrences(of: " ", with: "", options: NSString.CompareOptions.literal, range: nil), radix: 16) else { return }
-            
-            self.modemID = parsedModemID
-            print("Parsed Modem ID: \(parsedModemID); " + String(parsedModemID, radix: 16))
-            self.findMyController.clearMessages()
-            self.loadMessage(modemID: parsedModemID, messageID: UInt32(0))
-        },
-        label: {
-          Text("Download data")
-        })
-      Spacer()
+      VStack {
+          Spacer()
+          Text("Please insert the modem id that you want to fetch data for:")
+          HStack {
+              Spacer()
+              TextField("4 byte hex string, e.g. DE AD BE EF", text: self.$modemIDString).frame(width: 250)
+
+              Text("Repeat Time (s):")
+              TextField("Enter Repeat Time", value: self.$repeatTime, formatter: NumberFormatter()).frame(width: 100)
+          
+              Text("Number of Messages:")
+              TextField("Enter Number of Messages", value: self.$numMessages, formatter: NumberFormatter()).frame(width: 100)
+                
+              Button(
+                  action: {
+                      guard let parsedModemID = UInt32(self.modemIDString.replacingOccurrences(of: " ", with: "", options: NSString.CompareOptions.literal, range: nil), radix: 16) else { return }
+                      
+                      self.modemID = parsedModemID
+                      self.isRepeatingFetch = true
+                      print("Parsed Modem ID: \(parsedModemID); " + String(parsedModemID, radix: 16))
+                      print("Time to repeat search, in seconds: " + String(repeatTime))
+                      print("Number of messages to automatically fetch: " + String(numMessages))
+                      self.findMyController.clearMessages()
+                    
+                      loadMultiMessage(modemID:parsedModemID, numMessages: numMessages)
+                      isRepeatingFetch = repeatTime > 0
+                      
+                      
+                  },
+                  label: {
+                      Text("Download data")
+                  })
+              Spacer()
+          }
+          Spacer()
+          
+          // Add input fields for repeat time and numMessages
+          
+          Spacer()
       }
-    Spacer()
-    Spacer()
-    }
   }
+      
+  
 
   var loadingView: some View {
     VStack {
@@ -66,15 +91,35 @@ struct OFFetchReportsMainView: View {
     VStack {
            HStack {
                // Text("Result")
-               Spacer()
-                  Button(
-                    action: {
-                      self.showData = false
-                      self.showModemPrompt = true
-                    },
-                    label: {
-                      Text("ID: 0x\(String(self.findMyController.modemID, radix: 16))")
-                    }).padding(.top, 5).padding(.trailing, 5)
+            Spacer()
+             Button(
+               action: {
+                 self.showData = false
+                 self.showModemPrompt = true
+                 self.isRepeatingFetch = false
+               },
+               label: {
+                 Text("Fetch Every: " + String(repeatTime) + "s")
+               }).padding(.top, 5).padding(.trailing, 5)
+             
+              Button(
+                 action: {
+                   self.isRepeatingFetch = !self.isRepeatingFetch
+                   print("Auto Refetch:" + String(isRepeatingFetch))
+                 },
+                 label: {
+                   Text(isRepeatingFetch ? "Stop Fetching" : "Continue Fetching")
+               }).padding(.top, 5).padding(.trailing, 5)
+             
+              Button(
+                action: {
+                  self.showData = false
+                  self.showModemPrompt = true
+                  self.isRepeatingFetch = false
+                },
+                label: {
+                  Text("ID: 0x\(String(self.findMyController.modemID, radix: 16))")
+                }).padding(.top, 5).padding(.trailing, 5)
            }
            Divider()
            ForEach(0...max(10, self.findMyController.messages.count+1), id: \.self) { i in
@@ -106,7 +151,19 @@ struct OFFetchReportsMainView: View {
             
            }
         } 
-     } 
+     }.onAppear {
+       // Start the timer when the view appears
+       if self.isRepeatingFetch && self.repeatTime > 0 {
+           // Convert repeatTime to TimeInterval
+           let repeatTimeInterval: TimeInterval = TimeInterval(self.repeatTime)
+           
+           // Start the timer
+           self.timer = Timer.scheduledTimer(withTimeInterval: repeatTimeInterval, repeats: true) { _ in
+               // Call your function when the timer fires
+               self.loadMultiMessage(modemID: self.modemID, numMessages: self.numMessages)
+           }
+       }
+   }
   }
 
   // This view is shown if the search party token cannot be accessed from keychain
@@ -176,6 +233,13 @@ struct OFFetchReportsMainView: View {
         }
     return true
   }
+  
+  func loadMultiMessage(modemID: UInt32, numMessages: Int) {
+    // TODO: Make this run parellel
+    for i in 0...numMessages-1 {
+      self.loadMessage(modemID: modemID, messageID: UInt32(i))
+    }
+  }
 
   // swiftlint:disable identifier_name
   func loadMessage(modemID: UInt32, messageID: UInt32) -> Bool {
@@ -199,6 +263,7 @@ struct OFFetchReportsMainView: View {
                 print("Fetching data")
                 print(token)
                 self.downloadAndDecodeData(modemID: modemID, messageID: messageID, searchPartyToken: token)
+              
 
             }
         }
@@ -217,7 +282,10 @@ struct OFFetchReportsMainView: View {
           self.error = error
           return
         }
-
+        
+        // Log packet time
+        let currentTimestamp = Int(Date().timeIntervalSince1970)
+        print("Current Unix Timestamp: \(currentTimestamp)")
         // Show data view
         self.loading = false
         self.showData = true
