@@ -9,6 +9,8 @@
 
 import SwiftUI
 import Dispatch
+import Cocoa
+import Foundation
 
 struct OFFetchReportsMainView: View {
 
@@ -32,48 +34,86 @@ struct OFFetchReportsMainView: View {
   
   @State var isRepeatingFetch: Bool = true
   
-  @State private var timer: Timer?
+  @State var timer: Timer?
+  
+  @State var logFilePath: String = ""
+  
+  @State var fileHandle: FileHandle?
+  
+  
 
   var modemIDView: some View {
       VStack {
-          Spacer()
-          Text("Please insert the modem id that you want to fetch data for:")
           HStack {
-              Spacer()
-              TextField("4 byte hex string, e.g. DE AD BE EF", text: self.$modemIDString).frame(width: 250)
-
-              Text("Repeat Time (s):")
-              TextField("Enter Repeat Time", value: self.$repeatTime, formatter: NumberFormatter()).frame(width: 100)
-          
-              Text("Number of Messages:")
-              TextField("Enter Number of Messages", value: self.$numMessages, formatter: NumberFormatter()).frame(width: 100)
-                
-              Button(
-                  action: {
-                      guard let parsedModemID = UInt32(self.modemIDString.replacingOccurrences(of: " ", with: "", options: NSString.CompareOptions.literal, range: nil), radix: 16) else { return }
-                      
-                      self.modemID = parsedModemID
-                      self.isRepeatingFetch = true
-                      print("Parsed Modem ID: \(parsedModemID); " + String(parsedModemID, radix: 16))
-                      print("Time to repeat search, in seconds: " + String(repeatTime))
-                      print("Number of messages to automatically fetch: " + String(numMessages))
-                      self.findMyController.clearMessages()
-                    
-                      loadMultiMessage(modemID:parsedModemID, numMessages: numMessages)
-                      isRepeatingFetch = repeatTime > 0
-                      
-                      
-                  },
-                  label: {
-                      Text("Download data")
-                  })
-              Spacer()
+            Text("Please insert the modem id that you want to fetch data for:")
+            TextField("4 byte hex string, e.g. DE AD BE EF", text: self.$modemIDString).frame(width: 250)
           }
-          Spacer()
-          
-          // Add input fields for repeat time and numMessages
-          
-          Spacer()
+        
+          HStack {
+            Text("Repeat Time (s):")
+            TextField("Enter Repeat Time", value: self.$repeatTime, formatter: NumberFormatter()).frame(width: 100)
+          }
+
+          HStack {
+            Text("Number of Messages:")
+            TextField("Enter Number of Messages", value: self.$numMessages, formatter: NumberFormatter()).frame(width: 100)
+          }
+
+          VStack {
+            Text("Log file: " + logFilePath)
+
+            Button(
+              action: {
+                openFolderDialog();
+              },
+              label: {
+                Text("Select Log Folder");
+              }
+            )
+          }
+          Divider()
+          HStack {
+            Button(
+              action: {
+                guard let parsedModemID = UInt32(self.modemIDString.replacingOccurrences(of: " ", with: "", options: NSString.CompareOptions.literal, range: nil), radix: 16) else { return }
+                self.modemID = parsedModemID
+                self.isRepeatingFetch = repeatTime > 0
+                
+                if let fileHandle = FileHandle(forWritingAtPath: logFilePath) {
+                    // The file already exists, so use the existing file handle.
+                    self.fileHandle = fileHandle
+                } else {
+                    // The file doesn't exist, so create it.
+                    if FileManager.default.createFile(atPath: logFilePath, contents: nil, attributes: nil) {
+                        if let fileHandle = FileHandle(forWritingAtPath: logFilePath) {
+                            self.fileHandle = fileHandle
+                        } else {
+                            // Handle the case where the file still cannot be opened.
+                            print("Failed to open created log file at path: \(logFilePath)")
+                            return
+                        }
+                    } else {
+                        // Handle the case where the file cannot be created.
+                        print("Failed to create log file at path: \(logFilePath)")
+                        return
+                    }
+                }
+                
+                logAndPrint("Parsed Modem ID: \(parsedModemID); " + String(parsedModemID, radix: 16), fileHandle: self.fileHandle!)
+                logAndPrint("Time to repeat search, in seconds: " + String(repeatTime), fileHandle: self.fileHandle!)
+                logAndPrint("Number of messages to automatically fetch: " + String(numMessages), fileHandle: self.fileHandle!)
+                
+                self.findMyController.clearMessages()
+                
+                loadMultiMessage(modemID:parsedModemID, numMessages: numMessages)
+                isRepeatingFetch = repeatTime > 0
+                
+                
+              },
+              label: {
+                Text("Download data")
+              })
+          }
       }
   }
       
@@ -165,6 +205,37 @@ struct OFFetchReportsMainView: View {
        }
    }
   }
+  
+  func openFolderDialog() {
+    let openPanel = NSOpenPanel();
+    openPanel.canChooseDirectories = true; // Allow folder selection
+    openPanel.canChooseFiles = false; // Don't allow file selection
+    openPanel.allowsMultipleSelection = false; // Allow only one folder selection
+    openPanel.prompt = "Select Folder";
+      
+      openPanel.begin { (result) in
+          if result == .OK {
+              if let selectedURL = openPanel.urls.first {
+                let selectedFolderPath = selectedURL.path;
+                  // Use selectedFolderPath as the path to the selected folder
+                self.logFilePath = selectedFolderPath + "/log-" + String(Int(Date().timeIntervalSince1970)) + ".txt"
+              }
+          }
+      }
+  }
+  
+  func logAndPrint(_ text: String, fileHandle: FileHandle) {
+    fileHandle.seekToEndOfFile()
+    
+    // Convert the string to data and write it to the file
+    if let data = (text+"\n").data(using: .utf8) {
+        fileHandle.write(data)
+        print(text)
+    } else {
+        print("Error converting string to data")
+    }
+  }
+
 
   // This view is shown if the search party token cannot be accessed from keychain
   var missingSearchPartyTokenView: some View {
@@ -263,8 +334,6 @@ struct OFFetchReportsMainView: View {
                 print("Fetching data")
                 print(token)
                 self.downloadAndDecodeData(modemID: modemID, messageID: messageID, searchPartyToken: token)
-              
-
             }
         }
     return true
@@ -284,8 +353,8 @@ struct OFFetchReportsMainView: View {
         }
         
         // Log packet time
-        let currentTimestamp = Int(Date().timeIntervalSince1970)
-        print("Current Unix Timestamp: \(currentTimestamp)")
+        let _currentTimestamp = Int(Date().timeIntervalSince1970)
+        logAndPrint("Modem: \(modemID) | messageID: \(messageID) | searchPartyToken: \(searchPartyToken) | Time: \(_currentTimestamp)", fileHandle: self.fileHandle!)
         // Show data view
         self.loading = false
         self.showData = true
