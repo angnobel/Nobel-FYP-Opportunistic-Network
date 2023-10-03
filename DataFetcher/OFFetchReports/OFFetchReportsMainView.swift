@@ -9,8 +9,6 @@
 
 import SwiftUI
 import Dispatch
-import Foundation
-import Cocoa
 
 struct OFFetchReportsMainView: View {
 
@@ -36,8 +34,6 @@ struct OFFetchReportsMainView: View {
   
   @State private var timer: Timer?
 
-  @State private var logFileURL: URL?
-
   var modemIDView: some View {
       VStack {
           Spacer()
@@ -58,7 +54,6 @@ struct OFFetchReportsMainView: View {
                       
                       self.modemID = parsedModemID
                       self.isRepeatingFetch = true
-                      openFolderSelectionDialog()
                       print("Parsed Modem ID: \(parsedModemID); " + String(parsedModemID, radix: 16))
                       print("Time to repeat search, in seconds: " + String(repeatTime))
                       print("Number of messages to automatically fetch: " + String(numMessages))
@@ -79,24 +74,6 @@ struct OFFetchReportsMainView: View {
           // Add input fields for repeat time and numMessages
           
           Spacer()
-      }
-      private func openFolderSelectionDialog() {
-        let openPanel = NSOpenPanel()
-        openPanel.canChooseDirectories = true
-        openPanel.canChooseFiles = false
-        openPanel.allowsMultipleSelection = false
-
-        openPanel.begin { response in
-            if response == .OK, let folderURL = openPanel.urls.first {
-                // The user selected a folder; you can now save your log file in this folder.
-                self.logFileURL = folderURL.appendingPathComponent("log.txt")
-
-                // Perform your log file writing operations here using logFileURL
-                // Example: try "Hello, World!".write(to: logFileURL, atomically: true, encoding: .utf8)
-                String initialMessage = "Log File for OFFetcher. Starting time: " + Int(Date().timeIntervalSince1970)
-                initialMessage.write(to: self.logFileURL, atomically: true, encoding: .utf8)
-            }
-        }
       }
   }
       
