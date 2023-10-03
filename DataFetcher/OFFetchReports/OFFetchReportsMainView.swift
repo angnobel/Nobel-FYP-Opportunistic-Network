@@ -193,14 +193,16 @@ struct OFFetchReportsMainView: View {
         } 
      }.onAppear {
        // Start the timer when the view appears
-       if self.isRepeatingFetch && self.repeatTime > 0 {
+       if self.repeatTime > 0 {
            // Convert repeatTime to TimeInterval
            let repeatTimeInterval: TimeInterval = TimeInterval(self.repeatTime)
            
            // Start the timer
            self.timer = Timer.scheduledTimer(withTimeInterval: repeatTimeInterval, repeats: true) { _ in
                // Call your function when the timer fires
+             if self.isRepeatingFetch {
                self.loadMultiMessage(modemID: self.modemID, numMessages: self.numMessages)
+             }
            }
        }
    }

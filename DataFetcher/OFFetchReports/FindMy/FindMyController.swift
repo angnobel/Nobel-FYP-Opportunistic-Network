@@ -57,7 +57,7 @@ class FindMyController: ObservableObject {
                     adv_key = static_prefix + byteArray(from: UInt32(bit)) + byteArray(from: UInt32(messageID)) + byteArray(from: m.modemID)
                     adv_key += byteArray(from: validKeyCounter) + fill_0 + byteArray(from: UInt32(v)) //2 lines, otherwise the XCode type checker takes too long
                     validKeyCounter += 1
-                    print("==== Testing key")
+//                    print("==== Testing key")
                 } while (BoringSSL.isPublicKeyValid(Data(adv_key)) == 0)
                 print("Found valid pub key on \(validKeyCounter). try")
                 let k = DataEncodingKey(index: UInt32(bit), bitValue: UInt8(v), advertisedKey: adv_key, hashedKey: SHA256.hash(data: adv_key).data)
@@ -145,7 +145,6 @@ class FindMyController: ObservableObject {
       }
     }
 
-  
 
     func decodeReports(messageID: UInt32, with searchPartyToken: Data, completion: @escaping (Error?) -> Void) {
       print("Decoding reports")
