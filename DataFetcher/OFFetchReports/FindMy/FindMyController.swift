@@ -11,6 +11,8 @@ import Combine
 import Foundation
 import SwiftUI
 import CryptoKit
+import Cocoa
+import Foundation
 
 
 func byteArray<T>(from value: T) -> [UInt8] where T: FixedWidthInteger {
@@ -36,13 +38,25 @@ class FindMyController: ObservableObject {
 
   @Published var modemID: UInt32 = 0
   @Published var batch_size: UInt32 = 128
+  
+  func logAndPrint(_ text: String, fileHandle: FileHandle) {
+    fileHandle.seekToEndOfFile()
+    
+    // Convert the string to data and write it to the file
+    if let data = (text+"\n").data(using: .utf8) {
+        fileHandle.write(data)
+        print(text)
+    } else {
+        print("Error converting string to data")
+    }
+  }
 
   func clearMessages() {
      self.messages = [UInt32: Message]()
   }
 
   func fetchBitsUntilEnd(
-    for modemID: UInt32, message messageID: UInt32, startBit: UInt32, bitCount: UInt32, with searchPartyToken: Data, completion: @escaping (Error?) -> Void
+    for modemID: UInt32, message messageID: UInt32, startBit: UInt32, bitCount: UInt32, with searchPartyToken: Data, logger: FileHandle, completion: @escaping (Error?) -> Void
     ) {
     
     let fill_0: [UInt8] = [0, 0, 0, 0, 0, 0]
@@ -68,12 +82,16 @@ class FindMyController: ObservableObject {
        m.fetchedBits = startBit + bitCount
       self.messages[UInt32(messageID)] = m
       // Includes async fetch if finished, otherwise fetches more bits
-      self.fetchReports(for: messageID, with: searchPartyToken, completion: completion)
+      self.fetchReports(for: messageID, with: searchPartyToken, logger: logger, completion: completion)
   }
 
   func fetchMessage(
-    for modemID: UInt32, message messageID: UInt32, with searchPartyToken: Data, completion: @escaping (Error?) -> Void
-    ) {
+      for modemID: UInt32,
+      message messageID: UInt32,
+      with searchPartyToken: Data,
+      logger : FileHandle,
+      completion: @escaping (Error?) -> Void
+  ) {
     
     self.modemID = modemID
     let start_index: UInt32 = 0
@@ -81,12 +99,12 @@ class FindMyController: ObservableObject {
     let m = Message(modemID: modemID, messageID: UInt32(messageID))
     self.messages[messageID] = m
  
-    fetchBitsUntilEnd(for: modemID, message: messageID, startBit: start_index, bitCount: self.batch_size, with: searchPartyToken, completion: completion);
+    fetchBitsUntilEnd(for: modemID, message: messageID, startBit: start_index, bitCount: self.batch_size, with: searchPartyToken, logger: logger, completion: completion);
   }
 
 
 
-  func fetchReports(for messageID: UInt32, with searchPartyToken: Data, completion: @escaping (Error?) -> Void) {
+  func fetchReports(for messageID: UInt32, with searchPartyToken: Data, logger: FileHandle, completion: @escaping (Error?) -> Void) {
 
     DispatchQueue.global(qos: .background).async {
       let fetchReportGroup = DispatchGroup()
@@ -128,7 +146,8 @@ class FindMyController: ObservableObject {
 
       // Completion Handler
       fetchReportGroup.notify(queue: .main) {
-        print("Finished loading the reports. Now decode them")
+        self.logAndPrint("Message \(messageID) Result Finish loading report. Time: \(Int(Date().timeIntervalSince1970))" , fileHandle: logger)
+        
 
         // Export the reports to the desktop
         var reports = [FindMyReport]()
@@ -138,7 +157,7 @@ class FindMyController: ObservableObject {
           }
         }
         DispatchQueue.main.async {
-            self.decodeReports(messageID: messageID, with: searchPartyToken) { _ in completion(nil) }
+          self.decodeReports(messageID: messageID, with: searchPartyToken, logger: logger) { _ in completion(nil) }
           }
 
         }
@@ -146,7 +165,7 @@ class FindMyController: ObservableObject {
     }
 
 
-    func decodeReports(messageID: UInt32, with searchPartyToken: Data, completion: @escaping (Error?) -> Void) {
+  func decodeReports(messageID: UInt32, with searchPartyToken: Data, logger: FileHandle, completion: @escaping (Error?) -> Void) {
       print("Decoding reports")
 
       // Iterate over all messages
@@ -173,7 +192,13 @@ class FindMyController: ObservableObject {
       var resultByteStr = ""
       var byte_valid = 1
       var byte_completely_invalid = 1
-      if result.keys.max() == nil { print("No reports found"); completion(nil); return }
+      if result.keys.max() == nil {
+        logAndPrint("Message \(messageID) No Report Found" , fileHandle: logger)
+        completion(nil);
+        return
+        
+      }
+    
       for i in 0..<message!.fetchedBits {
           let v = result[i]
           if v == nil {
@@ -204,19 +229,19 @@ class FindMyController: ObservableObject {
             byte_completely_invalid = 1
           }
       }
-      
-      print("Result bitstring: \(resultBitStr)")
-      print("Result bytestring: \(resultByteStr)")
+    
+      logAndPrint("Message \(messageID) Result bitstring: \(resultBitStr) bytestring: \(resultBitStr)" , fileHandle: logger)
+    
       message?.decodedStr = resultByteStr
       self.messages[messageID] = message
       if earlyExit {
-          print("Fetched a fully invalid byte. Message probably ended.")
+          print("Message \(messageID) Fetched a fully invalid byte. Message probably ended.")
           completion(nil)
           return
       }
       // Not finished yet -> Next round
       print("Haven't found end byte yet. Starting with bit \(result.keys.max) now")
-      fetchBitsUntilEnd(for: modemID, message: messageID, startBit: UInt32(result.keys.max()!), bitCount: self.batch_size, with: searchPartyToken, completion: completion); // remove bitCount magic value   
+    fetchBitsUntilEnd(for: modemID, message: messageID, startBit: UInt32(result.keys.max()!), bitCount: self.batch_size, with: searchPartyToken, logger: logger, completion: completion); // remove bitCount magic value
    }
 }
 

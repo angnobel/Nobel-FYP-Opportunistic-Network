@@ -345,7 +345,7 @@ struct OFFetchReportsMainView: View {
     self.loading = true
 
     self.findMyController.fetchMessage(
-      for: modemID, message: messageID, with: searchPartyToken,
+      for: modemID, message: messageID, with: searchPartyToken, logger: self.fileHandle!,
       completion: { error in
         // Check if an error occurred
         guard error == nil else {
@@ -356,7 +356,7 @@ struct OFFetchReportsMainView: View {
         
         // Log packet time
         let _currentTimestamp = Int(Date().timeIntervalSince1970)
-        logAndPrint("Modem: \(modemID) | messageID: \(messageID) | searchPartyToken: \(searchPartyToken) | Time: \(_currentTimestamp)", fileHandle: self.fileHandle!)
+//        logAndPrint("Modem: \(modemID) | messageID: \(messageID) | searchPartyToken: \(searchPartyToken) | Time: \(_currentTimestamp)", fileHandle: self.fileHandle!)
         // Show data view
         self.loading = false
         self.showData = true
