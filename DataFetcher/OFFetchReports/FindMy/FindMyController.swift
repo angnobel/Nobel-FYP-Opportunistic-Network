@@ -73,10 +73,10 @@ class FindMyController: ObservableObject {
                     validKeyCounter += 1
 //                    print("==== Testing key")
                 } while (BoringSSL.isPublicKeyValid(Data(adv_key)) == 0)
-                print("Found valid pub key on \(validKeyCounter). try")
+                // print("Found valid pub key on \(validKeyCounter). try")
                 let k = DataEncodingKey(index: UInt32(bit), bitValue: UInt8(v), advertisedKey: adv_key, hashedKey: SHA256.hash(data: adv_key).data)
                 m.keys.append(k)
-                print(Data(adv_key).base64EncodedString())
+                // print(Data(adv_key).base64EncodedString())
             }
         }
        m.fetchedBits = startBit + bitCount
@@ -146,7 +146,7 @@ class FindMyController: ObservableObject {
 
       // Completion Handler
       fetchReportGroup.notify(queue: .main) {
-        self.logAndPrint("Message \(messageID) Result Finish loading report. Time: \(Int(Date().timeIntervalSince1970))" , fileHandle: logger)
+        self.logAndPrint("Time Stamp: Message \(messageID) Time: \(Int(Date().timeIntervalSince1970))" , fileHandle: logger)
         
 
         // Export the reports to the desktop
@@ -193,7 +193,7 @@ class FindMyController: ObservableObject {
       var byte_valid = 1
       var byte_completely_invalid = 1
       if result.keys.max() == nil {
-        logAndPrint("Message \(messageID) No Report Found" , fileHandle: logger)
+        logAndPrint("Result: Message \(messageID) No Report Found" , fileHandle: logger)
         completion(nil);
         return
         
@@ -230,7 +230,7 @@ class FindMyController: ObservableObject {
           }
       }
     
-      logAndPrint("Message \(messageID) Result bitstring: \(resultBitStr) bytestring: \(resultBitStr)" , fileHandle: logger)
+      logAndPrint("Result: Message \(messageID) bitstring: \(resultBitStr) bytestring: \(resultBitStr)" , fileHandle: logger)
     
       message?.decodedStr = resultByteStr
       self.messages[messageID] = message

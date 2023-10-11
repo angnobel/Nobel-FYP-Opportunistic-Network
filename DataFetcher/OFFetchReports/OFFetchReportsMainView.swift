@@ -117,15 +117,6 @@ struct OFFetchReportsMainView: View {
       }
   }
       
-  
-
-  var loadingView: some View {
-    VStack {
-      Text("Downloading and decoding message #\(self.messageIDToFetch)...")
-        .font(Font.system(size: 32, weight: .bold, design: .default))
-        .padding()
-    }
-  }
 
   var dataView: some View {
     VStack {
@@ -189,7 +180,7 @@ struct OFFetchReportsMainView: View {
                //Spacer()
                
             
-           }
+            }
         } 
      }.onAppear {
        // Start the timer when the view appears
@@ -267,9 +258,7 @@ struct OFFetchReportsMainView: View {
   }
   var body: some View {
     GeometryReader { geo in
-      if self.loading {
-        self.loadingView
-      } else if self.showData {
+      if self.showData {
         self.dataView
       } else if self.showModemPrompt {
         self.modemIDView
