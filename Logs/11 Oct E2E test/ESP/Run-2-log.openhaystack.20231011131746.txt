@@ -1,0 +1,109 @@
+[0;32mI (371) cpu_start: Compile time:     Oct  9 2023 16:50:23[0m
+[0;32mI (377) cpu_start: ELF file SHA256:  3845c5258a078f20...[0m
+[0;32mI (383) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (388) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (393) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (398) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (402) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (410) heap_init: At 3FC9E570 len 0003E1A0 (248 KiB): DRAM[0m
+[0;32mI (416) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (423) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (430) spi_flash: detected chip: generic[0m
+[0;32mI (433) spi_flash: flash io: dio[0m
+[0;32mI (438) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (444) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (451) coexist: coex firmware version: 80b0d89[0m
+[0;32mI (457) coexist: coexist rom version 9387209[0m
+[0;32mI (462) app_start: Starting scheduler on CPU0[0m
+[0;32mI (466) main_task: Started on CPU0[0m
+[0;32mI (466) main_task: Calling app_main()[0m
+[0;32mI (476) BLE_INIT: BT controller compile version [963cad4][0m
+[0;32mI (476) phy_init: phy_version 970,1856f88,May 10 2023,17:44:12[0m
+[0;32mI (536) BLE_INIT: Bluetooth MAC: 34:85:18:20:62:22
+[0m
+[0;32mI (546) WIFI: ESP_WIFI_MODE_STA[0m
+[0;32mI (546) pp: pp rom version: 9387209[0m
+[0;32mI (556) net80211: net80211 rom version: 9387209[0m
+I (566) wifi:wifi driver task: 3fcb490c, prio:23, stack:6656, core=0
+I (566) wifi:wifi firmware version: ce9244d
+I (566) wifi:wifi certification version: v7.0
+I (566) wifi:config NVS flash: enabled
+I (566) wifi:config nano formating: disabled
+I (576) wifi:Init data frame dynamic rx buffer num: 32
+I (576) wifi:Init management frame dynamic rx buffer num: 32
+I (586) wifi:Init management short buffer num: 32
+I (586) wifi:Init dynamic tx buffer num: 32
+I (596) wifi:Init static tx FG buffer num: 2
+I (596) wifi:Init static rx buffer size: 1600
+I (596) wifi:Init static rx buffer num: 10
+I (606) wifi:Init dynamic rx buffer num: 32
+[0;32mI (606) wifi_init: rx ba win: 6[0m
+[0;32mI (606) wifi_init: tcpip mbox: 32[0m
+[0;32mI (616) wifi_init: udp mbox: 6[0m
+[0;32mI (616) wifi_init: tcp mbox: 6[0m
+[0;32mI (626) wifi_init: tcp tx win: 5744[0m
+[0;32mI (626) wifi_init: tcp rx win: 5744[0m
+[0;32mI (626) wifi_init: tcp mss: 1440[0m
+[0;32mI (636) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (636) wifi_init: WiFi RX IRAM OP enabled[0m
+I (646) wifi:mode : sta (34:85:18:20:62:20)
+I (646) wifi:enable tsf
+[0;32mI (656) WIFI: wifi_init_sta finished.[0m
+I (656) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (656) wifi:state: init -> auth (b0)
+I (666) wifi:state: auth -> assoc (0)
+I (686) wifi:state: assoc -> run (10)
+I (796) wifi:state: run -> init (2c0)
+I (796) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (796) WIFI: retry to connect to the AP[0m
+[0;32mI (806) WIFI: connect to the AP fail[0m
+[0;32mI (2496) WIFI: retry to connect to the AP[0m
+[0;32mI (2496) WIFI: connect to the AP fail[0m
+I (2496) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (2496) wifi:state: init -> auth (b0)
+I (2506) wifi:state: auth -> assoc (0)
+I (2526) wifi:state: assoc -> run (10)
+I (2546) wifi:connected with Galaxy A53 5G 1935, aid = 1, channel 6, BW20, bssid = 4a:76:3a:af:43:ac
+I (2546) wifi:security: WPA2-PSK, phy: bgn, rssi: -34
+I (2546) wifi:pm start, type: 1
+
+I (2556) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000
+I (2566) wifi:<ba-add>idx:0 (ifx:0, 4a:76:3a:af:43:ac), tid:0, ssn:0, winSize:64
+I (2596) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (3566) esp_netif_handlers: sta ip: 192.168.90.115, mask: 255.255.255.0, gw: 192.168.90.72[0m
+[0;32mI (3566) WIFI: got ip:192.168.90.115[0m
+[0;32mI (3566) WIFI: connected to ap SSID:Galaxy A53 5G 1935 password:ixvo3528[0m
+[0;32mI (5576) findmy_modem: Sending initial default message: A[0m
+[0;32mI (5576) findmy_modem: Data to send (msg_id: 0): A[0m
+[0;32mI (5576) findmy_modem:   Sending byte 0/1 (0x41)[0m
+[0;32mI (5636) findmy_modem:   pub key to use (3. try): ba be 00 00 00 00 00 00 00 00 80 00 80 05 00 00 00 02 00 00 00 00 00 00 00 00 00 ... 00[0m
+[0;32mI (5686) findmy_modem:   pub key to use (2. try): ba be 00 00 00 01 00 00 00 00 80 00 80 05 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 01[0m
+[0;32mI (5726) findmy_modem:   pub key to use (1. try): ba be 00 00 00 02 00 00 00 00 80 00 80 05 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00[0m
+[0;32mI (5786) findmy_modem:   pub key to use (2. try): ba be 00 00 00 03 00 00 00 00 80 00 80 05 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00[0m
+[0;32mI (5826) findmy_modem:   pub key to use (1. try): ba be 00 00 00 04 00 00 00 00 80 00 80 05 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00[0m
+[0;32mI (5946) findmy_modem:   pub key to use (5. try): ba be 00 00 00 05 00 00 00 00 80 00 80 05 00 00 00 04 00 00 00 00 00 00 00 00 00 ... 00[0m
+[0;32mI (5976) findmy_modem:   pub key to use (1. try): ba be 00 00 00 06 00 00 00 00 80 00 80 05 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00[0m
+[0;32mI (6076) findmy_modem:   pub key to use (4. try): ba be 00 00 00 07 00 00 00 00 80 00 80 05 00 00 00 03 00 00 00 00 00 00 00 00 00 ... 01[0m
+[0;32mI (6106) TIMESTAMP: Unix: 1697001471[0m
+[0;32mI (6106) findmy_modem:   Sending byte 1/1 (0x00)[0m
+[0;32mI (6136) findmy_modem:   pub key to use (2. try): ba be 00 00 00 08 00 00 00 00 80 00 80 05 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00[0m
+[0;32mI (6236) findmy_modem:   pub key to use (4. try): ba be 00 00 00 09 00 00 00 00 80 00 80 05 00 00 00 03 00 00 00 00 00 00 00 00 00 ... 00[0m
+[0;32mI (6296) findmy_modem:   pub key to use (2. try): ba be 00 00 00 0a 00 00 00 00 80 00 80 05 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00[0m
+[0;32mI (6336) findmy_modem:   pub key to use (1. try): ba be 00 00 00 0b 00 00 00 00 80 00 80 05 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00[0m
+[0;32mI (6416) findmy_modem:   pub key to use (3. try): ba be 00 00 00 0c 00 00 00 00 80 00 80 05 00 00 00 02 00 00 00 00 00 00 00 00 00 ... 00[0m
+[0;32mI (6476) findmy_modem:   pub key to use (2. try): ba be 00 00 00 0d 00 00 00 00 80 00 80 05 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00[0m
+[0;32mI (6516) findmy_modem:   pub key to use (1. try): ba be 00 00 00 0e 00 00 00 00 80 00 80 05 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00[0m
+[0;32mI (6556) findmy_modem:   pub key to use (1. try): ba be 00 00 00 0f 00 00 00 00 80 00 80 05 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00[0m
+[0;32mI (6586) TIMESTAMP: Unix: 1697001472[0m
+[0;32mI (36586) TIMESTAMP: Unix: 1697001502[0m
+I (36586) wifi:state: run -> init (0)
+I (36586) wifi:pm stop, total sleep time: 30712746 us / 34032324 us
+
+I (36586) wifi:<ba-del>idx:0, tid:0
+I (36586) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (36596) WIFI: retry to connect to the AP[0m
+[0;32mI (36596) WIFI: connect to the AP fail[0m
+I (36606) wifi:flush txq
+I (36606) wifi:stop sw txq
+I (36606) wifi:lmac stop hw txq
+[0;32mI (36606) main_task: Returned from app_main()[0m
