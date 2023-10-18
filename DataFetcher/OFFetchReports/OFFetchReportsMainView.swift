@@ -32,6 +32,7 @@ struct OFFetchReportsMainView: View {
 
   @State var showModemPrompt = false
   @State var repeatTime: Int = 0
+  @State var messageStartFrom: Int = 0
   @State var numMessages: Int = 1
   
   @State var isRepeatingFetch: Bool = true
@@ -54,6 +55,11 @@ struct OFFetchReportsMainView: View {
           HStack {
             Text("Repeat Time (s):")
             TextField("Enter Repeat Time", value: self.$repeatTime, formatter: NumberFormatter()).frame(width: 100)
+          }
+        
+          HStack {
+            Text("Start from message:")
+            TextField("Message start from", value: self.$messageStartFrom, formatter: NumberFormatter()).frame(width: 100)
           }
 
           HStack {
@@ -107,7 +113,7 @@ struct OFFetchReportsMainView: View {
                 
                 self.findMyController.clearMessages()
                 
-                loadMultiMessage(modemID:parsedModemID, numMessages: numMessages)
+                loadMultiMessage(modemID: parsedModemID, startFrom: messageStartFrom, numMessages: numMessages)
                 isRepeatingFetch = repeatTime > 0
                 
                 if self.repeatTime > 0 {
@@ -118,7 +124,7 @@ struct OFFetchReportsMainView: View {
                     self.timer = Timer.scheduledTimer(withTimeInterval: repeatTimeInterval, repeats: true) { _ in
                         // Call your function when the timer fires
                       if self.isRepeatingFetch {
-                        self.loadMultiMessage(modemID: self.modemID, numMessages: self.numMessages)
+                        self.loadMultiMessage(modemID: self.modemID, startFrom: self.messageStartFrom, numMessages: self.numMessages)
                       }
                     }
                 }
@@ -300,10 +306,10 @@ struct OFFetchReportsMainView: View {
     return true
   }
   
-  func loadMultiMessage(modemID: UInt32, numMessages: Int) {
+  func loadMultiMessage(modemID: UInt32, startFrom: Int, numMessages: Int) {
     // TODO: Make this run parellel
     
-    for i in 0...numMessages-1 {
+    for i in startFrom...startFrom+numMessages-1 {
       self.loadMessage(modemID: modemID, messageID: UInt32(i))
     }
   }
