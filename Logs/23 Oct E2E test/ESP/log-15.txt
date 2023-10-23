@@ -1,0 +1,146 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\Nobel\Documents\GitHub\tagalong-0.1-FYP\Firmware\ESP32> set IDF_PATH=C:\Users\Nobel\esp\esp-idf
+PS C:\Users\Nobel\Documents\GitHub\tagalong-0.1-FYP\Firmware\ESP32> C:\Users\Nobel\.espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:\Users\Nobel\esp\esp-idf\tools\idf_monitor.py -p COM11 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 c:\Users\Nobel\Documents\GitHub\tagalong-0.1-FYP\Firmware\ESP32\build\openhaystack.elf
+--- WARNING: GDB cannot open serial ports accessed as COMx
+--- Using \\.\COM11 instead...
+--- idf_monitor on \\.\COM11 115200 ---
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1704
+load:0x403cc710,len:0x968
+load:0x403ce710,len:0x2f68
+entry 0x403cc710
+I (30) boot: ESP-IDF v5.1.1 2nd stage bootloader
+I (30) boot: compile time Oct  9 2023 16:50:48
+I (30) boot: chip revision: v0.4
+I (33) boot.esp32c3: SPI Speed      : 80MHz
+I (38) boot.esp32c3: SPI Mode       : DIO
+I (43) boot.esp32c3: SPI Flash Size : 4MB
+I (47) boot: Enabling RNG early entropy source...
+I (53) boot: Partition Table:
+I (56) boot: ## Label            Usage          Type ST Offset   Length
+I (64) boot:  0 nvs              WiFi data        01 02 00009000 00005000
+I (71) boot:  1 key              unknown          40 00 0000e000 00001000
+I (79) boot:  2 phy_init         RF data          01 01 0000f000 00001000
+I (86) boot:  3 factory          factory app      00 00 00010000 00200000
+I (94) boot: End of partition table
+I (98) esp_image: segment 0: paddr=00010020 vaddr=3c100020 size=376c8h (227016) map
+I (142) esp_image: segment 1: paddr=000476f0 vaddr=3fc93800 size=03084h ( 12420) load
+I (145) esp_image: segment 2: paddr=0004a77c vaddr=40380000 size=0589ch ( 22684) load
+I (152) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=f8d8ch (1019276) map
+I (319) esp_image: segment 4: paddr=00148db4 vaddr=4038589c size=0de48h ( 56904) load
+I (336) boot: Loaded app from partition at offset 0x10000
+I (336) boot: Disabling RNG early entropy source...
+I (348) cpu_start: Unicore app
+I (348) cpu_start: Pro cpu up.
+I (357) cpu_start: Pro cpu start user code
+I (357) cpu_start: cpu freq: 160000000 Hz
+I (357) cpu_start: Application information:
+I (360) cpu_start: Project name:     openhaystack
+I (366) cpu_start: App version:      40382ca-dirty
+I (371) cpu_start: Compile time:     Oct 18 2023 13:04:19
+I (377) cpu_start: ELF file SHA256:  00a1ccb6cd286bd9...
+I (383) cpu_start: ESP-IDF:          v5.1.1
+I (388) cpu_start: Min chip rev:     v0.3
+I (393) cpu_start: Max chip rev:     v0.99
+I (398) cpu_start: Chip rev:         v0.4
+I (402) heap_init: Initializing. RAM available for dynamic allocation:
+I (410) heap_init: At 3FC9E570 len 0003E1A0 (248 KiB): DRAM
+I (416) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM
+I (423) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM
+I (430) spi_flash: detected chip: generic
+I (433) spi_flash: flash io: dio
+I (438) sleep: Configure to isolate all GPIO pins in sleep state
+I (444) sleep: Enable automatic switching of GPIO sleep configuration
+I (451) coexist: coex firmware version: 80b0d89
+I (457) coexist: coexist rom version 9387209
+I (462) app_start: Starting scheduler on CPU0
+I (466) main_task: Started on CPU0
+I (466) main_task: Calling app_main()
+I (476) BLE_INIT: BT controller compile version [963cad4]
+I (476) phy_init: phy_version 970,1856f88,May 10 2023,17:44:12
+I (526) BLE_INIT: Bluetooth MAC: 34:85:18:20:62:22
+
+I (536) WIFI: ESP_WIFI_MODE_STA
+I (546) pp: pp rom version: 9387209
+I (546) net80211: net80211 rom version: 9387209
+I (556) wifi:wifi driver task: 3fcb490c, prio:23, stack:6656, core=0
+I (556) wifi:wifi firmware version: ce9244d
+I (556) wifi:wifi certification version: v7.0
+I (556) wifi:config NVS flash: enabled
+I (556) wifi:config nano formating: disabled
+I (566) wifi:Init data frame dynamic rx buffer num: 32
+I (566) wifi:Init management frame dynamic rx buffer num: 32
+I (576) wifi:Init management short buffer num: 32
+I (576) wifi:Init dynamic tx buffer num: 32
+I (586) wifi:Init static tx FG buffer num: 2
+I (586) wifi:Init static rx buffer size: 1600
+I (586) wifi:Init static rx buffer num: 10
+I (596) wifi:Init dynamic rx buffer num: 32
+I (596) wifi_init: rx ba win: 6
+I (606) wifi_init: tcpip mbox: 32
+I (606) wifi_init: udp mbox: 6
+I (606) wifi_init: tcp mbox: 6
+I (616) wifi_init: tcp tx win: 5744
+I (616) wifi_init: tcp rx win: 5744
+I (626) wifi_init: tcp mss: 1440
+I (626) wifi_init: WiFi IRAM OP enabled
+I (626) wifi_init: WiFi RX IRAM OP enabled
+I (636) wifi:mode : sta (34:85:18:20:62:20)
+I (636) wifi:enable tsf
+I (646) WIFI: wifi_init_sta finished.
+I (646) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (656) wifi:state: init -> auth (b0)
+I (656) wifi:state: auth -> assoc (0)
+I (706) wifi:state: assoc -> run (10)
+I (736) wifi:connected with Galaxy A53 5G 1935, aid = 1, channel 6, BW20, bssid = 4a:76:3a:af:43:ac
+I (736) wifi:security: WPA2-PSK, phy: bgn, rssi: -34
+I (746) wifi:pm start, type: 1
+
+I (746) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000
+I (756) wifi:<ba-add>idx:0 (ifx:0, 4a:76:3a:af:43:ac), tid:0, ssn:0, winSize:64
+I (776) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (1756) esp_netif_handlers: sta ip: 192.168.90.115, mask: 255.255.255.0, gw: 192.168.90.72
+I (1756) WIFI: got ip:192.168.90.115
+I (1756) WIFI: connected to ap SSID:Galaxy A53 5G 1935 password:ixvo3528
+I (6766) findmy_modem: Data to send (msg_id: 15): A
+I (6766) findmy_modem:   Sending byte 0/1 (0x41)
+I (6816) findmy_modem:   pub key to use (3. try): ba be 00 00 00 00 00 00 00 0f 81 00 80 03 00 00 00 02 00 00 00 00 00 00 00 00 00 ... 00
+I (6856) findmy_modem:   pub key to use (1. try): ba be 00 00 00 01 00 00 00 0f 81 00 80 03 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 01
+I (6896) findmy_modem:   pub key to use (1. try): ba be 00 00 00 02 00 00 00 0f 81 00 80 03 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (6996) findmy_modem:   pub key to use (4. try): ba be 00 00 00 03 00 00 00 0f 81 00 80 03 00 00 00 03 00 00 00 00 00 00 00 00 00 ... 00
+I (7046) findmy_modem:   pub key to use (2. try): ba be 00 00 00 04 00 00 00 0f 81 00 80 03 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00
+I (7086) findmy_modem:   pub key to use (1. try): ba be 00 00 00 05 00 00 00 0f 81 00 80 03 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (7126) findmy_modem:   pub key to use (1. try): ba be 00 00 00 06 00 00 00 0f 81 00 80 03 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (7226) findmy_modem:   pub key to use (4. try): ba be 00 00 00 07 00 00 00 0f 81 00 80 03 00 00 00 03 00 00 00 00 00 00 00 00 00 ... 01
+I (7256) TIMESTAMP: Unix: 1698058252
+I (7256) findmy_modem:   Sending byte 1/1 (0x00)
+I (7266) findmy_modem:   pub key to use (1. try): ba be 00 00 00 08 00 00 00 0f 81 00 80 03 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (7306) findmy_modem:   pub key to use (1. try): ba be 00 00 00 09 00 00 00 0f 81 00 80 03 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (7346) findmy_modem:   pub key to use (1. try): ba be 00 00 00 0a 00 00 00 0f 81 00 80 03 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (7386) findmy_modem:   pub key to use (1. try): ba be 00 00 00 0b 00 00 00 0f 81 00 80 03 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (7426) findmy_modem:   pub key to use (1. try): ba be 00 00 00 0c 00 00 00 0f 81 00 80 03 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (7466) findmy_modem:   pub key to use (1. try): ba be 00 00 00 0d 00 00 00 0f 81 00 80 03 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (7566) findmy_modem:   pub key to use (4. try): ba be 00 00 00 0e 00 00 00 0f 81 00 80 03 00 00 00 03 00 00 00 00 00 00 00 00 00 ... 00
+I (7606) findmy_modem:   pub key to use (1. try): ba be 00 00 00 0f 00 00 00 0f 81 00 80 03 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (7636) TIMESTAMP: Unix: 1698058252
+I (11636) TIMESTAMP: Unix: 1698058256
+I (11636) wifi:state: run -> init (0)
+I (11636) wifi:pm stop, total sleep time: 8506599 us / 10890442 us
+
+I (11636) wifi:<ba-del>idx:0, tid:0
+I (11636) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (11646) WIFI: retry to connect to the AP
+I (11646) WIFI: connect to the AP fail
+I (11696) wifi:flush txq
+I (11696) wifi:stop sw txq
+I (11696) wifi:lmac stop hw txq
+I (11696) main_task: Returned from app_main()
