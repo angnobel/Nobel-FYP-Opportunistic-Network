@@ -11,12 +11,11 @@ import Foundation
 import OSLog
 
 /// Uses the AltStore Mail plugin to access recent anisette data.
-public class AnisetteDataManager: NSObject {
-    @objc static let shared = AnisetteDataManager()
+public class AnisetteDataManager : NSObject{
     private var anisetteDataCompletionHandlers: [String: (Result<AppleAccountData, Error>) -> Void] = [:]
     private var anisetteDataTimers: [String: Timer] = [:]
 
-    private override init() {
+    public override init() {
         super.init()
 
         dlopen("/System/Library/PrivateFrameworks/AuthKit.framework/AuthKit", RTLD_NOW)

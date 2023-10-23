@@ -39,6 +39,8 @@ class FindMyController: ObservableObject {
   @Published var modemID: UInt32 = 0
   @Published var batch_size: UInt32 = 128
   
+  @Published var computedKeysCache: [UInt32: [DataEncodingKey]] = [:]
+  
   func logAndPrint(_ text: String, fileHandle: FileHandle) {
     fileHandle.seekToEndOfFile()
     
@@ -56,34 +58,46 @@ class FindMyController: ObservableObject {
   }
 
   func fetchBitsUntilEnd(
-    for modemID: UInt32, message messageID: UInt32, startBit: UInt32, bitCount: UInt32, with searchPartyToken: Data, logger: FileHandle, completion: @escaping (Error?) -> Void
-    ) {
-    
-    let fill_0: [UInt8] = [0, 0, 0, 0, 0, 0]
-    let static_prefix: [UInt8] = [0xba, 0xbe]
+      for modemID: UInt32, message messageID: UInt32, startBit: UInt32, bitCount: UInt32, with searchPartyToken: Data, logger: FileHandle, completion: @escaping (Error?) -> Void
+  ) {
 
-       var m = self.messages[messageID]!
-        for bit in startBit..<startBit+bitCount {
-            for v in 0...1 {
-                var validKeyCounter: UInt32 = 0
-                var adv_key = [UInt8]()
-                repeat {
-                    adv_key = static_prefix + byteArray(from: UInt32(bit)) + byteArray(from: UInt32(messageID)) + byteArray(from: m.modemID)
-                    adv_key += byteArray(from: validKeyCounter) + fill_0 + byteArray(from: UInt32(v)) //2 lines, otherwise the XCode type checker takes too long
-                    validKeyCounter += 1
-//                    print("==== Testing key")
-                } while (BoringSSL.isPublicKeyValid(Data(adv_key)) == 0)
-                // print("Found valid pub key on \(validKeyCounter). try")
-                let k = DataEncodingKey(index: UInt32(bit), bitValue: UInt8(v), advertisedKey: adv_key, hashedKey: SHA256.hash(data: adv_key).data)
-                m.keys.append(k)
-                // print(Data(adv_key).base64EncodedString())
-            }
-        }
-       m.fetchedBits = startBit + bitCount
-      self.messages[UInt32(messageID)] = m
-      // Includes async fetch if finished, otherwise fetches more bits
+      // Check if the computed keys for this messageID are already cached
+      if let cachedKeys = computedKeysCache[messageID] {
+          // Use the cached keys instead of recomputing
+          self.messages[messageID]!.keys += cachedKeys
+          self.messages[messageID]!.fetchedBits = startBit + bitCount
+          self.fetchReports(for: messageID, with: searchPartyToken, logger: logger, completion: completion)
+          return
+      }
+
+      // If keys are not cached, proceed with computing them
+      let fill_0: [UInt8] = [0, 0, 0, 0, 0, 0]
+      let static_prefix: [UInt8] = [0xba, 0xbe]
+
+      var m = self.messages[messageID]!
+      for bit in startBit..<startBit + bitCount {
+          for v in 0...1 {
+              var validKeyCounter: UInt32 = 0
+              var adv_key = [UInt8]()
+              repeat {
+                  adv_key = static_prefix + byteArray(from: UInt32(bit)) + byteArray(from: UInt32(messageID)) + byteArray(from: m.modemID)
+                  adv_key += byteArray(from: validKeyCounter) + fill_0 + byteArray(from: UInt32(v))
+                  validKeyCounter += 1
+              } while (BoringSSL.isPublicKeyValid(Data(adv_key)) == 0)
+
+              let k = DataEncodingKey(index: UInt32(bit), bitValue: UInt8(v), advertisedKey: adv_key, hashedKey: SHA256.hash(data: adv_key).data)
+              m.keys.append(k)
+          }
+      }
+
+      // Cache the computed keys for this messageID
+      computedKeysCache[messageID] = m.keys
+
+      m.fetchedBits = startBit + bitCount
+      self.messages[messageID] = m
       self.fetchReports(for: messageID, with: searchPartyToken, logger: logger, completion: completion)
   }
+
 
   func fetchMessage(
       for modemID: UInt32,

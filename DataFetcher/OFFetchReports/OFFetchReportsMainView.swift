@@ -15,11 +15,13 @@ import Foundation
 struct OFFetchReportsMainView: View {
 
   @Environment(\.findMyController) var findMyController
+  
+  // Refresh
+  @State var loading = false
 
   @State var targetedDrop: Bool = false
   @State var error: Error?
   @State var showData = false
-  @State var loading = false
   @State var messageIDToFetch: UInt32 = 0
 
   @State var searchPartyToken: Data?
@@ -30,6 +32,7 @@ struct OFFetchReportsMainView: View {
 
   @State var showModemPrompt = false
   @State var repeatTime: Int = 0
+  @State var messageStartFrom: Int = 0
   @State var numMessages: Int = 1
   
   @State var isRepeatingFetch: Bool = true
@@ -52,6 +55,11 @@ struct OFFetchReportsMainView: View {
           HStack {
             Text("Repeat Time (s):")
             TextField("Enter Repeat Time", value: self.$repeatTime, formatter: NumberFormatter()).frame(width: 100)
+          }
+        
+          HStack {
+            Text("Start from message:")
+            TextField("Message start from", value: self.$messageStartFrom, formatter: NumberFormatter()).frame(width: 100)
           }
 
           HStack {
@@ -105,9 +113,23 @@ struct OFFetchReportsMainView: View {
                 
                 self.findMyController.clearMessages()
                 
-                loadMultiMessage(modemID:parsedModemID, numMessages: numMessages)
+                loadMultiMessage(modemID: parsedModemID, startFrom: messageStartFrom, numMessages: numMessages)
                 isRepeatingFetch = repeatTime > 0
                 
+                if self.repeatTime > 0 {
+                    // Convert repeatTime to TimeInterval
+                    let repeatTimeInterval: TimeInterval = TimeInterval(self.repeatTime)
+                    
+                    // Start the timer
+                    self.timer = Timer.scheduledTimer(withTimeInterval: repeatTimeInterval, repeats: true) { _ in
+                        // Call your function when the timer fires
+                      if self.isRepeatingFetch {
+                        self.loadMultiMessage(modemID: self.modemID, startFrom: self.messageStartFrom, numMessages: self.numMessages)
+                      }
+                    }
+                }
+                
+                self.showData = true
                 
               },
               label: {
@@ -182,21 +204,7 @@ struct OFFetchReportsMainView: View {
             
             }
         } 
-     }.onAppear {
-       // Start the timer when the view appears
-       if self.repeatTime > 0 {
-           // Convert repeatTime to TimeInterval
-           let repeatTimeInterval: TimeInterval = TimeInterval(self.repeatTime)
-           
-           // Start the timer
-           self.timer = Timer.scheduledTimer(withTimeInterval: repeatTimeInterval, repeats: true) { _ in
-               // Call your function when the timer fires
-             if self.isRepeatingFetch {
-               self.loadMultiMessage(modemID: self.modemID, numMessages: self.numMessages)
-             }
-           }
-       }
-   }
+     }
   }
   
   func openFolderDialog() {
@@ -258,7 +266,10 @@ struct OFFetchReportsMainView: View {
   }
   var body: some View {
     GeometryReader { geo in
-      if self.showData {
+      if self.loading {
+        self.dataView
+      }
+      else if self.showData {
         self.dataView
       } else if self.showModemPrompt {
         self.modemIDView
@@ -267,15 +278,14 @@ struct OFFetchReportsMainView: View {
           .frame(width: geo.size.width, height: geo.size.height)
       }
     }
-
   }
 
   // swiftlint:disable identifier_name
   func getDataForModem(modemID: UInt32) -> Bool {
         print("Retrieving data")
         print(modemID)
-        
-            AnisetteDataManager.shared.requestAnisetteData { result in
+          
+            AnisetteDataManager().requestAnisetteData { result in
             switch result {
             case .failure(_):
                 print("AnsietteDataManager failed.")
@@ -296,9 +306,10 @@ struct OFFetchReportsMainView: View {
     return true
   }
   
-  func loadMultiMessage(modemID: UInt32, numMessages: Int) {
+  func loadMultiMessage(modemID: UInt32, startFrom: Int, numMessages: Int) {
     // TODO: Make this run parellel
-    for i in 0...numMessages-1 {
+    
+    for i in startFrom...startFrom+numMessages-1 {
       self.loadMessage(modemID: modemID, messageID: UInt32(i))
     }
   }
@@ -310,7 +321,7 @@ struct OFFetchReportsMainView: View {
         print(modemID)
         print(messageID)
         
-            AnisetteDataManager.shared.requestAnisetteData { result in
+            AnisetteDataManager().requestAnisetteData { result in
             switch result {
             case .failure(_):
                 print("AnsietteDataManager failed.")
@@ -331,7 +342,6 @@ struct OFFetchReportsMainView: View {
   }
 
   func downloadAndDecodeData(modemID: UInt32, messageID: UInt32, searchPartyToken: Data) {
-    self.loading = true
 
     self.findMyController.fetchMessage(
       for: modemID, message: messageID, with: searchPartyToken, logger: self.fileHandle!,
@@ -342,14 +352,7 @@ struct OFFetchReportsMainView: View {
           self.error = error
           return
         }
-        
-        // Log packet time
-        let _currentTimestamp = Int(Date().timeIntervalSince1970)
-//        logAndPrint("Modem: \(modemID) | messageID: \(messageID) | searchPartyToken: \(searchPartyToken) | Time: \(_currentTimestamp)", fileHandle: self.fileHandle!)
-        // Show data view
-        self.loading = false
-        self.showData = true
-
+        self.loading = !self.loading
       })
   }
 }
