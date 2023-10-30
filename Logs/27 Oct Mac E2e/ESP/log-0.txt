@@ -1,0 +1,419 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\Nobel\Documents\GitHub\tagalong-0.1-FYP\Firmware\ESP32> set IDF_PATH=C:\Users\Nobel\esp\esp-idf
+PS C:\Users\Nobel\Documents\GitHub\tagalong-0.1-FYP\Firmware\ESP32> C:\Users\Nobel\.espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:\Users\Nobel\esp\esp-idf\tools\idf_monitor.py -p COM11 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 c:\Users\Nobel\Documents\GitHub\tagalong-0.1-FYP\Firmware\ESP32\build\openhaystack.elf
+--- WARNING: GDB cannot open serial ports accessed as COMx
+--- Using \\.\COM11 instead...
+--- idf_monitor on \\.\COM11 115200 ---
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---
+x�x�x�xxx��x�����xxxx��xxxx�x��x�x�x�x�xxx�x1. try): ba b0 00 0�ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1704
+load:0x403cc710,len:0x968
+load:0x403ce710,len:0x2f68
+entry 0x403cc710
+I (30) boot: ESP-IDF v5.1.1 2nd stage bootloader
+I (30) boot: compile time Oct  9 2023 16:50:48
+I (30) boot: chip revision: v0.4
+I (33) boot.esp32c3: SPI Speed      : 80MHz
+I (38) boot.esp32c3: SPI Mode       : DIO
+I (43) boot.esp32c3: SPI Flash Size : 4MB
+I (47) boot: Enabling RNG early entropy source...
+I (53) boot: Partition Table:
+I (56) boot: ## Label            Usage          Type ST Offset   Length
+I (64) boot:  0 nvs              WiFi data        01 02 00009000 00005000
+I (71) boot:  1 key              unknown          40 00 0000e000 00001000
+I (79) boot:  2 phy_init         RF data          01 01 0000f000 00001000
+I (86) boot:  3 factory          factory app      00 00 00010000 00200000
+I (94) boot: End of partition table
+I (98) esp_image: segment 0: paddr=00010020 vaddr=3c100020 size=376c8h (227016) map
+I (142) esp_image: segment 1: paddr=000476f0 vaddr=3fc93800 size=03084h ( 12420) load
+I (145) esp_image: segment 2: paddr=0004a77c vaddr=40380000 size=0589ch ( 22684) load
+I (152) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=f8d90h (1019280) map
+I (319) esp_image: segment 4: paddr=00148db8 vaddr=4038589c size=0de48h ( 56904) load
+I (336) boot: Loaded app from partition at offset 0x10000
+I (336) boot: Disabling RNG early entropy source...
+I (348) cpu_start: Unicore app
+I (348) cpu_start: Pro cpu up.
+I (357) cpu_start: Pro cpu start user code
+I (357) cpu_start: cpu freq: 160000000 Hz
+I (357) cpu_start: Application information:
+I (360) cpu_start: Project name:     openhaystack
+I (366) cpu_start: App version:      17cd9e0-dirty
+I (371) cpu_start: Compile time:     Oct 27 2023 16:38:01
+I (377) cpu_start: ELF file SHA256:  6133eebbd248f114...
+I (383) cpu_start: ESP-IDF:          v5.1.1
+I (388) cpu_start: Min chip rev:     v0.3
+I (393) cpu_start: Max chip rev:     v0.99
+I (398) cpu_start: Chip rev:         v0.4
+I (402) heap_init: Initializing. RAM available for dynamic allocation:
+I (410) heap_init: At 3FC9E570 len 0003E1A0 (248 KiB): DRAM
+I (416) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM
+I (423) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM
+I (430) spi_flash: detected chip: generic
+I (434) spi_flash: flash io: dio
+I (438) sleep: Configure to isolate all GPIO pins in sleep state
+I (444) sleep: Enable automatic switching of GPIO sleep configuration
+I (451) coexist: coex firmware version: 80b0d89
+I (457) coexist: coexist rom version 9387209
+I (462) app_start: Starting scheduler on CPU0
+I (467) main_task: Started on CPU0
+I (467) main_task: Calling app_main()
+I (477) BLE_INIT: BT controller compile version [963cad4]
+I (477) phy_init: phy_version 970,1856f88,May 10 2023,17:44:12
+I (527) BLE_INIT: Bluetooth MAC: 34:85:18:20:62:22
+
+I (547) WIFI: ESP_WIFI_MODE_STA
+I (547) pp: pp rom version: 9387209
+I (547) net80211: net80211 rom version: 9387209
+I (557) wifi:wifi driver task: 3fcb490c, prio:23, stack:6656, core=0
+I (557) wifi:wifi firmware version: ce9244d
+I (557) wifi:wifi certification version: v7.0
+I (567) wifi:config NVS flash: enabled
+I (567) wifi:config nano formating: disabled
+I (567) wifi:Init data frame dynamic rx buffer num: 32
+I (577) wifi:Init management frame dynamic rx buffer num: 32
+I (577) wifi:Init management short buffer num: 32
+I (587) wifi:Init dynamic tx buffer num: 32
+I (587) wifi:Init static tx FG buffer num: 2
+I (597) wifi:Init static rx buffer size: 1600
+I (597) wifi:Init static rx buffer num: 10
+I (597) wifi:Init dynamic rx buffer num: 32
+I (607) wifi_init: rx ba win: 6
+I (607) wifi_init: tcpip mbox: 32
+I (617) wifi_init: udp mbox: 6
+I (617) wifi_init: tcp mbox: 6
+I (617) wifi_init: tcp tx win: 5744
+I (627) wifi_init: tcp rx win: 5744
+I (627) wifi_init: tcp mss: 1440
+I (637) wifi_init: WiFi IRAM OP enabled
+I (637) wifi_init: WiFi RX IRAM OP enabled
+I (647) wifi:mode : sta (34:85:18:20:62:20)
+I (647) wifi:enable tsf
+I (647) WIFI: wifi_init_sta finished.
+
+Logging is enabled into file log.openhaystack.20231027171516.txt
+I (2337) WIFI: retry to connect to the AP
+I (2337) WIFI: connect to the AP fail
+I (4027) WIFI: retry to connect to the AP
+I (4027) WIFI: connect to the AP fail
+I (4137) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (4137) wifi:state: init -> auth (b0)
+I (4157) wifi:state: auth -> assoc (0)
+I (4167) wifi:state: assoc -> run (10)
+I (4197) wifi:connected with Galaxy A53 5G 1935, aid = 2, channel 6, BW20, bssid = 4a:76:3a:af:43:ac
+I (4197) wifi:security: WPA2-PSK, phy: bgn, rssi: -27
+I (4197) wifi:pm start, type: 1
+
+I (4207) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000
+I (4217) wifi:<ba-add>idx:0 (ifx:0, 4a:76:3a:af:43:ac), tid:0, ssn:0, winSize:64
+I (4567) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (5217) esp_netif_handlers: sta ip: 192.168.140.115, mask: 255.255.255.0, gw: 192.168.140.143
+I (5217) WIFI: got ip:192.168.140.115
+I (5217) WIFI: connected to ap SSID:Galaxy A53 5G 1935 password:ixvo3528
+I (9227) findmy_modem: Data to send (msg_id: 0): A
+I (9227) findmy_modem:   Sending byte 0/1 (0x41)
+I (9297) findmy_modem:   pub key to use (4. try): ba be 00 00 00 00 00 00 00 00 81 00 80 06 00 00 00 03 00 00 00 00 00 00 00 00 00 ... 00
+I (9337) findmy_modem:   pub key to use (1. try): ba be 00 00 00 01 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 01
+I (9397) findmy_modem:   pub key to use (2. try): ba be 00 00 00 02 00 00 00 00 81 00 80 06 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00
+I (9437) findmy_modem:   pub key to use (1. try): ba be 00 00 00 03 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (9487) findmy_modem:   pub key to use (1. try): ba be 00 00 00 04 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (9517) findmy_modem:   pub key to use (1. try): ba be 00 00 00 05 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (9557) findmy_modem:   pub key to use (1. try): ba be 00 00 00 06 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (9597) findmy_modem:   pub key to use (1. try): ba be 00 00 00 07 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 01
+I (9627) TIMESTAMP: Unix: 1698398127
+I (9627) findmy_modem:   Sending byte 1/1 (0x00)
+I (9637) findmy_modem:   pub key to use (1. try): ba be 00 00 00 08 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (9677) findmy_modem:   pub key to use (1. try): ba be 00 00 00 09 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (9717) findmy_modem:   pub key to use (1. try): ba be 00 00 00 0a 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (9757) findmy_modem:   pub key to use (1. try): ba be 00 00 00 0b 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (9817) findmy_modem:   pub key to use (2. try): ba be 00 00 00 0c 00 00 00 00 81 00 80 06 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00
+I (9877) findmy_modem:   pub key to use (2. try): ba be 00 00 00 0d 00 00 00 00 81 00 80 06 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00
+I (9937) findmy_modem:   pub key to use (2. try): ba be 00 00 00 0e 00 00 00 00 81 00 80 06 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00
+I (9977) findmy_modem:   pub key to use (1. try): ba be 00 00 00 0f 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (10007) TIMESTAMP: Unix: 1698398128
+I (12007) findmy_modem: Data to send (msg_id: 0): A
+I (12007) findmy_modem:   Sending byte 0/1 (0x41)
+I (12077) findmy_modem:   pub key to use (4. try): ba be 00 00 00 00 00 00 00 00 81 00 80 06 00 00 00 03 00 00 00 00 00 00 00 00 00 ... 00
+I (12117) findmy_modem:   pub key to use (1. try): ba be 00 00 00 01 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 01
+I (12177) findmy_modem:   pub key to use (2. try): ba be 00 00 00 02 00 00 00 00 81 00 80 06 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00
+I (12217) findmy_modem:   pub key to use (1. try): ba be 00 00 00 03 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (12257) findmy_modem:   pub key to use (1. try): ba be 00 00 00 04 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (12297) findmy_modem:   pub key to use (1. try): ba be 00 00 00 05 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (12337) findmy_modem:   pub key to use (1. try): ba be 00 00 00 06 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (12377) findmy_modem:   pub key to use (1. try): ba be 00 00 00 07 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 01
+I (12407) TIMESTAMP: Unix: 1698398130
+I (12407) findmy_modem:   Sending byte 1/1 (0x00)
+I (12417) findmy_modem:   pub key to use (1. try): ba be 00 00 00 08 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (12457) findmy_modem:   pub key to use (1. try): ba be 00 00 00 09 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (12497) findmy_modem:   pub key to use (1. try): ba be 00 00 00 0a 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (12537) findmy_modem:   pub key to use (1. try): ba be 00 00 00 0b 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (12597) findmy_modem:   pub key to use (2. try): ba be 00 00 00 0c 00 00 00 00 81 00 80 06 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00
+I (12657) findmy_modem:   pub key to use (2. try): ba be 00 00 00 0d 00 00 00 00 81 00 80 06 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00
+I (12717) findmy_modem:   pub key to use (2. try): ba be 00 00 00 0e 00 00 00 00 81 00 80 06 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00
+I (12757) findmy_modem:   pub key to use (1. try): ba be 00 00 00 0f 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (12787) TIMESTAMP: Unix: 1698398131
+I (14787) findmy_modem: Data to send (msg_id: 0): A
+I (14787) findmy_modem:   Sending byte 0/1 (0x41)
+I (14857) findmy_modem:   pub key to use (4. try): ba be 00 00 00 00 00 00 00 00 81 00 80 06 00 00 00 03 00 00 00 00 00 00 00 00 00 ... 00
+I (14887) findmy_modem:   pub key to use (1. try): ba be 00 00 00 01 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 01
+I (14947) findmy_modem:   pub key to use (2. try): ba be 00 00 00 02 00 00 00 00 81 00 80 06 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00
+I (14987) findmy_modem:   pub key to use (1. try): ba be 00 00 00 03 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (15027) findmy_modem:   pub key to use (1. try): ba be 00 00 00 04 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (15067) findmy_modem:   pub key to use (1. try): ba be 00 00 00 05 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (15107) findmy_modem:   pub key to use (1. try): ba be 00 00 00 06 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (15147) findmy_modem:   pub key to use (1. try): ba be 00 00 00 07 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 01
+I (15177) TIMESTAMP: Unix: 1698398133
+I (15177) findmy_modem:   Sending byte 1/1 (0x00)
+I (15187) findmy_modem:   pub key to use (1. try): ba be 00 00 00 08 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (15227) findmy_modem:   pub key to use (1. try): ba be 00 00 00 09 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (15267) findmy_modem:   pub key to use (1. try): ba be 00 00 00 0a 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (15307) findmy_modem:   pub key to use (1. try): ba be 00 00 00 0b 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (15367) findmy_modem:   pub key to use (2. try): ba be 00 00 00 0c 00 00 00 00 81 00 80 06 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00
+I (15427) findmy_modem:   pub key to use (2. try): ba be 00 00 00 0d 00 00 00 00 81 00 80 06 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00
+I (15487) findmy_modem:   pub key to use (2. try): ba be 00 00 00 0e 00 00 00 00 81 00 80 06 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00
+I (15527) findmy_modem:   pub key to use (1. try): ba be 00 00 00 0f 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (15557) TIMESTAMP: Unix: 1698398133
+I (17557) findmy_modem: Data to send (msg_id: 0): A
+I (17557) findmy_modem:   Sending byte 0/1 (0x41)
+I (17627) findmy_modem:   pub key to use (4. try): ba be 00 00 00 00 00 00 00 00 81 00 80 06 00 00 00 03 00 00 00 00 00 00 00 00 00 ... 00
+I (17657) findmy_modem:   pub key to use (1. try): ba be 00 00 00 01 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 01
+I (17717) findmy_modem:   pub key to use (2. try): ba be 00 00 00 02 00 00 00 00 81 00 80 06 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00
+I (17757) findmy_modem:   pub key to use (1. try): ba be 00 00 00 03 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (17797) findmy_modem:   pub key to use (1. try): ba be 00 00 00 04 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (17837) findmy_modem:   pub key to use (1. try): ba be 00 00 00 05 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (17877) findmy_modem:   pub key to use (1. try): ba be 00 00 00 06 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (17917) findmy_modem:   pub key to use (1. try): ba be 00 00 00 07 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 01
+I (17947) TIMESTAMP: Unix: 1698398136
+I (17947) findmy_modem:   Sending byte 1/1 (0x00)
+I (17957) findmy_modem:   pub key to use (1. try): ba be 00 00 00 08 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (17997) findmy_modem:   pub key to use (1. try): ba be 00 00 00 09 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (18037) findmy_modem:   pub key to use (1. try): ba be 00 00 00 0a 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (18077) findmy_modem:   pub key to use (1. try): ba be 00 00 00 0b 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (18137) findmy_modem:   pub key to use (2. try): ba be 00 00 00 0c 00 00 00 00 81 00 80 06 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00
+I (18197) findmy_modem:   pub key to use (2. try): ba be 00 00 00 0d 00 00 00 00 81 00 80 06 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00
+I (18257) findmy_modem:   pub key to use (2. try): ba be 00 00 00 0e 00 00 00 00 81 00 80 06 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00
+I (18297) findmy_modem:   pub key to use (1. try): ba be 00 00 00 0f 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (18327) TIMESTAMP: Unix: 1698398136
+I (22327) TIMESTAMP: Unix: 1698398140
+I (22327) wifi:state: run -> init (0)
+I (22327) wifi:pm stop, total sleep time: 14059069 us / 18121997 us
+
+I (22327) wifi:<ba-del>idx:0, tid:0
+I (22327) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (22337) WIFI: retry to connect to the AP
+I (22337) WIFI: connect to the AP fail
+I (22347) wifi:flush txq
+I (22347) wifi:stop sw txq
+I (22347) wifi:lmac stop hw txq
+I (22347) main_task: Returned from app_main()
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1704
+load:0x403cc710,len:0x968
+load:0x403ce710,len:0x2f68
+entry 0x403cc710
+I (30) boot: ESP-IDF v5.1.1 2nd stage bootloader
+I (30) boot: compile time Oct  9 2023 16:50:48
+I (30) boot: chip revision: v0.4
+I (33) boot.esp32c3: SPI Speed      : 80MHz
+I (38) boot.esp32c3: SPI Mode       : DIO
+I (43) boot.esp32c3: SPI Flash Size : 4MB
+I (47) boot: Enabling RNG early entropy source...
+I (53) boot: Partition Table:
+I (56) boot: ## Label            Usage          Type ST Offset   Length
+I (64) boot:  0 nvs              WiFi data        01 02 00009000 00005000
+I (71) boot:  1 key              unknown          40 00 0000e000 00001000
+I (79) boot:  2 phy_init         RF data          01 01 0000f000 00001000
+I (86) boot:  3 factory          factory app      00 00 00010000 00200000
+I (94) boot: End of partition table
+I (98) esp_image: segment 0: paddr=00010020 vaddr=3c100020 size=376c8h (227016) map
+I (142) esp_image: segment 1: paddr=000476f0 vaddr=3fc93800 size=03084h ( 12420) load
+I (145) esp_image: segment 2: paddr=0004a77c vaddr=40380000 size=0589ch ( 22684) load
+I (152) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=f8d90h (1019280) map
+I (319) esp_image: segment 4: paddr=00148db8 vaddr=4038589c size=0de48h ( 56904) load
+I (336) boot: Loaded app from partition at offset 0x10000
+I (336) boot: Disabling RNG early entropy source...
+I (348) cpu_start: Unicore app
+I (348) cpu_start: Pro cpu up.
+I (357) cpu_start: Pro cpu start user code
+I (357) cpu_start: cpu freq: 160000000 Hz
+I (357) cpu_start: Application information:
+I (360) cpu_start: Project name:     openhaystack
+I (366) cpu_start: App version:      17cd9e0-dirty
+I (371) cpu_start: Compile time:     Oct 27 2023 16:38:01
+I (377) cpu_start: ELF file SHA256:  6133eebbd248f114...
+I (383) cpu_start: ESP-IDF:          v5.1.1
+I (388) cpu_start: Min chip rev:     v0.3
+I (393) cpu_start: Max chip rev:     v0.99
+I (398) cpu_start: Chip rev:         v0.4
+I (403) heap_init: Initializing. RAM available for dynamic allocation:
+I (410) heap_init: At 3FC9E570 len 0003E1A0 (248 KiB): DRAM
+I (416) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM
+I (423) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM
+I (430) spi_flash: detected chip: generic
+I (434) spi_flash: flash io: dio
+I (438) sleep: Configure to isolate all GPIO pins in sleep state
+I (444) sleep: Enable automatic switching of GPIO sleep configuration
+I (451) coexist: coex firmware version: 80b0d89
+I (457) coexist: coexist rom version 9387209
+I (462) app_start: Starting scheduler on CPU0
+I (467) main_task: Started on CPU0
+I (467) main_task: Calling app_main()
+I (477) BLE_INIT: BT controller compile version [963cad4]
+I (477) phy_init: phy_version 970,1856f88,May 10 2023,17:44:12
+I (517) BLE_INIT: Bluetooth MAC: 34:85:18:20:62:22
+
+I (537) WIFI: ESP_WIFI_MODE_STA
+I (537) pp: pp rom version: 9387209
+I (537) net80211: net80211 rom version: 9387209
+I (547) wifi:wifi driver task: 3fcb490c, prio:23, stack:6656, core=0
+I (547) wifi:wifi firmware version: ce9244d
+I (547) wifi:wifi certification version: v7.0
+I (547) wifi:config NVS flash: enabled
+I (557) wifi:config nano formating: disabled
+I (557) wifi:Init data frame dynamic rx buffer num: 32
+I (567) wifi:Init management frame dynamic rx buffer num: 32
+I (567) wifi:Init management short buffer num: 32
+I (577) wifi:Init dynamic tx buffer num: 32
+I (577) wifi:Init static tx FG buffer num: 2
+I (577) wifi:Init static rx buffer size: 1600
+I (587) wifi:Init static rx buffer num: 10
+I (587) wifi:Init dynamic rx buffer num: 32
+I (597) wifi_init: rx ba win: 6
+I (597) wifi_init: tcpip mbox: 32
+I (597) wifi_init: udp mbox: 6
+I (607) wifi_init: tcp mbox: 6
+I (607) wifi_init: tcp tx win: 5744
+I (617) wifi_init: tcp rx win: 5744
+I (617) wifi_init: tcp mss: 1440
+I (617) wifi_init: WiFi IRAM OP enabled
+I (627) wifi_init: WiFi RX IRAM OP enabled
+I (637) wifi:mode : sta (34:85:18:20:62:20)
+I (637) wifi:enable tsf
+I (637) WIFI: wifi_init_sta finished.
+I (707) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (717) wifi:state: init -> auth (b0)
+I (717) wifi:state: auth -> assoc (0)
+I (737) wifi:state: assoc -> run (10)
+I (767) wifi:connected with Galaxy A53 5G 1935, aid = 2, channel 6, BW20, bssid = 4a:76:3a:af:43:ac
+I (767) wifi:security: WPA2-PSK, phy: bgn, rssi: -40
+I (767) wifi:pm start, type: 1
+
+I (767) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000
+I (777) wifi:<ba-add>idx:0 (ifx:0, 4a:76:3a:af:43:ac), tid:0, ssn:0, winSize:64
+I (917) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (1787) esp_netif_handlers: sta ip: 192.168.140.115, mask: 255.255.255.0, gw: 192.168.140.143
+I (1787) WIFI: got ip:192.168.140.115
+I (1787) WIFI: connected to ap SSID:Galaxy A53 5G 1935 password:ixvo3528
+I (5797) findmy_modem: Data to send (msg_id: 0): A
+I (5797) findmy_modem:   Sending byte 0/1 (0x41)
+I (5867) findmy_modem:   pub key to use (4. try): ba be 00 00 00 00 00 00 00 00 81 00 80 06 00 00 00 03 00 00 00 00 00 00 00 00 00 ... 00
+I (5907) findmy_modem:   pub key to use (1. try): ba be 00 00 00 01 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 01
+I (5967) findmy_modem:   pub key to use (2. try): ba be 00 00 00 02 00 00 00 00 81 00 80 06 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00
+I (6007) findmy_modem:   pub key to use (1. try): ba be 00 00 00 03 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (6057) findmy_modem:   pub key to use (1. try): ba be 00 00 00 04 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (6087) findmy_modem:   pub key to use (1. try): ba be 00 00 00 05 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (6127) findmy_modem:   pub key to use (1. try): ba be 00 00 00 06 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (6167) findmy_modem:   pub key to use (1. try): ba be 00 00 00 07 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 01
+I (6197) TIMESTAMP: Unix: 1698398339
+I (6197) findmy_modem:   Sending byte 1/1 (0x00)
+I (6207) findmy_modem:   pub key to use (1. try): ba be 00 00 00 08 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (6247) findmy_modem:   pub key to use (1. try): ba be 00 00 00 09 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (6287) findmy_modem:   pub key to use (1. try): ba be 00 00 00 0a 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (6327) findmy_modem:   pub key to use (1. try): ba be 00 00 00 0b 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (6387) findmy_modem:   pub key to use (2. try): ba be 00 00 00 0c 00 00 00 00 81 00 80 06 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00
+I (6447) findmy_modem:   pub key to use (2. try): ba be 00 00 00 0d 00 00 00 00 81 00 80 06 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00
+I (6507) findmy_modem:   pub key to use (2. try): ba be 00 00 00 0e 00 00 00 00 81 00 80 06 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00
+I (6547) findmy_modem:   pub key to use (1. try): ba be 00 00 00 0f 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (6577) TIMESTAMP: Unix: 1698398339
+I (8577) findmy_modem: Data to send (msg_id: 0): A
+I (8577) findmy_modem:   Sending byte 0/1 (0x41)
+I (8647) findmy_modem:   pub key to use (4. try): ba be 00 00 00 00 00 00 00 00 81 00 80 06 00 00 00 03 00 00 00 00 00 00 00 00 00 ... 00
+I (8687) findmy_modem:   pub key to use (1. try): ba be 00 00 00 01 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 01
+I (8747) findmy_modem:   pub key to use (2. try): ba be 00 00 00 02 00 00 00 00 81 00 80 06 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00
+I (8787) findmy_modem:   pub key to use (1. try): ba be 00 00 00 03 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (8827) findmy_modem:   pub key to use (1. try): ba be 00 00 00 04 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (8867) findmy_modem:   pub key to use (1. try): ba be 00 00 00 05 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (8907) findmy_modem:   pub key to use (1. try): ba be 00 00 00 06 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (8947) findmy_modem:   pub key to use (1. try): ba be 00 00 00 07 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 01
+I (8977) TIMESTAMP: Unix: 1698398342
+I (8977) findmy_modem:   Sending byte 1/1 (0x00)
+I (8987) findmy_modem:   pub key to use (1. try): ba be 00 00 00 08 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (9027) findmy_modem:   pub key to use (1. try): ba be 00 00 00 09 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (9067) findmy_modem:   pub key to use (1. try): ba be 00 00 00 0a 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (9107) findmy_modem:   pub key to use (1. try): ba be 00 00 00 0b 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (9167) findmy_modem:   pub key to use (2. try): ba be 00 00 00 0c 00 00 00 00 81 00 80 06 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00
+I (9227) findmy_modem:   pub key to use (2. try): ba be 00 00 00 0d 00 00 00 00 81 00 80 06 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00
+I (9287) findmy_modem:   pub key to use (2. try): ba be 00 00 00 0e 00 00 00 00 81 00 80 06 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00
+I (9327) findmy_modem:   pub key to use (1. try): ba be 00 00 00 0f 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (9357) TIMESTAMP: Unix: 1698398342
+I (11357) findmy_modem: Data to send (msg_id: 0): A
+I (11357) findmy_modem:   Sending byte 0/1 (0x41)
+I (11427) findmy_modem:   pub key to use (4. try): ba be 00 00 00 00 00 00 00 00 81 00 80 06 00 00 00 03 00 00 00 00 00 00 00 00 00 ... 00
+I (11467) findmy_modem:   pub key to use (1. try): ba be 00 00 00 01 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 01
+I (11527) findmy_modem:   pub key to use (2. try): ba be 00 00 00 02 00 00 00 00 81 00 80 06 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00
+I (11567) findmy_modem:   pub key to use (1. try): ba be 00 00 00 03 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (11607) findmy_modem:   pub key to use (1. try): ba be 00 00 00 04 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (11647) findmy_modem:   pub key to use (1. try): ba be 00 00 00 05 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (11687) findmy_modem:   pub key to use (1. try): ba be 00 00 00 06 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (11727) findmy_modem:   pub key to use (1. try): ba be 00 00 00 07 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 01
+I (11757) TIMESTAMP: Unix: 1698398345
+I (11757) findmy_modem:   Sending byte 1/1 (0x00)
+I (11767) findmy_modem:   pub key to use (1. try): ba be 00 00 00 08 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (11807) findmy_modem:   pub key to use (1. try): ba be 00 00 00 09 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (11847) findmy_modem:   pub key to use (1. try): ba be 00 00 00 0a 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (11887) findmy_modem:   pub key to use (1. try): ba be 00 00 00 0b 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (11947) findmy_modem:   pub key to use (2. try): ba be 00 00 00 0c 00 00 00 00 81 00 80 06 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00
+I (12007) findmy_modem:   pub key to use (2. try): ba be 00 00 00 0d 00 00 00 00 81 00 80 06 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00
+I (12067) findmy_modem:   pub key to use (2. try): ba be 00 00 00 0e 00 00 00 00 81 00 80 06 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00
+I (12107) findmy_modem:   pub key to use (1. try): ba be 00 00 00 0f 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (12137) TIMESTAMP: Unix: 1698398345
+I (14137) findmy_modem: Data to send (msg_id: 0): A
+I (14137) findmy_modem:   Sending byte 0/1 (0x41)
+I (14207) findmy_modem:   pub key to use (4. try): ba be 00 00 00 00 00 00 00 00 81 00 80 06 00 00 00 03 00 00 00 00 00 00 00 00 00 ... 00
+I (14237) findmy_modem:   pub key to use (1. try): ba be 00 00 00 01 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 01
+I (14297) findmy_modem:   pub key to use (2. try): ba be 00 00 00 02 00 00 00 00 81 00 80 06 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00
+I (14337) findmy_modem:   pub key to use (1. try): ba be 00 00 00 03 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (14377) findmy_modem:   pub key to use (1. try): ba be 00 00 00 04 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (14417) findmy_modem:   pub key to use (1. try): ba be 00 00 00 05 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (14457) findmy_modem:   pub key to use (1. try): ba be 00 00 00 06 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (14497) findmy_modem:   pub key to use (1. try): ba be 00 00 00 07 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 01
+I (14527) TIMESTAMP: Unix: 1698398347
+I (14527) findmy_modem:   Sending byte 1/1 (0x00)
+I (14537) findmy_modem:   pub key to use (1. try): ba be 00 00 00 08 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (14577) findmy_modem:   pub key to use (1. try): ba be 00 00 00 09 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (14617) findmy_modem:   pub key to use (1. try): ba be 00 00 00 0a 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (14657) findmy_modem:   pub key to use (1. try): ba be 00 00 00 0b 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (14717) findmy_modem:   pub key to use (2. try): ba be 00 00 00 0c 00 00 00 00 81 00 80 06 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00
+I (14777) findmy_modem:   pub key to use (2. try): ba be 00 00 00 0d 00 00 00 00 81 00 80 06 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00
+I (14837) findmy_modem:   pub key to use (2. try): ba be 00 00 00 0e 00 00 00 00 81 00 80 06 00 00 00 01 00 00 00 00 00 00 00 00 00 ... 00
+I (14877) findmy_modem:   pub key to use (1. try): ba be 00 00 00 0f 00 00 00 00 81 00 80 06 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 00
+I (14907) TIMESTAMP: Unix: 1698398348
+I (18907) TIMESTAMP: Unix: 1698398352
+I (18907) wifi:state: run -> init (0)
+I (18907) wifi:pm stop, total sleep time: 15528704 us / 18133841 us
+
+I (18907) wifi:<ba-del>idx:0, tid:0
+I (18907) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (18917) WIFI: retry to connect to the AP
+I (18917) WIFI: connect to the AP fail
+I (18927) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (18927) wifi:state: init -> auth (b0)
+I (18937) wifi:state: auth -> init (0)
+I (18937) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (18947) WIFI: retry to connect to the AP
+I (18947) WIFI: connect to the AP fail
+I (18957) wifi:flush txq
+I (18957) wifi:stop sw txq
+I (18957) wifi:lmac stop hw txq
+I (18957) main_task: Returned from app_main()
