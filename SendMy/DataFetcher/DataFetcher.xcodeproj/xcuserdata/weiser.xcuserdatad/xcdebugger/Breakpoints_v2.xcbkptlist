@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "69CCB121-3CCE-480D-8BCA-593EABBEBC6D"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0CD167AF-5079-4012-BEDC-806A720E2D2B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OFFetchReports/AnisetteDataManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "requestAnisetteData(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0CD167AF-5079-4012-BEDC-806A720E2D2B - 71caeae75b29682a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OFFetchReports.AnisetteDataManager.requestAnisetteData((Swift.Result&lt;__C.AppleAccountData, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "OFFetchReports"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/weiser/Documents/GitHub/tagalong-0.1-FYP/DataFetcher/OFFetchReports/AnisetteDataManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "988">
+               </Location>
+               <Location
+                  uuid = "0CD167AF-5079-4012-BEDC-806A720E2D2B - 71caeae75b29682a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OFFetchReports.AnisetteDataManager.requestAnisetteData((Swift.Result&lt;__C.AppleAccountData, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "OFFetchReports"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/weiser/Documents/GitHub/tagalong-0.1-FYP/DataFetcher/OFFetchReports/AnisetteDataManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "1068">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

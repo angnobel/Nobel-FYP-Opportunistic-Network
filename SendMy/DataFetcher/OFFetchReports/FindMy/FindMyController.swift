@@ -128,7 +128,7 @@ class FindMyController: ObservableObject {
 
         fetchReportGroup.enter()
 
-        let keys = self.messages[messageID]!.keys
+          let keys = self.messages[messageID]!.keys
 
         let keyHashes = keys.map({ $0.hashedKey.base64EncodedString() })
 

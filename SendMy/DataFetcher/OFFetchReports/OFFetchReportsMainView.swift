@@ -175,7 +175,7 @@ struct OFFetchReportsMainView: View {
                 }).padding(.top, 5).padding(.trailing, 5)
            }
            Divider()
-           ForEach(0...max(10, self.findMyController.messages.count+1), id: \.self) { i in
+           ForEach(0...max(20, self.findMyController.messages.count+1), id: \.self) { i in
             if  self.findMyController.messages[UInt32(i)] != nil {
              HStack {
               Text("#\(self.findMyController.messages[UInt32(i)]!.messageID)").font(.system(size: 14, design: .monospaced)).frame(width: 30)
