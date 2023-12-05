@@ -28,7 +28,7 @@
 #include "lwip/err.h"
 #include "lwip/sys.h"
 
-
+ 
 #define CHECK_BIT(var,pos) ((var) & (1<<(7-pos)))
 
 #define TEST_RTS (18)
@@ -170,7 +170,7 @@ void wifi_init_sta(void)
 
 
 // Set custom modem id before flashing:
-static const uint32_t modem_id = 0x80008001;
+static const uint32_t modem_id = 0x81008008;
 
 static const char* LOG_TAG = "findmy_modem";
 
@@ -178,7 +178,7 @@ static const char* LOG_TAG = "findmy_modem";
 static void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param);
 
 /** Random device address */
-static esp_bd_addr_t rnd_addr = { 0xFF, 0xBB, 0xCC, 0xDD, 0xEE, 0xFF };
+static esp_bd_addr_t rnd_addr = { 0xFF, 0xBA, 0xCA, 0xDA, 0xEE, 0xFF };
 
 /** Advertisement payload */
 static uint8_t adv_data[31] = {
@@ -261,7 +261,7 @@ int is_valid_pubkey(uint8_t *pub_key_compressed) {
    memcpy(&with_sign_byte[1], pub_key_compressed, 28);
    uECC_decompress(with_sign_byte, pub_key_uncompressed, curve);
    if(!uECC_valid_public_key(pub_key_uncompressed, curve)) {
-       ESP_LOGW(LOG_TAG, "Generated public key tested as invalid");
+    //    ESP_LOGW(LOG_TAG, "Generated public key tested as invalid");
        return 0;
    }
    return 1;
@@ -403,9 +403,9 @@ void send_data_once_blocking(uint8_t* data_to_send, uint32_t len, uint32_t msg_i
 
 void app_main(void)
 {  
-    const int NUM_MESSAGES = 0;
+    const int NUM_MESSAGES = 1;
     const int REPEAT_MESSAGE_TIMES = 1;
-    const int MESSAGE_DELAY = 200;
+    const int MESSAGE_DELAY = 100;
 
 
     // Init Flash and BT
@@ -426,7 +426,7 @@ void app_main(void)
     wait_for_sntp_sync();    
     
     // Initial test message sent after boot
-    static uint8_t data_to_send[] = "__";
+    static uint8_t data_to_send[] = "A";
 
     esp_err_t status;
     //register the scan callback function to the gap module
@@ -437,14 +437,14 @@ void app_main(void)
 
     uint32_t current_message_id = 0;
     
-    ESP_LOGI(LOG_TAG, "Sending initial default message: %s", data_to_send);
+    // ESP_LOGI(LOG_TAG, "Modem_id: %s", modem_id);
 
-    send_data_once_blocking(data_to_send, sizeof(data_to_send), current_message_id); 
+    // send_data_once_blocking(data_to_send, sizeof(data_to_send), current_message_id); 
 
     
     for (uint32_t i = 0; i < NUM_MESSAGES; i++) {
-        generateAlphaSequence(i, data_to_send);
-        current_message_id++;
+        // generateAlphaSequence(i, data_to_send);
+        // current_message_id++;
         for (int j = 0; j < REPEAT_MESSAGE_TIMES; j++) {
             send_data_once_blocking(data_to_send, sizeof(data_to_send), current_message_id);
             
