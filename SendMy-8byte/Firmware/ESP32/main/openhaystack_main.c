@@ -446,6 +446,7 @@ void send_data_once_blocking(uint8_t* data_to_send, uint32_t len, uint32_t chunk
         }
 
         set_addr_and_payload_for_byte(chunk_i, msg_id, val, chunk_len);
+        log_current_unix_time();
         ESP_LOGD(LOG_TAG, "    resetting. Will now use device address: %02x %02x %02x %02x %02x %02x", rnd_addr[0], rnd_addr[1], rnd_addr[2], rnd_addr[3], rnd_addr[4], rnd_addr[5]);
         reset_advertising();
         vTaskDelay(2);    
@@ -489,12 +490,22 @@ void app_main(void)
     }
     printf("\n");
 
-    // ESP_LOGI(LOG_TAG, "Bytes: %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x", data[0], data[1], data[2], data[3], data[4], data[5], data[6], data[7], data[8], data[9]); 
-    send_data_once_blocking(data, sizeof(data) - 1, 8, current_message_id);
-    current_message_id++;
-    send_data_once_blocking(data, sizeof(data) - 1, 11, current_message_id);
-    vTaskDelay(500);
+    static uint8_t data_to_send[] = "A";
 
+    for (uint32_t i = 0; i < NUM_MESSAGES; i++) {
+        // generateAlphaSequence(i, data_to_send);
+        // current_message_id++;
+        for (int j = 0; j < REPEAT_MESSAGE_TIMES; j++) {
+            send_data_once_blocking(data_to_send, sizeof(data_to_send) - 1, 8, current_message_id);
+            vTaskDelay(MESSAGE_DELAY);
+        }
+        vTaskDelay(MESSAGE_DELAY);
+    }
+
+    // Wrap up and end
+    log_current_unix_time();
     esp_ble_gap_stop_advertising();
+    esp_wifi_disconnect();
+    esp_wifi_stop();
 }
 
