@@ -11,7 +11,8 @@ import Combine
 import Foundation
 import SwiftUI
 import CryptoKit
-
+import Dispatch
+import Cocoa
 
 func byteArray<T>(from value: T) -> [UInt8] where T: FixedWidthInteger {
     withUnsafeBytes(of: value.bigEndian, Array.init)
@@ -36,9 +37,23 @@ class FindMyController: ObservableObject {
 
   @Published var modemID: UInt32 = 0
   @Published var chunkLength: UInt32 = 8
+  
+  @Published var computedKeysCache: [UInt32: [DataEncodingKey]] = [:]
 
   //@Published var startKey: [UInt8] = [0x7a, 0x6a, 0x10, 0x26, 0x7a, 0x6a, 0x10, 0x26, 0x7a, 0x6a, 0x10, 0x26, 0x7a, 0x6a, 0x10, 0x26, 0x7a, 0x6a, 0x10, 0x26]
   @Published var startKey: [UInt8] = [0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0]
+  
+  func logAndPrint(_ text: String, fileHandle: FileHandle) {
+    fileHandle.seekToEndOfFile()
+    
+    // Convert the string to data and write it to the file
+    if let data = (text+"\n").data(using: .utf8) {
+        fileHandle.write(data)
+        print(text)
+    } else {
+        print("Error converting string to data")
+    }
+  }
 
   func clearMessages() {
      self.messages = [UInt32: Message]()
@@ -79,10 +94,10 @@ class FindMyController: ObservableObject {
 
 
   func fetchBitsUntilEnd(
-    for modemID: UInt32, message messageID: UInt32, startChunk: UInt32, with searchPartyToken: Data, completion: @escaping (Error?) -> Void
-    ) {
+    for modemID: UInt32, message messageID: UInt32, startChunk: UInt32, with searchPartyToken: Data, logger: FileHandle, completion: @escaping (Error?) -> Void
+  ) {
     
-    let static_prefix: [UInt8] = [0xba, 0xbe]
+    let static_prefix: [UInt8] = [0xBA, 0xBE]
 
     var m = self.messages[messageID]!
     //m.keys = []
@@ -154,26 +169,31 @@ class FindMyController: ObservableObject {
     print(m.fetchedChunks)
     self.messages[UInt32(messageID)] = m
     // Includes async fetch if finished, otherwise fetches more bits
-    self.fetchReports(for: messageID, with: searchPartyToken, completion: completion)
+    self.fetchReports(for: messageID, with: searchPartyToken, logger: logger, completion: completion)
   }
     
   func fetchMessage(
-    for modemID: UInt32, message messageID: UInt32, chunk chunkLength: UInt32, with searchPartyToken: Data, completion: @escaping (Error?) -> Void
-    ) {
+    for modemID: UInt32,
+    message messageID: UInt32,
+    chunk chunkLength: UInt32,
+    with searchPartyToken: Data,
+    logger : FileHandle,
+    completion: @escaping (Error?) -> Void
+  ) {
     
     self.modemID = modemID
     self.chunkLength = chunkLength
     let start_index: UInt32 = 0
     let message_finished = false;
-        let m = Message(modemID: modemID, messageID: UInt32(messageID), chunkLength: chunkLength)
+    let m = Message(modemID: modemID, messageID: UInt32(messageID), chunkLength: chunkLength)
     self.messages[messageID] = m
  
-    fetchBitsUntilEnd(for: modemID, message: messageID, startChunk: start_index, with: searchPartyToken, completion: completion);
+    fetchBitsUntilEnd(for: modemID, message: messageID, startChunk: start_index, with: searchPartyToken, logger: logger, completion: completion);
   }
 
 
 
-  func fetchReports(for messageID: UInt32, with searchPartyToken: Data, completion: @escaping (Error?) -> Void) {
+  func fetchReports(for messageID: UInt32, with searchPartyToken: Data, logger: FileHandle, completion: @escaping (Error?) -> Void) {
 
     DispatchQueue.global(qos: .background).async {
       let fetchReportGroup = DispatchGroup()
@@ -183,9 +203,8 @@ class FindMyController: ObservableObject {
 
         let keys = self.messages[messageID]!.keys
         let keyHashes = keys.map({ $0.hashedKey.base64EncodedString() })
-
         // 21 days reduced to 1 day
-        let duration: Double = (24 * 60 * 60) * 1
+        let duration: Double = (21 * 24 * 60 * 60) * 1
         let startDate = Date() - duration
 
         fetcher.query(
@@ -195,6 +214,7 @@ class FindMyController: ObservableObject {
           searchPartyToken: searchPartyToken
         ) { jd in
           guard let jsonData = jd else {
+            print("ERROR")
             fetchReportGroup.leave()
             return
           }
@@ -202,6 +222,7 @@ class FindMyController: ObservableObject {
           do {
             // Decode the report
             let report = try JSONDecoder().decode(FindMyReportResults.self, from: jsonData)
+            print(report)
             self.messages[UInt32(messageID)]!.reports += report.results
           } catch {
             print("Failed with error \(error)")
@@ -222,7 +243,8 @@ class FindMyController: ObservableObject {
           }
         }
         DispatchQueue.main.async {
-            self.decodeReports(messageID: messageID, with: searchPartyToken) { _ in completion(nil) }
+            self.decodeReports(messageID: messageID, with: searchPartyToken, logger: logger
+) { _ in completion(nil) }
           }
 
         }
@@ -231,7 +253,7 @@ class FindMyController: ObservableObject {
 
   
 
-    func decodeReports(messageID: UInt32, with searchPartyToken: Data, completion: @escaping (Error?) -> Void) {
+    func decodeReports(messageID: UInt32, with searchPartyToken: Data, logger: FileHandle, completion: @escaping (Error?) -> Void) {
       print("Decoding reports")
 
       // Iterate over all messages
@@ -384,7 +406,7 @@ class FindMyController: ObservableObject {
       }
       // Not finished yet -> Next round
       print("Haven't found end byte yet. Starting with bit \(result.keys.max()! + 1) now")
-      fetchBitsUntilEnd(for: modemID, message: messageID, startChunk: UInt32(result.keys.max()! + 1), with: searchPartyToken, completion: completion); // remove bitCount magic value
+      fetchBitsUntilEnd(for: modemID, message: messageID, startChunk: UInt32(result.keys.max()! + 1), with: searchPartyToken, logger: logger, completion: completion); // remove bitCount magic value
    }
 }
 

@@ -40,7 +40,7 @@
     }
 
     
-    return [self fetchSearchpartyTokenFromAccounts];; 
+    return [self fetchSearchpartyTokenFromAccounts];;
 }
 
 - (NSData * _Nullable) fetchSearchpartyTokenFromAccounts {
@@ -111,31 +111,38 @@
 }
 
 - (void)fetchAnisetteData:(void (^)(NSDictionary *_Nullable))completion {
-    // Use the AltStore mail plugin
-    [[AnisetteDataManager shared] requestAnisetteDataObjc:^(NSDictionary *_Nullable dict) {
-      completion(dict);
+    AnisetteDataManager *anisetteManager = [[AnisetteDataManager alloc] init];
+    
+    [anisetteManager requestAnisetteDataObjc:^(NSDictionary *_Nullable dict) {
+        completion(dict);
     }];
 }
 
-- (void) queryForHashes:(NSArray *)publicKeys startDate: (NSDate *) date duration: (double) duration searchPartyToken:(nonnull NSData *)searchPartyToken completion: (void (^)(NSData* _Nullable)) completion {
+- (void)queryForHashes:(NSArray *)publicKeys
+             startDate:(NSDate *)date
+             duration:(double)duration
+      searchPartyToken:(NSData *)searchPartyToken
+           completion:(void (^)(NSData * _Nullable))completion {
     
-    // calculate the timestamps for the defined duration
-    long long startDate = [date timeIntervalSince1970] * 1000;
-    long long endDate = ([date timeIntervalSince1970] + duration) * 1000.0;
+    // Calculate the timestamps for the defined duration
+    long long startDateValue = [date timeIntervalSince1970] * 1000;
+    long long endDateValue = ([date timeIntervalSince1970] + duration) * 1000.0;
     
-    //NSLog(@"Requesting data for %@", publicKeys);
-    NSDictionary * query = @{
+    // NSLog(@"Requesting data for %@", publicKeys);
+    NSDictionary *query = @{
         @"search": @[
-                @{
-                    @"endDate": [NSString stringWithFormat:@"%lli", endDate],
-                    @"ids": publicKeys,
-                    @"startDate": [NSString stringWithFormat:@"%lli", startDate]
-                }
+            @{
+                @"endDate": [NSString stringWithFormat:@"%lli", endDateValue],
+                @"ids": publicKeys,
+                @"startDate": [NSString stringWithFormat:@"%lli", startDateValue]
+            }
         ]
     };
+    
     NSData *httpBody = [NSJSONSerialization dataWithJSONObject:query options:0 error:nil];
-        
-    //NSLog(@"Query : %@",query);
+    
+    //NSLog(@"Query: %@", query);
+    
     NSString *authKey = @"authorization";
     NSData *securityToken = searchPartyToken;
     NSString *appleId = [self fetchAppleAccountId];
@@ -147,32 +154,35 @@
             return;
         }
         
-        NSMutableURLRequest* req = [[NSMutableURLRequest alloc] initWithURL:[[NSURL alloc] initWithString:@"https://gateway.icloud.com/acsnservice/fetch"]];
+        NSMutableURLRequest *req = [[NSMutableURLRequest alloc] initWithURL:[[NSURL alloc] initWithString:@"https://gateway.icloud.com/acsnservice/fetch"]];
         
         [req setHTTPMethod:@"POST"];
         [req setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
         [req setValue:@"application/json" forHTTPHeaderField:@"Accept"];
         [req setValue:authValue forHTTPHeaderField:authKey];
         
-        
         NSDictionary *appleHeadersDict = dict;
-        for(id key in appleHeadersDict)
+        for (id key in appleHeadersDict) {
             [req setValue:[appleHeadersDict objectForKey:key] forHTTPHeaderField:key];
-        
-        //NSLog(@"Headers:\n%@",req.allHTTPHeaderFields);
-        
-        [req setHTTPBody:httpBody];
-        
-        NSURLResponse * response;
-        NSError * error = nil;
-        NSData * data = [NSURLConnection sendSynchronousRequest:req returningResponse:&response error:&error];
-        
-        if (error) {
-            NSLog(@"Error during request: \n\n%@", error);
         }
         
-        completion(data);
+        NSLog(@"Headers:\n%@", req.allHTTPHeaderFields);
+        [req setHTTPBody:httpBody];
+        
+        NSURLSession *session = [NSURLSession sharedSession];
+        NSURLSessionDataTask *task = [session dataTaskWithRequest:req completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+            if (error) {
+                NSLog(@"Error during request: %@", error);
+                completion(nil);
+            } else {
+                
+                completion(data);
+            }
+        }];
+        [task resume];
     }];
 }
 
+
 @end
+

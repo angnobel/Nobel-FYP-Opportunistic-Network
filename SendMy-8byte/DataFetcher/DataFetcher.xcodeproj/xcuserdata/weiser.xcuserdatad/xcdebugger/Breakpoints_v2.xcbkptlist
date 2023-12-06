@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "3F2B9A27-AA57-4C2A-81A8-F4F2B2062F6C"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DFF1B2ED-E6C5-4C30-936F-DB9C8C482989"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OFFetchReports/OFFetchReportsMainView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "352"
+            endingLineNumber = "352"
+            landmarkName = "loadMessage(modemID:messageID:chunkLength:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DFF1B2ED-E6C5-4C30-936F-DB9C8C482989 - a731b79469273498"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;__C.AppleAccountData, Swift.Error&gt;) -&gt; () in OFFetchReports.OFFetchReportsMainView.loadMessage(modemID: Swift.UInt32, messageID: Swift.UInt32, chunkLength: Swift.UInt32) -&gt; Swift.Bool"
+                  moduleName = "OFFetchReports"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/weiser/Documents/GitHub/tagalong-0.1-FYP/SendMy-8byte/DataFetcher/OFFetchReports/OFFetchReportsMainView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "237"
+                  endingLineNumber = "237"
+                  offsetFromSymbolStart = "1244">
+               </Location>
+               <Location
+                  uuid = "DFF1B2ED-E6C5-4C30-936F-DB9C8C482989 - a731b794692705fb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;__C.AppleAccountData, Swift.Error&gt;) -&gt; () in OFFetchReports.OFFetchReportsMainView.loadMessage(modemID: Swift.UInt32, messageID: Swift.UInt32, chunkLength: Swift.UInt32) -&gt; Swift.Bool"
+                  moduleName = "OFFetchReports"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/weiser/Documents/GitHub/tagalong-0.1-FYP/SendMy-8byte/DataFetcher/OFFetchReports/OFFetchReportsMainView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "366"
+                  endingLineNumber = "366"
+                  offsetFromSymbolStart = "1244">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4092B29F-4891-4D00-BCA9-1166BB707F37"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OFFetchReports/OFFetchReportsMainView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "353"
+            endingLineNumber = "353"
+            landmarkName = "loadMessage(modemID:messageID:chunkLength:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4092B29F-4891-4D00-BCA9-1166BB707F37 - 492a50fad9baca9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OFFetchReports.OFFetchReportsMainView.loadMessage(modemID: Swift.UInt32, messageID: Swift.UInt32, chunkLength: Swift.UInt32) -&gt; Swift.Bool"
+                  moduleName = "OFFetchReports"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/weiser/Documents/GitHub/tagalong-0.1-FYP/SendMy-8byte/DataFetcher/OFFetchReports/OFFetchReportsMainView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "238"
+                  endingLineNumber = "238"
+                  offsetFromSymbolStart = "796">
+               </Location>
+               <Location
+                  uuid = "4092B29F-4891-4D00-BCA9-1166BB707F37 - 492a50fad9b9d08"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OFFetchReports.OFFetchReportsMainView.loadMessage(modemID: Swift.UInt32, messageID: Swift.UInt32, chunkLength: Swift.UInt32) -&gt; Swift.Bool"
+                  moduleName = "OFFetchReports"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/weiser/Documents/GitHub/tagalong-0.1-FYP/SendMy-8byte/DataFetcher/OFFetchReports/OFFetchReportsMainView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "367"
+                  endingLineNumber = "367"
+                  offsetFromSymbolStart = "796">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
