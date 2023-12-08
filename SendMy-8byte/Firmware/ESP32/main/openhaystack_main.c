@@ -169,7 +169,7 @@ void wifi_init_sta(void)
 
 
 // Set custom modem id before flashing:
-static const uint32_t modem_id = 0x000fbeef;
+static const uint32_t modem_id = 0x81008000;
 
 static const char* LOG_TAG = "findmy_modem";
 
@@ -318,9 +318,9 @@ void set_addr_and_payload_for_byte(uint32_t index, uint32_t msg_id, uint8_t val,
     public_key[7] = 0x00;
     copy_4b_big_endian(&public_key[8], &msg_id);
     if (index) {
-        memcpy(&public_key[12], &curr_addr, 20);
+        memcpy(&public_key[12], &curr_addr, 16);
     } else {
-        memcpy(&public_key[12], &start_addr, 20);
+        memcpy(&public_key[12], &start_addr, 16);
     }
 
     uint32_t offset = (chunk_len * (index + 1)) % (8 * 16); // mod the offset correctly
@@ -341,7 +341,7 @@ void set_addr_and_payload_for_byte(uint32_t index, uint32_t msg_id, uint8_t val,
         public_key[28 - ((offset/8) + 1)] ^= xor_val_hi;
     }
 
-    memcpy(&curr_addr, &public_key[12], 20);
+    memcpy(&curr_addr, &public_key[12], 16);
 
     do {
       copy_2b_big_endian(&public_key[6], &valid_key_counter);
@@ -445,7 +445,7 @@ void send_data_once_blocking(uint8_t* data_to_send, uint32_t len, uint32_t chunk
             remaining_bits -= bits_to_extract;
         }
 
-        set_addr_and_payload_for_byte(chunk_i, msg_id, val, chunk_len);
+        set_addr_and_payload_for_byte(chunk_i, msg_id, chunk_value, chunk_len);
         log_current_unix_time();
         ESP_LOGD(LOG_TAG, "    resetting. Will now use device address: %02x %02x %02x %02x %02x %02x", rnd_addr[0], rnd_addr[1], rnd_addr[2], rnd_addr[3], rnd_addr[4], rnd_addr[5]);
         reset_advertising();
@@ -457,7 +457,7 @@ void send_data_once_blocking(uint8_t* data_to_send, uint32_t len, uint32_t chunk
 void app_main(void)
 {
     const int NUM_MESSAGES = 1;
-    const int REPEAT_MESSAGE_TIMES = 1;
+    const int REPEAT_MESSAGE_TIMES = 100;
     const int MESSAGE_DELAY = 100;
 
 
@@ -473,6 +473,13 @@ void app_main(void)
     // Init WIFI
     ESP_LOGI(WIFI_TAG, "ESP_WIFI_MODE_STA");
     wifi_init_sta();
+
+    esp_err_t status;
+    //register the scan callback function to the gap module
+    if ((status = esp_ble_gap_register_callback(esp_gap_cb)) != ESP_OK) {
+        ESP_LOGE(LOG_TAG, "gap register error: %s", esp_err_to_name(status));
+        return;
+    }
 
     // Sync time
     initialize_sntp();
