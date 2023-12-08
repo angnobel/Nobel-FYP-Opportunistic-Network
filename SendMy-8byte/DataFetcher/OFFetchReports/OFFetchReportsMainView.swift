@@ -198,7 +198,7 @@ struct OFFetchReportsMainView: View {
         }
     }
   }
-        
+  
   var loadingView: some View {
     VStack {
       Text("Downloading and decoding message #\(self.messageIDToFetch)...")
@@ -206,51 +206,73 @@ struct OFFetchReportsMainView: View {
         .padding()
     }
   }
-
+        
   var dataView: some View {
     VStack {
            HStack {
                // Text("Result")
                Spacer()
+                 Button(
+                   action: {
+                     self.showData = false
+                     self.showModemPrompt = true
+                     self.isRepeatingFetch = false
+                   },
+                   label: {
+                     Text("Fetch Every: " + String(repeatTime) + "s")
+                   }).padding(.top, 5).padding(.trailing, 5)
+                 
+                  Button(
+                     action: {
+                       self.isRepeatingFetch = !self.isRepeatingFetch
+                       print("Auto Refetch:" + String(isRepeatingFetch))
+                     },
+                     label: {
+                       Text(isRepeatingFetch ? "Stop Fetching" : "Continue Fetching")
+                   }).padding(.top, 5).padding(.trailing, 5)
+                 
                   Button(
                     action: {
                       self.showData = false
                       self.showModemPrompt = true
+                      self.isRepeatingFetch = false
                     },
                     label: {
                       Text("ID: 0x\(String(self.findMyController.modemID, radix: 16))")
                     }).padding(.top, 5).padding(.trailing, 5)
            }
            Divider()
-           ForEach(0...max(10, self.findMyController.messages.count+1), id: \.self) { i in
-            if  self.findMyController.messages[UInt32(i)] != nil {
-             HStack {
+      ScrollView {
+        ForEach(0...max(100, self.findMyController.messages.count+1), id: \.self) { i in
+          if  self.findMyController.messages[UInt32(i)] != nil {
+            HStack {
               Text("#\(self.findMyController.messages[UInt32(i)]!.messageID)").font(.system(size: 14, design: .monospaced)).frame(width: 30)
               Text(self.findMyController.messages[UInt32(i)]!.decodedStr ?? "<None>").font(.system(size: 14, design: .monospaced))
-        
+              
               Spacer()
-                  Button(
-                    action: {
-                        self.loadMessage(modemID: self.modemID, messageID: self.findMyController.messages[UInt32(i)]!.messageID, chunkLength: self.chunkLength)
-                    },
-                    label: {
-                      Text("Reload message")
-                    })
-                 }
-            } else {
-                
-               Button(
-                    action: {
-                        self.loadMessage(modemID: self.modemID, messageID: UInt32(i), chunkLength: self.chunkLength)
-                    },
-                    label: {
-                      Text("Load message #\(i)")
-                    })
-               //Spacer()
-               
+              Button(
+                action: {
+                  self.loadMessage(modemID: self.modemID, messageID: self.findMyController.messages[UInt32(i)]!.messageID, chunkLength: self.chunkLength)
+                },
+                label: {
+                  Text("Reload message")
+                })
+            }
+          } else {
             
-           }
+            Button(
+              action: {
+                self.loadMessage(modemID: self.modemID, messageID: UInt32(i), chunkLength: self.chunkLength)
+              },
+              label: {
+                Text("Load message #\(i)")
+              })
+            //Spacer()
+            
+            
+          }
         }
+      }
      }
   }
 
@@ -285,7 +307,8 @@ struct OFFetchReportsMainView: View {
     GeometryReader { geo in
       if self.loading {
         self.loadingView
-      } else if self.showData {
+      }
+      else if self.showData {
         self.dataView
       } else if self.showModemPrompt {
         self.modemIDView

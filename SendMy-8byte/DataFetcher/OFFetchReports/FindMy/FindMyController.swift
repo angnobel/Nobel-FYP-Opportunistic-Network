@@ -41,7 +41,7 @@ class FindMyController: ObservableObject {
   @Published var computedKeysCache: [UInt32: [DataEncodingKey]] = [:]
 
   //@Published var startKey: [UInt8] = [0x7a, 0x6a, 0x10, 0x26, 0x7a, 0x6a, 0x10, 0x26, 0x7a, 0x6a, 0x10, 0x26, 0x7a, 0x6a, 0x10, 0x26, 0x7a, 0x6a, 0x10, 0x26]
-  @Published var startKey: [UInt8] = [0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0]
+  @Published var startKey: [UInt8] = [0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0]
   
   func logAndPrint(_ text: String, fileHandle: FileHandle) {
     fileHandle.seekToEndOfFile()
@@ -63,7 +63,7 @@ class FindMyController: ObservableObject {
     var result = [UInt8]()
     if (a.count == b.count) {
       for i in 0..<a.count {
-          result.insert(a[i] ^ b[i], at: 0)
+        result.insert(a[a.count - i - 1] ^ b[b.count - i - 1], at: 0)
       }
     } else if (a.count < b.count) {
       for i in 0..<a.count {
@@ -115,17 +115,14 @@ class FindMyController: ObservableObject {
     for val in 0..<Int(pow(Double(2), Double(chunkLength))) {
       var validKeyCounter: UInt16 = 0
       var adv_key = [UInt8]()
-//      print(chunkLength)
-//      print(startChunk)
-//      print(val)
-//      var offsetVal = byteArray(from: val << (chunkLength * startChunk))
-      var offsetValLen = chunkLength * (startChunk + 1)
+      
+      let offsetValLen = chunkLength * (startChunk + 1)
       var offsetValChunks = (offsetValLen / 8)
-      var leftover = (offsetValLen) % 8
+      let leftover = (offsetValLen) % 8
       if (leftover) != 0 { offsetValChunks += 1 }
       var offsetVal = Array(repeating: UInt8(0x0), count: Int(offsetValChunks))
       
-      let mask = chunkLength == 8 ? UInt8(1) : UInt8(1 << chunkLength)
+      let mask = chunkLength == 8 ? UInt8(255) : UInt8(1 << chunkLength)
       
       if (leftover == 0) {
           offsetVal[0] = UInt8(val) << (8 - chunkLength)
@@ -140,18 +137,11 @@ class FindMyController: ObservableObject {
       //print("recovered: " + String(describing: recovered))
 
     repeat {
+      let xorResult : [UInt8] = xorArrays(a: recovered, b: offsetVal)
       adv_key = static_prefix + byteArray(from: m.modemID)
-      adv_key += byteArray(from: validKeyCounter) + xorArrays(a: recovered, b: offsetVal)
+      adv_key += byteArray(from: validKeyCounter) + byteArray(from: m.messageID) + xorResult
       validKeyCounter += 1
-      //print("==== Testing key")
-      //print("Valid Key Counter: \(validKeyCounter)")
-      //var key_hex = String(format:"%02X", adv_key[0])
-      //for i in 1..<adv_key.count{
-      //    key_hex += " " + String(format:"%02X", adv_key[i])
-      //}
-      //key_hex += "\n"
-      //print("Attempted key: \(key_hex)")
-      //print()
+      
     } while (BoringSSL.isPublicKeyValid(Data(adv_key)) == 0 && validKeyCounter < UInt16.max)
 
     var key_hex = String(format:"%02X", adv_key[0])
@@ -279,7 +269,7 @@ class FindMyController: ObservableObject {
               let cLen = message!.chunkLength
               let leftover = ((k.index + 1) * cLen) % 8
               var startVal: UInt8
-              let mask = cLen == 8 ? UInt8(1) : UInt8(1 << cLen)
+              let mask = cLen == 8 ? UInt8(255) : UInt8(1 << cLen)
               if (leftover == 0) {
                   startVal = (startKey[(Int(((k.index + 1) * cLen)) / 8) - 1] >> (8 - cLen)) & mask
               } else if (leftover < cLen) {

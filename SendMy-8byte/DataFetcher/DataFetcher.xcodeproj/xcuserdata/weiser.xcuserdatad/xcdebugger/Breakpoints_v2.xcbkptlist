@@ -14,10 +14,10 @@
             filePath = "OFFetchReports/OFFetchReportsMainView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "352"
-            endingLineNumber = "352"
+            startingLineNumber = "375"
+            endingLineNumber = "375"
             landmarkName = "loadMessage(modemID:messageID:chunkLength:)"
-            landmarkType = "7">
+            landmarkType = "9">
             <Locations>
                <Location
                   uuid = "DFF1B2ED-E6C5-4C30-936F-DB9C8C482989 - a731b79469273498"
@@ -62,10 +62,10 @@
             filePath = "OFFetchReports/OFFetchReportsMainView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "353"
-            endingLineNumber = "353"
+            startingLineNumber = "376"
+            endingLineNumber = "376"
             landmarkName = "loadMessage(modemID:messageID:chunkLength:)"
-            landmarkType = "7">
+            landmarkType = "9">
             <Locations>
                <Location
                   uuid = "4092B29F-4891-4D00-BCA9-1166BB707F37 - 492a50fad9baca9"
@@ -98,6 +98,71 @@
                   offsetFromSymbolStart = "796">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD76A13D-EE40-4F35-BB5C-CC91322EE4DA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OFFetchReports/FindMy/FindMyController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "248"
+            endingLineNumber = "248"
+            landmarkName = "decodeReports(messageID:with:logger:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E92AA87C-4E8A-40FD-900F-517BFEF87DA0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OFFetchReports/FindMy/FindMyController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "395"
+            endingLineNumber = "395"
+            landmarkName = "decodeReports(messageID:with:logger:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D7556B40-0AB4-40F6-A16E-F718C1DD993E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OFFetchReports/FindMy/FindMyController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "396"
+            endingLineNumber = "396"
+            landmarkName = "decodeReports(messageID:with:logger:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1811D061-38F4-4886-8B5D-8CB00300B306"
+            shouldBeEnabled = "No"
+            condition = "val == 1"
+            ignoreCount = "1"
+            continueAfterRunningActions = "No"
+            filePath = "OFFetchReports/FindMy/FindMyController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "fetchBitsUntilEnd(for:message:startChunk:with:logger:completion:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
