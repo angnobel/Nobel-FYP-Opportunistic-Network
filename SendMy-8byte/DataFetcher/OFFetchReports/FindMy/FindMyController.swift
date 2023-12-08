@@ -119,51 +119,52 @@ class FindMyController: ObservableObject {
 //      print(startChunk)
 //      print(val)
 //      var offsetVal = byteArray(from: val << (chunkLength * startChunk))
-        var offsetValLen = chunkLength * (startChunk + 1)
-        var offsetValChunks = (offsetValLen / 8)
-        var leftover = (offsetValLen) % 8
-        if (leftover) != 0 { offsetValChunks += 1 }
-        var offsetVal = Array(repeating: UInt8(0x0), count: Int(offsetValChunks))
-        
-        let mask = UInt8(1 << chunkLength)
-        if (leftover == 0) {
-            offsetVal[0] = UInt8(val) << (8 - chunkLength)
-        } else if (leftover < chunkLength) {
-            offsetVal[1] = UInt8(val) << (8 - (chunkLength - leftover))
-            offsetVal[0] = UInt8(val) >> (chunkLength - leftover)
-        } else {
-            offsetVal[0] = UInt8(val) << (leftover - chunkLength)
-        }
-        
-        //print("offsetVal: " + String(describing: offsetVal))
-        //print("recovered: " + String(describing: recovered))
-
-      repeat {
-        adv_key = static_prefix + byteArray(from: m.modemID)
-        adv_key += byteArray(from: validKeyCounter) + xorArrays(a: recovered, b: offsetVal)
-        validKeyCounter += 1
-        //print("==== Testing key")
-        //print("Valid Key Counter: \(validKeyCounter)")
-        //var key_hex = String(format:"%02X", adv_key[0])
-        //for i in 1..<adv_key.count{
-        //    key_hex += " " + String(format:"%02X", adv_key[i])
-        //}
-        //key_hex += "\n"
-        //print("Attempted key: \(key_hex)")
-        //print()
-      } while (BoringSSL.isPublicKeyValid(Data(adv_key)) == 0 && validKeyCounter < UInt16.max)
-
-      var key_hex = String(format:"%02X", adv_key[0])
-      for i in 1..<adv_key.count{
-          key_hex += " " + String(format:"%02X", adv_key[i])
+      var offsetValLen = chunkLength * (startChunk + 1)
+      var offsetValChunks = (offsetValLen / 8)
+      var leftover = (offsetValLen) % 8
+      if (leftover) != 0 { offsetValChunks += 1 }
+      var offsetVal = Array(repeating: UInt8(0x0), count: Int(offsetValChunks))
+      
+      let mask = chunkLength == 8 ? UInt8(1) : UInt8(1 << chunkLength)
+      
+      if (leftover == 0) {
+          offsetVal[0] = UInt8(val) << (8 - chunkLength)
+      } else if (leftover < chunkLength) {
+          offsetVal[1] = UInt8(val) << (8 - (chunkLength - leftover))
+          offsetVal[0] = UInt8(val) >> (chunkLength - leftover)
+      } else {
+          offsetVal[0] = UInt8(val) << (leftover - chunkLength)
       }
+      
+      //print("offsetVal: " + String(describing: offsetVal))
+      //print("recovered: " + String(describing: recovered))
+
+    repeat {
+      adv_key = static_prefix + byteArray(from: m.modemID)
+      adv_key += byteArray(from: validKeyCounter) + xorArrays(a: recovered, b: offsetVal)
+      validKeyCounter += 1
+      //print("==== Testing key")
+      //print("Valid Key Counter: \(validKeyCounter)")
+      //var key_hex = String(format:"%02X", adv_key[0])
+      //for i in 1..<adv_key.count{
+      //    key_hex += " " + String(format:"%02X", adv_key[i])
+      //}
       //key_hex += "\n"
-      print("Valid key: \(key_hex)")
-      //print("Found valid pub key on \(validKeyCounter). try")
-      let k = DataEncodingKey(index: UInt32(startChunk), value: UInt8(val), advertisedKey: adv_key, hashedKey: SHA256.hash(data: adv_key).data)
-      m.keys.append(k)
-//      print(Data(adv_key).base64EncodedString())
+      //print("Attempted key: \(key_hex)")
+      //print()
+    } while (BoringSSL.isPublicKeyValid(Data(adv_key)) == 0 && validKeyCounter < UInt16.max)
+
+    var key_hex = String(format:"%02X", adv_key[0])
+    for i in 1..<adv_key.count{
+        key_hex += " " + String(format:"%02X", adv_key[i])
     }
+    //key_hex += "\n"
+    print("Valid key: \(key_hex)")
+    //print("Found valid pub key on \(validKeyCounter). try")
+    let k = DataEncodingKey(index: UInt32(startChunk), value: UInt8(val), advertisedKey: adv_key, hashedKey: SHA256.hash(data: adv_key).data)
+    m.keys.append(k)
+//      print(Data(adv_key).base64EncodedString())
+  }
 
     m.fetchedChunks += 1
     print(m.fetchedChunks)
@@ -278,7 +279,7 @@ class FindMyController: ObservableObject {
               let cLen = message!.chunkLength
               let leftover = ((k.index + 1) * cLen) % 8
               var startVal: UInt8
-              let mask = UInt8(1 << cLen)
+              let mask = cLen == 8 ? UInt8(1) : UInt8(1 << cLen)
               if (leftover == 0) {
                   startVal = (startKey[(Int(((k.index + 1) * cLen)) / 8) - 1] >> (8 - cLen)) & mask
               } else if (leftover < cLen) {
