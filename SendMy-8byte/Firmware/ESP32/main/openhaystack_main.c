@@ -169,7 +169,7 @@ void wifi_init_sta(void)
 
 
 // Set custom modem id before flashing:
-static const uint32_t modem_id = 0x81008000;
+static const uint32_t modem_id = 0x81008100;
 
 static const char* LOG_TAG = "findmy_modem";
 
@@ -253,7 +253,7 @@ static void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *par
                 ESP_LOGE(LOG_TAG, "adv stop failed: %s", esp_err_to_name(err));
             }
             else {
-                ESP_LOGI(LOG_TAG, "advertising stopped");
+                // ESP_LOGI(LOG_TAG, "advertising stopped");
             }
             break;
         default:
@@ -323,22 +323,21 @@ void set_addr_and_payload_for_byte(uint32_t index, uint32_t msg_id, uint8_t val,
         memcpy(&public_key[12], &start_addr, 16);
     }
 
-    uint32_t offset = (chunk_len * (index + 1)) % (8 * 16); // mod the offset correctly
-    uint32_t remain = 8 - ((chunk_len * index) % 8);
+    uint32_t bit_index = index * chunk_len;
+    uint32_t byte_index = bit_index/8;
     
-    printf("offset: %d, reamining: %d\n",offset, remain);
+    uint32_t start_byte = byte_index % 16;
+    uint32_t next_byte = (start_byte + 1) % 16;
     
-    if (remain == chunk_len) {
-        uint8_t xor_val = val << (8 - remain);
-        public_key[28 - (offset/8)] ^= xor_val;
-    } else if (remain > chunk_len) {
-        uint8_t xor_val = val << (8 - remain);
-        public_key[28 - ((offset/8) + 1)] ^= xor_val;
-    } else { 
-        uint8_t xor_val_lo = val << (8 - remain);
-        uint8_t xor_val_hi = val >> remain;
-        public_key[28 - ((offset/8))] ^= xor_val_lo;
-        public_key[28 - ((offset/8) + 1)] ^= xor_val_hi;
+    uint32_t start_offset = bit_index % 8;
+    
+    if ((8- start_offset) >= chunk_len) {
+        // Fill only first bytes
+        public_key[27 - start_byte] ^= val << start_offset;
+    } else {
+        // Fill both bytes
+        public_key[27 - start_byte] ^= val << start_offset;
+        public_key[27 - next_byte] ^= val >> (8 - start_offset);
     }
 
     memcpy(&curr_addr, &public_key[12], 16);
@@ -449,15 +448,15 @@ void send_data_once_blocking(uint8_t* data_to_send, uint32_t len, uint32_t chunk
         log_current_unix_time();
         ESP_LOGD(LOG_TAG, "    resetting. Will now use device address: %02x %02x %02x %02x %02x %02x", rnd_addr[0], rnd_addr[1], rnd_addr[2], rnd_addr[3], rnd_addr[4], rnd_addr[5]);
         reset_advertising();
-        vTaskDelay(2);    
+        vTaskDelay(50);    
     }
     esp_ble_gap_stop_advertising();
 }
 
 void app_main(void)
 {
-    const int NUM_MESSAGES = 1;
-    const int REPEAT_MESSAGE_TIMES = 100;
+    const int NUM_MESSAGES = 100;
+    const int REPEAT_MESSAGE_TIMES = 1;
     const int MESSAGE_DELAY = 100;
 
 
@@ -487,21 +486,19 @@ void app_main(void)
 
     
     // Send Message
-    uint32_t current_message_id = 0;
-
-    uint8_t data[] = "ABCDEFGHIJKLMNOPQRSTU";
-
-    printf("Bytes: ");
-    for (int i = 0; i < sizeof(data); i++) {
-        printf("%02x ", data[i]);
-    }
-    printf("\n");
+    uint32_t current_message_id = 1;
 
     static uint8_t data_to_send[] = "A";
 
+    printf("Bytes: ");
+    for (int i = 0; i < sizeof(data_to_send); i++) {
+        printf("%02x ", data_to_send[i]);
+    }
+    printf("\n");
+
     for (uint32_t i = 0; i < NUM_MESSAGES; i++) {
         // generateAlphaSequence(i, data_to_send);
-        // current_message_id++;
+        current_message_id++;
         for (int j = 0; j < REPEAT_MESSAGE_TIMES; j++) {
             send_data_once_blocking(data_to_send, sizeof(data_to_send) - 1, 8, current_message_id);
             vTaskDelay(MESSAGE_DELAY);
