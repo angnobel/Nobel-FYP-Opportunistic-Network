@@ -15,7 +15,7 @@ import Foundation
 struct OFFetchReportsMainView: View {
 
   @Environment(\.findMyController) var findMyController
-
+  
   @State var targetedDrop: Bool = false
   @State var error: Error?
   @State var showData = false
@@ -190,6 +190,7 @@ struct OFFetchReportsMainView: View {
                 }
                 
                 self.showData = true
+                self.showModemPrompt = false
                 
               },
               label: {
@@ -243,10 +244,10 @@ struct OFFetchReportsMainView: View {
            }
            Divider()
       ScrollView {
-        ForEach(0...max(100, self.findMyController.messages.count+1), id: \.self) { i in
+        ForEach(0...max(300, self.findMyController.messages.count+1), id: \.self) { i in
           if  self.findMyController.messages[UInt32(i)] != nil {
             HStack {
-              Text("#\(self.findMyController.messages[UInt32(i)]!.messageID)").font(.system(size: 14, design: .monospaced)).frame(width: 30)
+              Text("#\(self.findMyController.messages[UInt32(i)]!.messageID)").font(.system(size: 14, design: .monospaced)).frame(width: 45)
               Text(self.findMyController.messages[UInt32(i)]!.decodedStr ?? "<None>").font(.system(size: 14, design: .monospaced))
               
               Spacer()
@@ -306,12 +307,12 @@ struct OFFetchReportsMainView: View {
   var body: some View {
     GeometryReader { geo in
       if self.loading {
-        self.loadingView
-      }
-      else if self.showData {
         self.dataView
       } else if self.showModemPrompt {
         self.modemIDView
+      }
+      else if self.showData {
+        self.dataView
       } else {
         self.modemIDView
           .frame(width: geo.size.width, height: geo.size.height)
@@ -393,8 +394,7 @@ struct OFFetchReportsMainView: View {
         }
 
         // Show data view
-        self.loading = false
-        self.showData = true
+        self.loading = !self.loading
 
       })
   }

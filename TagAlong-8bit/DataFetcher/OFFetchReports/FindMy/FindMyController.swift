@@ -224,7 +224,7 @@ class FindMyController: ObservableObject {
 
       // Completion Handler
       fetchReportGroup.notify(queue: .main) {
-        print("Finished loading the reports. Now decode them")
+        self.logAndPrint("Time Stamp: Message \(messageID) Time: \(Int(Date().timeIntervalSince1970))" , fileHandle: logger)
 
         // Export the reports to the desktop
         var reports = [FindMyReport]()
@@ -321,7 +321,10 @@ class FindMyController: ObservableObject {
 //      var decodedStr = message!.decodedStr!
       var chunk_valid = 1
       var chunk_completely_invalid = 1
-      if result.keys.max() == nil { print("No reports found"); completion(nil); return }
+      if result.keys.max() == nil {
+        logAndPrint("Result: Message \(messageID) No Report Found" , fileHandle: logger)
+        print("No reports found"); completion(nil); return
+      }
     
 //      print(result)
       print(message!.fetchedChunks - 1)
@@ -342,6 +345,7 @@ class FindMyController: ObservableObject {
       //let (quotient, remainder) = workingBitStr.count.quotientAndRemainder(dividingBy: 8)
         if (workingBitStr.count >  8) { // End of byte
         if chunk_completely_invalid == 1 {
+          logAndPrint("Result: Message \(messageID) No Report Found" , fileHandle: logger)
           print("Chunk invalid")
           earlyExit = true
         }
@@ -365,6 +369,7 @@ class FindMyController: ObservableObject {
         chunk_completely_invalid = 1
       }
       
+      
       message?.workingBitStr = workingBitStr
       message?.decodedBits = decodedBits
     
@@ -383,7 +388,7 @@ class FindMyController: ObservableObject {
             var byte = Int(strtoul(substr, nil, 2))
             decodedBytes.append(UInt8(byte))
         }
-    
+      logAndPrint("Result: Message \(messageID) bitstring: \(decodedStr) bytestring: \(decodedBytes)" , fileHandle: logger)
       message?.decodedBytes = decodedBytes
       message?.decodedStr = decodedStr
         
