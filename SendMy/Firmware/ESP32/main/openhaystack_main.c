@@ -170,7 +170,7 @@ void wifi_init_sta(void)
 
 
 // Set custom modem id before flashing:
-static const uint32_t modem_id = 0x81008008;
+static const uint32_t modem_id = 0x82008000;
 
 static const char* LOG_TAG = "findmy_modem";
 

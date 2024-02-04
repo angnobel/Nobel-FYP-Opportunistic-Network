@@ -169,7 +169,7 @@ void wifi_init_sta(void)
 
 
 // Set custom modem id before flashing:
-static const uint32_t modem_id = 0x000fbeef;
+static const uint32_t modem_id = 0x82008006;
 
 static const char* LOG_TAG = "findmy_modem";
 
@@ -177,7 +177,7 @@ static const char* LOG_TAG = "findmy_modem";
 static void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param);
 
 /** Random device address */
-static esp_bd_addr_t rnd_addr = { 0xFF, 0xBB, 0xCC, 0xDD, 0xEE, 0xFF };
+static esp_bd_addr_t rnd_addr = { 0xFF, 0xBB, 0xCB, 0xDD, 0xEE, 0xFF };
 
 /** Advertisement payload */
 static uint8_t adv_data[31] = {
@@ -193,15 +193,14 @@ static uint8_t adv_data[31] = {
     0x00, /* Hint (0x00) */
 };
 
-uint8_t start_addr[20] = {
+uint8_t start_addr[16] = {
     0x00, 0x00, 0x00, 0x00, 
     0x00, 0x00, 0x00, 0x00, 
     0x00, 0x00, 0x00, 0x00, 
-    0x00, 0x00, 0x00, 0x00, 
-    0x00, 0x00, 0x00, 0x00 
+    0x00, 0x00, 0x00, 0x00
 };
 
-uint8_t curr_addr[20];  
+uint8_t curr_addr[16];  
 
 uint32_t swap_uint32( uint32_t val )
 {
@@ -254,7 +253,7 @@ static void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *par
                 ESP_LOGE(LOG_TAG, "adv stop failed: %s", esp_err_to_name(err));
             }
             else {
-                ESP_LOGI(LOG_TAG, "advertising stopped");
+                // ESP_LOGI(LOG_TAG, "advertising stopped");
             }
             break;
         default:
@@ -307,12 +306,9 @@ void copy_2b_big_endian(uint8_t *dst, uint8_t *src) {
     dst[0] = src[1]; dst[1] = src[0];
 }
 
-// index as first part of payload to have an often changing MAC address
-// [2 byte magic] [4 byte modem_id] [2 byte tweak] [4 byte msg_id] [16 byte payload]
-// May have errors for chunk len >= 20
-#define NUM_DATA_BYTES (16)
-#define NUM_CONST_BYTES (28 - NUM_DATA_BYTES)
-void set_addr_and_payload_for_byte(uint32_t index, uint32_t msg_id, uint32_t val, uint32_t chunk_len) {    
+// Only works up to 8 bits per advert
+// [2 byte magic] [4 byte modem_id] [2 byte tweak] [4 byte message id] [16 byte payload]
+void set_addr_and_payload_for_byte(uint32_t index, uint32_t msg_id, uint8_t val, uint32_t chunk_len) {
     uint16_t valid_key_counter = 0;
     static uint8_t public_key[28] = {0};
     public_key[0] = 0xBA; // magic value
@@ -322,46 +318,41 @@ void set_addr_and_payload_for_byte(uint32_t index, uint32_t msg_id, uint32_t val
     public_key[7] = 0x00;
     copy_4b_big_endian(&public_key[8], &msg_id);
     if (index) {
-        memcpy(&public_key[NUM_CONST_BYTES], &curr_addr, NUM_DATA_BYTES);
+        memcpy(&public_key[12], &curr_addr, 16);
     } else {
-        memcpy(&public_key[NUM_CONST_BYTES], &start_addr, NUM_DATA_BYTES);
+        memcpy(&public_key[12], &start_addr, 16);
     }
+
+    uint32_t bit_index = index * chunk_len;
+    uint32_t byte_index = bit_index/8;
     
-    uint32_t total_bits = index * chunk_len;
-    uint32_t byte_index = total_bits / 8;
-    uint32_t bit_offset = total_bits % 8;
-
-    while (chunk_len > 0) {
-        uint32_t bits_in_current_byte = 8 - bit_offset;
-        uint32_t bits_to_write = (chunk_len < bits_in_current_byte) ? chunk_len : bits_in_current_byte;
-
-        // Mask the bits to write and shift them to the correct position
-        uint32_t bits_masked = (val & ((1U << bits_to_write) - 1)) << bit_offset;
-
-        // Update the current byte
-        public_key[(byte_index % NUM_DATA_BYTES) + NUM_CONST_BYTES] ^= bits_masked;
-
-        // Update indices and values for the next iteration
-        chunk_len -= bits_to_write;
-        val >>= bits_to_write;
-        byte_index++;
-
-        // Reset bit_offset for the next byte
-        bit_offset = 0;
+    uint32_t start_byte = byte_index % 16;
+    uint32_t next_byte = (start_byte + 1) % 16;
+    
+    uint32_t start_offset = bit_index % 8;
+    
+    if ((8- start_offset) >= chunk_len) {
+        // Fill only first bytes
+        public_key[27 - start_byte] ^= val << start_offset;
+    } else {
+        // Fill both bytes
+        public_key[27 - start_byte] ^= val << start_offset;
+        public_key[27 - next_byte] ^= val >> (8 - start_offset);
     }
 
-    memcpy(&curr_addr, &public_key[NUM_CONST_BYTES], NUM_DATA_BYTES);
+    memcpy(&curr_addr, &public_key[12], 16);
 
     do {
       copy_2b_big_endian(&public_key[6], &valid_key_counter);
 	    valid_key_counter++;
     } while (!is_valid_pubkey(public_key));
 
-    ESP_LOGI(LOG_TAG, "pub key to use (%d. try): %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x", valid_key_counter, public_key[0], public_key[1], public_key[2], public_key[3], public_key[4], public_key[5], public_key[6], public_key[7], public_key[8], public_key[9], public_key[10], public_key[11], public_key[12], public_key[13],public_key[14], public_key[15],public_key[16],public_key[17],public_key[18], public_key[19], public_key[20], public_key[21], public_key[22], public_key[23], public_key[24], public_key[25], public_key[26],  public_key[27]);
+    ESP_LOGI(LOG_TAG, "  pub key to use (%d. try): %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x", valid_key_counter, public_key[0], public_key[1], public_key[2], public_key[3], public_key[4], public_key[5], public_key[6], public_key[7], public_key[8], public_key[9], public_key[10], public_key[11], public_key[12], public_key[13],public_key[14], public_key[15],public_key[16],public_key[17],public_key[18], public_key[19], public_key[20], public_key[21], public_key[22], public_key[23], public_key[24], public_key[25], public_key[26],  public_key[27]);
 
     set_addr_from_key(rnd_addr, public_key);
     set_payload_from_key(adv_data, public_key);
 }
+
 
 void reset_advertising() {
     esp_err_t status;
@@ -419,7 +410,6 @@ void log_current_unix_time() {
     ESP_LOGI("TIMESTAMP", "Unix: %ld", (long) current_time);
 }
 
-// Shown problems for chunk_len=20, < 8 and multiples of 8 should be fine
 void send_data_once_blocking(uint8_t* data_to_send, uint32_t len, uint32_t chunk_len, uint32_t msg_id) {
     uint32_t num_chunks = len * 8 / chunk_len;
     if (len * 8 % chunk_len) {
@@ -427,7 +417,7 @@ void send_data_once_blocking(uint8_t* data_to_send, uint32_t len, uint32_t chunk
     }
     
     for (uint32_t chunk_i = 0; chunk_i < num_chunks; chunk_i++) {       
-        uint32_t chunk_value = 0;
+        uint8_t chunk_value = 0;
         
         uint32_t start_bit = chunk_i * chunk_len;
         uint32_t end_bit = start_bit + chunk_len;
@@ -455,9 +445,10 @@ void send_data_once_blocking(uint8_t* data_to_send, uint32_t len, uint32_t chunk
         }
 
         set_addr_and_payload_for_byte(chunk_i, msg_id, chunk_value, chunk_len);
+        log_current_unix_time();
         ESP_LOGD(LOG_TAG, "    resetting. Will now use device address: %02x %02x %02x %02x %02x %02x", rnd_addr[0], rnd_addr[1], rnd_addr[2], rnd_addr[3], rnd_addr[4], rnd_addr[5]);
         reset_advertising();
-        vTaskDelay(2); 
+        vTaskDelay(50);    
     }
     esp_ble_gap_stop_advertising();
 }
@@ -465,8 +456,8 @@ void send_data_once_blocking(uint8_t* data_to_send, uint32_t len, uint32_t chunk
 void app_main(void)
 {
     const int NUM_MESSAGES = 1;
-    const int REPEAT_MESSAGE_TIMES = 1;
-    const int MESSAGE_DELAY = 100;
+    const int REPEAT_MESSAGE_TIMES = 4;
+    const int MESSAGE_DELAY = 0;
 
 
     // Init Flash and BT
@@ -482,24 +473,37 @@ void app_main(void)
     ESP_LOGI(WIFI_TAG, "ESP_WIFI_MODE_STA");
     wifi_init_sta();
 
+    esp_err_t status;
+    //register the scan callback function to the gap module
+    if ((status = esp_ble_gap_register_callback(esp_gap_cb)) != ESP_OK) {
+        ESP_LOGE(LOG_TAG, "gap register error: %s", esp_err_to_name(status));
+        return;
+    }
+
     // Sync time
     initialize_sntp();
     wait_for_sntp_sync();
 
     
     // Send Message
-    uint32_t current_message_id = 0;
+    uint32_t current_message_id = 1;
 
     static uint8_t data_to_send[] = "A";
 
+    printf("Bytes: ");
+    for (int i = 0; i < sizeof(data_to_send); i++) {
+        printf("%02x ", data_to_send[i]);
+    }
+    printf("\n");
+
     for (uint32_t i = 0; i < NUM_MESSAGES; i++) {
         // generateAlphaSequence(i, data_to_send);
-        // current_message_id++;
         for (int j = 0; j < REPEAT_MESSAGE_TIMES; j++) {
             send_data_once_blocking(data_to_send, sizeof(data_to_send) - 1, 8, current_message_id);
-            
             vTaskDelay(MESSAGE_DELAY);
         }
+
+        current_message_id++;
         vTaskDelay(MESSAGE_DELAY);
     }
 

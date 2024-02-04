@@ -169,7 +169,7 @@ void wifi_init_sta(void)
 
 
 // Set custom modem id before flashing:
-static const uint32_t modem_id = 0x81008100;
+static const uint32_t modem_id = 0x81008104;
 
 static const char* LOG_TAG = "findmy_modem";
 
@@ -308,7 +308,7 @@ void copy_2b_big_endian(uint8_t *dst, uint8_t *src) {
 
 // Only works up to 8 bits per advert
 // [2 byte magic] [4 byte modem_id] [2 byte tweak] [4 byte message id] [16 byte payload]
-void set_addr_and_payload_for_byte(uint32_t index, uint32_t msg_id, uint8_t val, uint32_t chunk_len) {
+void set_addr_and_payload_for_byte(uint32_t index, uint32_t msg_id, uint32_t val, uint32_t chunk_len) {
     uint16_t valid_key_counter = 0;
     static uint8_t public_key[28] = {0};
     public_key[0] = 0xBA; // magic value
@@ -417,7 +417,7 @@ void send_data_once_blocking(uint8_t* data_to_send, uint32_t len, uint32_t chunk
     }
     
     for (uint32_t chunk_i = 0; chunk_i < num_chunks; chunk_i++) {       
-        uint8_t chunk_value = 0;
+        uint32_t chunk_value = 0;
         
         uint32_t start_bit = chunk_i * chunk_len;
         uint32_t end_bit = start_bit + chunk_len;
@@ -455,7 +455,7 @@ void send_data_once_blocking(uint8_t* data_to_send, uint32_t len, uint32_t chunk
 
 void app_main(void)
 {
-    const int NUM_MESSAGES = 100;
+    const int NUM_MESSAGES = 200;
     const int REPEAT_MESSAGE_TIMES = 1;
     const int MESSAGE_DELAY = 100;
 
@@ -486,7 +486,7 @@ void app_main(void)
 
     
     // Send Message
-    uint32_t current_message_id = 1;
+    uint32_t current_message_id = 0;
 
     static uint8_t data_to_send[] = "A";
 

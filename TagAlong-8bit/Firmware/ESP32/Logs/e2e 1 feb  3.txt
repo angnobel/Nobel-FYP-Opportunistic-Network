@@ -1,0 +1,248 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\Nobel\Documents\GitHub\tagalong-0.1-FYP\SendMy-8byte\Firmware\ESP32> set IDF_PATH=C:\Users\Nobel\esp\esp-idf
+PS C:\Users\Nobel\Documents\GitHub\tagalong-0.1-FYP\SendMy-8byte\Firmware\ESP32> C:\Users\Nobel\.espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:\Users\Nobel\esp\esp-idf\tools\idf_monitor.py -p COM11 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 c:\Users\Nobel\Documents\GitHub\tagalong-0.1-FYP\SendMy-8byte\Firmware\ESP32\build\openhaystack.elf
+--- WARNING: GDB cannot open serial ports accessed as COMx
+--- Using \\.\COM11 instead...
+--- idf_monitor on \\.\COM11 115200 ---
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1704
+load:0x403cc710,len:0x968
+load:0x403ce710,len:0x2f68
+SHA-256 comparison failed:
+Calculated: d165275cdc6b0949cf29f8cbe3cf506f09734b7072a2ad23e161a9b53f2f40fd
+Expected: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Attempting to boot anyway...
+entry 0x403cc710
+I (48) boot: ESP-IDF v5.1.1 2nd stage bootloader
+I (49) boot: compile time Jan 24 2024 13:58:30
+I (49) boot: chip revision: v0.4
+I (52) boot.esp32c3: SPI Speed      : 80MHz
+I (56) boot.esp32c3: SPI Mode       : DIO
+I (61) boot.esp32c3: SPI Flash Size : 4MB
+I (66) boot: Enabling RNG early entropy source...
+I (71) boot: Partition Table:
+I (75) boot: ## Label            Usage          Type ST Offset   Length
+I (82) boot:  0 nvs              WiFi data        01 02 00009000 00005000
+I (90) boot:  1 key              unknown          40 00 0000e000 00001000
+I (97) boot:  2 phy_init         RF data          01 01 0000f000 00001000
+I (104) boot:  3 factory          factory app      00 00 00010000 00200000
+I (112) boot: End of partition table
+I (116) esp_image: segment 0: paddr=00010020 vaddr=3c100020 size=37688h (226952) map
+I (144) esp_image: segment 1: paddr=000476b0 vaddr=3fc93800 size=03084h ( 12420) load
+I (146) esp_image: segment 2: paddr=0004a73c vaddr=40380000 size=058dch ( 22748) load
+I (152) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=f9104h (1020164) map
+I (244) esp_image: segment 4: paddr=0014912c vaddr=403858dc size=0de08h ( 56840) load
+I (257) boot: Loaded app from partition at offset 0x10000
+I (257) boot: Disabling RNG early entropy source...
+I (269) cpu_start: Unicore app
+I (269) cpu_start: Pro cpu up.
+I (278) cpu_start: Pro cpu start user code
+I (278) cpu_start: cpu freq: 160000000 Hz
+I (278) cpu_start: Application information:
+I (281) cpu_start: Project name:     openhaystack
+I (287) cpu_start: App version:      c764829-dirty
+I (292) cpu_start: Compile time:     Jan 24 2024 13:57:57
+I (298) cpu_start: ELF file SHA256:  8730921d665fb5d3...
+I (304) cpu_start: ESP-IDF:          v5.1.1
+I (309) cpu_start: Min chip rev:     v0.3
+I (314) cpu_start: Max chip rev:     v0.99
+I (319) cpu_start: Chip rev:         v0.4
+I (323) heap_init: Initializing. RAM available for dynamic allocation:
+I (331) heap_init: At 3FC9E590 len 0003E180 (248 KiB): DRAM
+I (337) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM
+I (344) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM
+I (351) spi_flash: detected chip: generic
+I (354) spi_flash: flash io: dio
+I (359) sleep: Configure to isolate all GPIO pins in sleep state
+I (365) sleep: Enable automatic switching of GPIO sleep configuration
+I (372) coexist: coex firmware version: 80b0d89
+I (378) coexist: coexist rom version 9387209
+I (383) app_start: Starting scheduler on CPU0
+I (387) main_task: Started on CPU0
+I (387) main_task: Calling app_main()
+I (397) BLE_INIT: BT controller compile version [963cad4]
+I (397) phy_init: phy_version 970,1856f88,May 10 2023,17:44:12
+I (457) BLE_INIT: Bluetooth MAC: 34:85:18:20:62:22
+
+I (477) WIFI: ESP_WIFI_MODE_STA
+I (477) pp: pp rom version: 9387209
+I (477) net80211: net80211 rom version: 9387209
+I (487) wifi:wifi driver task: 3fcb492c, prio:23, stack:6656, core=0
+I (487) wifi:wifi firmware version: ce9244d
+I (487) wifi:wifi certification version: v7.0
+I (487) wifi:config NVS flash: enabled
+I (497) wifi:config nano formating: disabled
+I (497) wifi:Init data frame dynamic rx buffer num: 32
+I (497) wifi:Init management frame dynamic rx buffer num: 32
+I (507) wifi:Init management short buffer num: 32
+I (507) wifi:Init dynamic tx buffer num: 32
+I (517) wifi:Init static tx FG buffer num: 2
+I (517) wifi:Init static rx buffer size: 1600
+I (527) wifi:Init static rx buffer num: 10
+I (527) wifi:Init dynamic rx buffer num: 32
+I (537) wifi_init: rx ba win: 6
+I (537) wifi_init: tcpip mbox: 32
+I (537) wifi_init: udp mbox: 6
+I (547) wifi_init: tcp mbox: 6
+I (547) wifi_init: tcp tx win: 5744
+I (547) wifi_init: tcp rx win: 5744
+I (557) wifi_init: tcp mss: 1440
+I (557) wifi_init: WiFi IRAM OP enabled
+I (567) wifi_init: WiFi RX IRAM OP enabled
+I (567) wifi:mode : sta (34:85:18:20:62:20)
+I (577) wifi:enable tsf
+I (577) WIFI: wifi_init_sta finished.
+I (2267) WIFI: retry to connect to the AP
+I (2267) WIFI: connect to the AP fail
+I (3957) WIFI: retry to connect to the AP
+I (3957) WIFI: connect to the AP fail
+I (5647) WIFI: retry to connect to the AP
+I (5647) WIFI: connect to the AP fail
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0x4 (DOWNLOAD(USB/UART0/1))
+waiting for download
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1704
+load:0x403cc710,len:0x968
+load:0x403ce710,len:0x2f68
+SHA-256 comparison failed:
+Calculated: d165275cdc6b0949cf29f8cbe3cf506f09734b7072a2ad23e161a9b53f2f40fd
+Expected: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Attempting to boot anyway...
+entry 0x403cc710
+I (48) boot: ESP-IDF v5.1.1 2nd stage bootloader
+I (49) boot: compile time Jan 24 2024 13:58:30
+I (49) boot: chip revision: v0.4
+I (52) boot.esp32c3: SPI Speed      : 80MHz
+I (56) boot.esp32c3: SPI Mode       : DIO
+I (61) boot.esp32c3: SPI Flash Size : 4MB
+I (66) boot: Enabling RNG early entropy source...
+I (71) boot: Partition Table:
+I (75) boot: ## Label            Usage          Type ST Offset   Length
+I (82) boot:  0 nvs              WiFi data        01 02 00009000 00005000
+I (90) boot:  1 key              unknown          40 00 0000e000 00001000
+I (97) boot:  2 phy_init         RF data          01 01 0000f000 00001000
+I (104) boot:  3 factory          factory app      00 00 00010000 00200000
+I (112) boot: End of partition table
+I (116) esp_image: segment 0: paddr=00010020 vaddr=3c100020 size=37688h (226952) map
+I (144) esp_image: segment 1: paddr=000476b0 vaddr=3fc93800 size=03084h ( 12420) load
+I (146) esp_image: segment 2: paddr=0004a73c vaddr=40380000 size=058dch ( 22748) load
+I (152) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=f9104h (1020164) map
+I (244) esp_image: segment 4: paddr=0014912c vaddr=403858dc size=0de08h ( 56840) load
+I (257) boot: Loaded app from partition at offset 0x10000
+I (257) boot: Disabling RNG early entropy source...
+I (269) cpu_start: Unicore app
+I (269) cpu_start: Pro cpu up.
+I (278) cpu_start: Pro cpu start user code
+I (278) cpu_start: cpu freq: 160000000 Hz
+I (278) cpu_start: Application information:
+I (281) cpu_start: Project name:     openhaystack
+I (287) cpu_start: App version:      c764829-dirty
+I (292) cpu_start: Compile time:     Jan 24 2024 13:57:57
+I (298) cpu_start: ELF file SHA256:  8730921d665fb5d3...
+I (304) cpu_start: ESP-IDF:          v5.1.1
+I (309) cpu_start: Min chip rev:     v0.3
+I (314) cpu_start: Max chip rev:     v0.99
+I (319) cpu_start: Chip rev:         v0.4
+I (323) heap_init: Initializing. RAM available for dynamic allocation:
+I (331) heap_init: At 3FC9E590 len 0003E180 (248 KiB): DRAM
+I (337) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM
+I (344) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM
+I (351) spi_flash: detected chip: generic
+I (354) spi_flash: flash io: dio
+I (359) sleep: Configure to isolate all GPIO pins in sleep state
+I (365) sleep: Enable automatic switching of GPIO sleep configuration
+I (372) coexist: coex firmware version: 80b0d89
+I (378) coexist: coexist rom version 9387209
+I (383) app_start: Starting scheduler on CPU0
+I (387) main_task: Started on CPU0
+I (387) main_task: Calling app_main()
+I (397) BLE_INIT: BT controller compile version [963cad4]
+I (397) phy_init: phy_version 970,1856f88,May 10 2023,17:44:12
+I (447) BLE_INIT: Bluetooth MAC: 34:85:18:20:62:22
+
+I (457) WIFI: ESP_WIFI_MODE_STA
+I (467) pp: pp rom version: 9387209
+I (467) net80211: net80211 rom version: 9387209
+I (477) wifi:wifi driver task: 3fcb492c, prio:23, stack:6656, core=0
+I (477) wifi:wifi firmware version: ce9244d
+I (477) wifi:wifi certification version: v7.0
+I (477) wifi:config NVS flash: enabled
+I (477) wifi:config nano formating: disabled
+I (487) wifi:Init data frame dynamic rx buffer num: 32
+I (487) wifi:Init management frame dynamic rx buffer num: 32
+I (497) wifi:Init management short buffer num: 32
+I (497) wifi:Init dynamic tx buffer num: 32
+I (507) wifi:Init static tx FG buffer num: 2
+I (507) wifi:Init static rx buffer size: 1600
+I (517) wifi:Init static rx buffer num: 10
+I (517) wifi:Init dynamic rx buffer num: 32
+I (517) wifi_init: rx ba win: 6
+I (527) wifi_init: tcpip mbox: 32
+I (527) wifi_init: udp mbox: 6
+I (527) wifi_init: tcp mbox: 6
+I (537) wifi_init: tcp tx win: 5744
+I (537) wifi_init: tcp rx win: 5744
+I (547) wifi_init: tcp mss: 1440
+I (547) wifi_init: WiFi IRAM OP enabled
+I (547) wifi_init: WiFi RX IRAM OP enabled
+I (557) wifi:mode : sta (34:85:18:20:62:20)
+I (557) wifi:enable tsf
+I (567) WIFI: wifi_init_sta finished.
+I (687) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (697) wifi:state: init -> auth (b0)
+I (717) wifi:state: auth -> assoc (0)
+I (747) wifi:state: assoc -> run (10)
+I (777) wifi:connected with Galaxy A53 5G 1935, aid = 1, channel 1, BW20, bssid = 4a:76:3a:af:43:ac
+I (777) wifi:security: WPA2-PSK, phy: bgn, rssi: -47
+I (797) wifi:pm start, type: 1
+
+I (797) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000
+I (797) wifi:<ba-add>idx:0 (ifx:0, 4a:76:3a:af:43:ac), tid:0, ssn:0, winSize:64
+I (807) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (1807) esp_netif_handlers: sta ip: 192.168.180.115, mask: 255.255.255.0, gw: 192.168.180.87
+I (1807) WIFI: got ip:192.168.180.115
+I (1807) WIFI: connected to ap SSID:Galaxy A53 5G 1935 password:ixvo3528
+Bytes: 41 00 
+I (4887) findmy_modem:   pub key to use (4. try): ba be 82 00 80 05 00 03 00 00 00 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (4887) TIMESTAMP: Unix: 1706784076
+I (4897) findmy_modem: advertising started
+I (5467) findmy_modem:   pub key to use (4. try): ba be 82 00 80 05 00 03 00 00 00 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (5467) TIMESTAMP: Unix: 1706784077
+I (5477) findmy_modem: advertising started
+I (6047) findmy_modem:   pub key to use (4. try): ba be 82 00 80 05 00 03 00 00 00 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (6047) TIMESTAMP: Unix: 1706784077
+I (6057) findmy_modem: advertising started
+I (6627) findmy_modem:   pub key to use (4. try): ba be 82 00 80 05 00 03 00 00 00 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (6627) TIMESTAMP: Unix: 1706784078
+I (6637) findmy_modem: advertising started
+I (7137) TIMESTAMP: Unix: 1706784078
+I (7137) wifi:state: run -> init (0)
+I (7137) wifi:pm stop, total sleep time: 2428441 us / 6339660 us
+
+I (7137) wifi:<ba-del>idx:0, tid:0
+I (7137) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (7147) WIFI: retry to connect to the AP
+I (7147) WIFI: connect to the AP fail
+W (12157) wifi:TX Q not empty: 500, TXQ_BLOCK=ff1000
+W (12157) wifi:force witi stop
+I (12157) wifi:flush txq
+I (12157) wifi:stop sw txq
+I (12157) wifi:lmac stop hw txq
+W (12157) wifi:sw txq[0] state(1) is not idle, potential error!
+I (12167) wifi:int: state=0 i=0
+I (12167) main_task: Returned from app_main()

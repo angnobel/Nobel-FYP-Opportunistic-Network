@@ -1,0 +1,735 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\Nobel\Documents\GitHub\tagalong-0.1-FYP\SendMy-8byte\Firmware\ESP32> set IDF_PATH=C:\Users\Nobel\esp\esp-idf
+PS C:\Users\Nobel\Documents\GitHub\tagalong-0.1-FYP\SendMy-8byte\Firmware\ESP32> C:\Users\Nobel\.espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:\Users\Nobel\esp\esp-idf\tools\idf_monitor.py -p COM11 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 c:\Users\Nobel\Documents\GitHub\tagalong-0.1-FYP\SendMy-8byte\Firmware\ESP32\build\openhaystack.elf
+--- WARNING: GDB cannot open serial ports accessed as COMx
+--- Using \\.\COM11 instead...
+--- idf_monitor on \\.\COM11 115200 ---
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1704
+load:0x403cc710,len:0x968
+load:0x403ce710,len:0x2f68
+SHA-256 comparison failed:
+Calculated: d165275cdc6b0949cf29f8cbe3cf506f09734b7072a2ad23e161a9b53f2f40fd
+Expected: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Attempting to boot anyway...
+entry 0x403cc710
+I (48) boot: ESP-IDF v5.1.1 2nd stage bootloader
+I (49) boot: compile time Jan 24 2024 13:58:30
+I (49) boot: chip revision: v0.4
+I (52) boot.esp32c3: SPI Speed      : 80MHz
+I (56) boot.esp32c3: SPI Mode       : DIO
+I (61) boot.esp32c3: SPI Flash Size : 4MB
+I (66) boot: Enabling RNG early entropy source...
+I (71) boot: Partition Table:
+I (75) boot: ## Label            Usage          Type ST Offset   Length
+I (82) boot:  0 nvs              WiFi data        01 02 00009000 00005000
+I (90) boot:  1 key              unknown          40 00 0000e000 00001000
+I (97) boot:  2 phy_init         RF data          01 01 0000f000 00001000
+I (104) boot:  3 factory          factory app      00 00 00010000 00200000
+I (112) boot: End of partition table
+I (116) esp_image: segment 0: paddr=00010020 vaddr=3c100020 size=37688h (226952) map
+I (144) esp_image: segment 1: paddr=000476b0 vaddr=3fc93800 size=03084h ( 12420) load
+I (146) esp_image: segment 2: paddr=0004a73c vaddr=40380000 size=058dch ( 22748) load
+I (152) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=f9108h (1020168) map
+I (244) esp_image: segment 4: paddr=00149130 vaddr=403858dc size=0de08h ( 56840) load
+I (257) boot: Loaded app from partition at offset 0x10000
+I (257) boot: Disabling RNG early entropy source...
+I (269) cpu_start: Unicore app
+I (269) cpu_start: Pro cpu up.
+I (278) cpu_start: Pro cpu start user code
+I (278) cpu_start: cpu freq: 160000000 Hz
+I (278) cpu_start: Application information:
+I (281) cpu_start: Project name:     openhaystack
+I (287) cpu_start: App version:      c764829-dirty
+I (292) cpu_start: Compile time:     Jan 24 2024 13:57:57
+I (298) cpu_start: ELF file SHA256:  b71edf39fd0e5d7c...
+I (304) cpu_start: ESP-IDF:          v5.1.1
+I (309) cpu_start: Min chip rev:     v0.3
+I (314) cpu_start: Max chip rev:     v0.99
+I (319) cpu_start: Chip rev:         v0.4
+I (323) heap_init: Initializing. RAM available for dynamic allocation:
+I (331) heap_init: At 3FC9E590 len 0003E180 (248 KiB): DRAM
+I (337) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM
+I (344) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM
+I (351) spi_flash: detected chip: generic
+I (354) spi_flash: flash io: dio
+I (359) sleep: Configure to isolate all GPIO pins in sleep state
+I (365) sleep: Enable automatic switching of GPIO sleep configuration
+I (372) coexist: coex firmware version: 80b0d89
+I (378) coexist: coexist rom version 9387209
+I (383) app_start: Starting scheduler on CPU0
+I (387) main_task: Started on CPU0
+I (387) main_task: Calling app_main()
+I (397) BLE_INIT: BT controller compile version [963cad4]
+I (397) phy_init: phy_version 970,1856f88,May 10 2023,17:44:12
+I (447) BLE_INIT: Bluetooth MAC: 34:85:18:20:62:22
+
+I (467) WIFI: ESP_WIFI_MODE_STA
+I (467) pp: pp rom version: 9387209
+I (467) net80211: net80211 rom version: 9387209
+I (477) wifi:wifi driver task: 3fcb492c, prio:23, stack:6656, core=0
+I (477) wifi:wifi firmware version: ce9244d
+I (477) wifi:wifi certification version: v7.0
+I (477) wifi:config NVS flash: enabled
+I (487) wifi:config nano formating: disabled
+I (487) wifi:Init data frame dynamic rx buffer num: 32
+I (487) wifi:Init management frame dynamic rx buffer num: 32
+I (497) wifi:Init management short buffer num: 32
+I (497) wifi:Init dynamic tx buffer num: 32
+I (507) wifi:Init static tx FG buffer num: 2
+I (507) wifi:Init static rx buffer size: 1600
+I (517) wifi:Init static rx buffer num: 10
+I (517) wifi:Init dynamic rx buffer num: 32
+I (517) wifi_init: rx ba win: 6
+I (527) wifi_init: tcpip mbox: 32
+I (527) wifi_init: udp mbox: 6
+I (537) wifi_init: tcp mbox: 6
+I (537) wifi_init: tcp tx win: 5744
+I (537) wifi_init: tcp rx win: 5744
+I (547) wifi_init: tcp mss: 1440
+I (547) wifi_init: WiFi IRAM OP enabled
+I (557) wifi_init: WiFi RX IRAM OP enabled
+I (557) wifi:mode : sta (34:85:18:20:62:20)
+I (557) wifi:enable tsf
+I (567) WIFI: wifi_init_sta finished.
+I (2257) WIFI: retry to connect to the AP
+I (2257) WIFI: connect to the AP fail
+I (3947) WIFI: retry to connect to the AP
+I (3947) WIFI: connect to the AP fail
+I (4037) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (4037) wifi:state: init -> auth (b0)
+I (4067) wifi:state: auth -> assoc (0)
+I (4097) wifi:state: assoc -> run (10)
+I (4187) wifi:connected with Galaxy A53 5G 1935, aid = 1, channel 6, BW20, bssid = 4a:76:3a:af:43:ac
+I (4187) wifi:security: WPA2-PSK, phy: bgn, rssi: -39
+I (4187) wifi:pm start, type: 1
+
+I (4187) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000
+I (4457) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (4457) wifi:<ba-add>idx:0 (ifx:0, 4a:76:3a:af:43:ac), tid:0, ssn:0, winSize:64
+I (5197) esp_netif_handlers: sta ip: 192.168.180.115, mask: 255.255.255.0, gw: 192.168.180.87
+I (5197) WIFI: got ip:192.168.180.115
+I (5197) WIFI: connected to ap SSID:Galaxy A53 5G 1935 password:ixvo3528
+Bytes: 41 00 
+I (8237) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (8237) TIMESTAMP: Unix: 1706172566
+I (8247) findmy_modem: advertising started
+I (10837) findmy_modem:   pub key to use (5. try): ba be 81 00 81 13 00 04 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (10837) TIMESTAMP: Unix: 1706172569
+I (10847) findmy_modem: advertising started
+I (13357) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (13367) TIMESTAMP: Unix: 1706172571
+I (13367) findmy_modem: advertising started
+I (15897) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (15897) TIMESTAMP: Unix: 1706172574
+I (15907) findmy_modem: advertising started
+I (18437) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (18437) TIMESTAMP: Unix: 1706172576
+I (18447) findmy_modem: advertising started
+I (20957) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 05 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (20967) TIMESTAMP: Unix: 1706172579
+I (20967) findmy_modem: advertising started
+I (23477) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 06 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (23487) TIMESTAMP: Unix: 1706172581
+I (23487) findmy_modem: advertising started
+I (25997) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 07 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (26007) TIMESTAMP: Unix: 1706172584
+I (26007) findmy_modem: advertising started
+I (28517) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (28527) TIMESTAMP: Unix: 1706172586
+I (28527) findmy_modem: advertising started
+I (31077) findmy_modem:   pub key to use (3. try): ba be 81 00 81 13 00 02 00 00 00 09 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (31077) TIMESTAMP: Unix: 1706172589
+I (31087) findmy_modem: advertising started
+I (33687) findmy_modem:   pub key to use (6. try): ba be 81 00 81 13 00 05 00 00 00 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (33697) TIMESTAMP: Unix: 1706172591
+I (33697) findmy_modem: advertising started
+I (36217) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 0b 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (36227) TIMESTAMP: Unix: 1706172594
+I (36227) findmy_modem: advertising started
+I (38737) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 0c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (38747) TIMESTAMP: Unix: 1706172596
+I (38747) findmy_modem: advertising started
+I (41277) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 0d 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (41277) TIMESTAMP: Unix: 1706172599
+I (41287) findmy_modem: advertising started
+I (43797) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 0e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (43807) TIMESTAMP: Unix: 1706172602
+I (43807) findmy_modem: advertising started
+I (46427) findmy_modem:   pub key to use (7. try): ba be 81 00 81 13 00 06 00 00 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (46427) TIMESTAMP: Unix: 1706172604
+I (46437) findmy_modem: advertising started
+I (48967) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (48967) TIMESTAMP: Unix: 1706172607
+I (48977) findmy_modem: advertising started
+I (51487) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 11 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (51497) TIMESTAMP: Unix: 1706172609
+I (51497) findmy_modem: advertising started
+I (54007) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 12 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (54017) TIMESTAMP: Unix: 1706172612
+I (54017) findmy_modem: advertising started
+I (56557) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 13 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (56557) TIMESTAMP: Unix: 1706172614
+I (56567) findmy_modem: advertising started
+I (59097) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 14 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (59097) TIMESTAMP: Unix: 1706172617
+I (59107) findmy_modem: advertising started
+I (61637) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 15 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (61637) TIMESTAMP: Unix: 1706172619
+I (61647) findmy_modem: advertising started
+I (64247) findmy_modem:   pub key to use (6. try): ba be 81 00 81 13 00 05 00 00 00 16 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (64257) TIMESTAMP: Unix: 1706172622
+I (64257) findmy_modem: advertising started
+I (66797) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 17 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (66797) TIMESTAMP: Unix: 1706172625
+I (66807) findmy_modem: advertising started
+I (69317) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 18 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (69327) TIMESTAMP: Unix: 1706172627
+I (69327) findmy_modem: advertising started
+I (71917) findmy_modem:   pub key to use (5. try): ba be 81 00 81 13 00 04 00 00 00 19 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (71917) TIMESTAMP: Unix: 1706172630
+I (71927) findmy_modem: advertising started
+I (74457) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 1a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (74457) TIMESTAMP: Unix: 1706172632
+I (74467) findmy_modem: advertising started
+I (76997) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 1b 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (76997) TIMESTAMP: Unix: 1706172635
+I (77007) findmy_modem: advertising started
+I (79517) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 1c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (79527) TIMESTAMP: Unix: 1706172637
+I (79527) findmy_modem: advertising started
+I (82057) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 1d 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (82057) TIMESTAMP: Unix: 1706172640
+I (82067) findmy_modem: advertising started
+I (84657) findmy_modem:   pub key to use (5. try): ba be 81 00 81 13 00 04 00 00 00 1e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (84657) TIMESTAMP: Unix: 1706172642
+I (84667) findmy_modem: advertising started
+I (87177) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 1f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (87187) TIMESTAMP: Unix: 1706172645
+I (87187) findmy_modem: advertising started
+I (89697) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 20 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (89707) TIMESTAMP: Unix: 1706172647
+I (89707) findmy_modem: advertising started
+I (92217) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 21 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (92227) TIMESTAMP: Unix: 1706172650
+I (92227) findmy_modem: advertising started
+I (94737) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 22 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (94747) TIMESTAMP: Unix: 1706172652
+I (94747) findmy_modem: advertising started
+I (97277) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 23 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (97277) TIMESTAMP: Unix: 1706172655
+I (97287) findmy_modem: advertising started
+I (99817) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 24 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (99817) TIMESTAMP: Unix: 1706172658
+I (99827) findmy_modem: advertising started
+I (102337) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 25 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (102347) TIMESTAMP: Unix: 1706172660
+I (102347) findmy_modem: advertising started
+I (104887) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 26 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (104887) TIMESTAMP: Unix: 1706172663
+I (104897) findmy_modem: advertising started
+I (107407) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 27 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (107417) TIMESTAMP: Unix: 1706172665
+I (107417) findmy_modem: advertising started
+I (109927) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 28 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (109937) TIMESTAMP: Unix: 1706172668
+I (109937) findmy_modem: advertising started
+I (112447) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 29 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (112457) TIMESTAMP: Unix: 1706172670
+I (112457) findmy_modem: advertising started
+I (115007) findmy_modem:   pub key to use (3. try): ba be 81 00 81 13 00 02 00 00 00 2a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (115007) TIMESTAMP: Unix: 1706172673
+I (115017) findmy_modem: advertising started
+I (117547) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 2b 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (117547) TIMESTAMP: Unix: 1706172675
+I (117557) findmy_modem: advertising started
+I (120067) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 2c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (120077) TIMESTAMP: Unix: 1706172678
+I (120077) findmy_modem: advertising started
+I (122597) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 2d 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (122607) TIMESTAMP: Unix: 1706172680
+I (122607) findmy_modem: advertising started
+I (125137) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 2e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (125137) TIMESTAMP: Unix: 1706172683
+I (125147) findmy_modem: advertising started
+I (127807) findmy_modem:   pub key to use (9. try): ba be 81 00 81 13 00 08 00 00 00 2f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (127807) TIMESTAMP: Unix: 1706172686
+I (127817) findmy_modem: advertising started
+I (130327) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 30 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (130337) TIMESTAMP: Unix: 1706172688
+I (130337) findmy_modem: advertising started
+W (130817) wifi:[ADDBA]rx delba, code:1, delete tid:0
+I (132867) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 31 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (132867) TIMESTAMP: Unix: 1706172691
+I (132877) findmy_modem: advertising started
+I (135387) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 32 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (135397) TIMESTAMP: Unix: 1706172693
+I (135397) findmy_modem: advertising started
+I (137997) findmy_modem:   pub key to use (6. try): ba be 81 00 81 13 00 05 00 00 00 33 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (138007) TIMESTAMP: Unix: 1706172696
+I (138007) findmy_modem: advertising started
+I (140527) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 34 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (140537) TIMESTAMP: Unix: 1706172698
+I (140537) findmy_modem: advertising started
+I (143057) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 35 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (143067) TIMESTAMP: Unix: 1706172701
+I (143067) findmy_modem: advertising started
+I (145577) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 36 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (145587) TIMESTAMP: Unix: 1706172703
+I (145587) findmy_modem: advertising started
+I (148117) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 37 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (148117) TIMESTAMP: Unix: 1706172706
+I (148127) findmy_modem: advertising started
+I (150637) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 38 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (150647) TIMESTAMP: Unix: 1706172708
+I (150647) findmy_modem: advertising started
+I (153157) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 39 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (153167) TIMESTAMP: Unix: 1706172711
+I (153167) findmy_modem: advertising started
+I (155717) findmy_modem:   pub key to use (3. try): ba be 81 00 81 13 00 02 00 00 00 3a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (155717) TIMESTAMP: Unix: 1706172713
+I (155727) findmy_modem: advertising started
+I (158237) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 3b 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (158247) TIMESTAMP: Unix: 1706172716
+I (158247) findmy_modem: advertising started
+I (160787) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 3c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (160787) TIMESTAMP: Unix: 1706172719
+I (160797) findmy_modem: advertising started
+I (163327) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 3d 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (163327) TIMESTAMP: Unix: 1706172721
+I (163337) findmy_modem: advertising started
+I (165867) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 3e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (165867) TIMESTAMP: Unix: 1706172724
+I (165877) findmy_modem: advertising started
+I (168387) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 3f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (168397) TIMESTAMP: Unix: 1706172726
+I (168397) findmy_modem: advertising started
+I (170917) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 40 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (170927) TIMESTAMP: Unix: 1706172729
+I (170927) findmy_modem: advertising started
+I (173477) findmy_modem:   pub key to use (3. try): ba be 81 00 81 13 00 02 00 00 00 41 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (173477) TIMESTAMP: Unix: 1706172731
+I (173487) findmy_modem: advertising started
+I (175997) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 42 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (176007) TIMESTAMP: Unix: 1706172734
+I (176007) findmy_modem: advertising started
+I (178517) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 43 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (178527) TIMESTAMP: Unix: 1706172736
+I (178527) findmy_modem: advertising started
+I (181047) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 44 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (181057) TIMESTAMP: Unix: 1706172739
+I (181057) findmy_modem: advertising started
+I (183587) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 45 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (183587) TIMESTAMP: Unix: 1706172741
+I (183597) findmy_modem: advertising started
+I (186107) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (186117) TIMESTAMP: Unix: 1706172744
+I (186117) findmy_modem: advertising started
+I (188637) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 47 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (188647) TIMESTAMP: Unix: 1706172746
+I (188647) findmy_modem: advertising started
+I (191157) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 48 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (191167) TIMESTAMP: Unix: 1706172749
+I (191167) findmy_modem: advertising started
+I (193697) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 49 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (193697) TIMESTAMP: Unix: 1706172751
+I (193707) findmy_modem: advertising started
+I (196217) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 4a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (196227) TIMESTAMP: Unix: 1706172754
+I (196227) findmy_modem: advertising started
+I (198737) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 4b 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (198747) TIMESTAMP: Unix: 1706172756
+I (198747) findmy_modem: advertising started
+I (201257) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 4c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (201267) TIMESTAMP: Unix: 1706172759
+I (201267) findmy_modem: advertising started
+I (203787) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 4d 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (203797) TIMESTAMP: Unix: 1706172762
+I (203797) findmy_modem: advertising started
+I (206317) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 4e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (206327) TIMESTAMP: Unix: 1706172764
+I (206327) findmy_modem: advertising started
+I (208857) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 4f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (208857) TIMESTAMP: Unix: 1706172767
+I (208867) findmy_modem: advertising started
+I (211397) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 50 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (211397) TIMESTAMP: Unix: 1706172769
+I (211407) findmy_modem: advertising started
+I (213917) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 51 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (213927) TIMESTAMP: Unix: 1706172772
+I (213927) findmy_modem: advertising started
+I (216457) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 52 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (216457) TIMESTAMP: Unix: 1706172774
+I (216467) findmy_modem: advertising started
+I (218977) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 53 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (218987) TIMESTAMP: Unix: 1706172777
+I (218987) findmy_modem: advertising started
+I (221507) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 54 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (221517) TIMESTAMP: Unix: 1706172779
+I (221517) findmy_modem: advertising started
+I (224047) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 55 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (224047) TIMESTAMP: Unix: 1706172782
+I (224057) findmy_modem: advertising started
+I (226567) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 56 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (226577) TIMESTAMP: Unix: 1706172784
+I (226577) findmy_modem: advertising started
+I (229107) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 57 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (229107) TIMESTAMP: Unix: 1706172787
+I (229117) findmy_modem: advertising started
+I (231647) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 58 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (231647) TIMESTAMP: Unix: 1706172789
+I (231657) findmy_modem: advertising started
+I (234167) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 59 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (234177) TIMESTAMP: Unix: 1706172792
+I (234177) findmy_modem: advertising started
+I (236687) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 5a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (236697) TIMESTAMP: Unix: 1706172794
+I (236697) findmy_modem: advertising started
+I (239277) findmy_modem:   pub key to use (4. try): ba be 81 00 81 13 00 03 00 00 00 5b 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (239277) TIMESTAMP: Unix: 1706172797
+I (239287) findmy_modem: advertising started
+I (241797) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 5c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (241807) TIMESTAMP: Unix: 1706172800
+I (241807) findmy_modem: advertising started
+I (244317) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 5d 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (244327) TIMESTAMP: Unix: 1706172802
+I (244327) findmy_modem: advertising started
+I (246837) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 5e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (246847) TIMESTAMP: Unix: 1706172805
+I (246847) findmy_modem: advertising started
+I (249357) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 5f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (249367) TIMESTAMP: Unix: 1706172807
+I (249367) findmy_modem: advertising started
+I (251897) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 60 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (251897) TIMESTAMP: Unix: 1706172810
+I (251907) findmy_modem: advertising started
+I (254417) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 61 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (254427) TIMESTAMP: Unix: 1706172812
+I (254427) findmy_modem: advertising started
+I (256977) findmy_modem:   pub key to use (3. try): ba be 81 00 81 13 00 02 00 00 00 62 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (256977) TIMESTAMP: Unix: 1706172815
+I (256987) findmy_modem: advertising started
+I (259517) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (259517) TIMESTAMP: Unix: 1706172817
+I (259527) findmy_modem: advertising started
+I (262037) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 64 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (262047) TIMESTAMP: Unix: 1706172820
+I (262047) findmy_modem: advertising started
+I (264577) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 65 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (264577) TIMESTAMP: Unix: 1706172822
+I (264587) findmy_modem: advertising started
+I (267247) findmy_modem:   pub key to use (9. try): ba be 81 00 81 13 00 08 00 00 00 66 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (267247) TIMESTAMP: Unix: 1706172825
+I (267257) findmy_modem: advertising started
+I (269767) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 67 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (269777) TIMESTAMP: Unix: 1706172828
+I (269777) findmy_modem: advertising started
+I (272297) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 68 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (272307) TIMESTAMP: Unix: 1706172830
+I (272307) findmy_modem: advertising started
+I (274817) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 69 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (274827) TIMESTAMP: Unix: 1706172833
+I (274827) findmy_modem: advertising started
+I (277337) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 6a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (277347) TIMESTAMP: Unix: 1706172835
+I (277347) findmy_modem: advertising started
+I (279867) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 6b 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (279877) TIMESTAMP: Unix: 1706172838
+I (279877) findmy_modem: advertising started
+I (282467) findmy_modem:   pub key to use (5. try): ba be 81 00 81 13 00 04 00 00 00 6c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (282467) TIMESTAMP: Unix: 1706172840
+I (282477) findmy_modem: advertising started
+I (284987) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 6d 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (284997) TIMESTAMP: Unix: 1706172843
+I (284997) findmy_modem: advertising started
+I (287687) findmy_modem:   pub key to use (10. try): ba be 81 00 81 13 00 09 00 00 00 6e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (287687) TIMESTAMP: Unix: 1706172845
+I (287697) findmy_modem: advertising started
+I (290207) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 6f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (290217) TIMESTAMP: Unix: 1706172848
+I (290217) findmy_modem: advertising started
+I (292747) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 70 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (292747) TIMESTAMP: Unix: 1706172850
+I (292757) findmy_modem: advertising started
+I (295287) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 71 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (295287) TIMESTAMP: Unix: 1706172853
+I (295297) findmy_modem: advertising started
+I (297807) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 72 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (297817) TIMESTAMP: Unix: 1706172856
+I (297817) findmy_modem: advertising started
+I (300387) findmy_modem:   pub key to use (4. try): ba be 81 00 81 13 00 03 00 00 00 73 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (300387) TIMESTAMP: Unix: 1706172858
+I (300397) findmy_modem: advertising started
+I (302927) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 74 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (302927) TIMESTAMP: Unix: 1706172861
+I (302937) findmy_modem: advertising started
+I (305447) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 75 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (305457) TIMESTAMP: Unix: 1706172863
+I (305457) findmy_modem: advertising started
+I (307967) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 76 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (307977) TIMESTAMP: Unix: 1706172866
+I (307977) findmy_modem: advertising started
+I (310517) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 77 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (310517) TIMESTAMP: Unix: 1706172868
+I (310527) findmy_modem: advertising started
+I (313077) findmy_modem:   pub key to use (3. try): ba be 81 00 81 13 00 02 00 00 00 78 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (313077) TIMESTAMP: Unix: 1706172871
+I (313087) findmy_modem: advertising started
+I (315617) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 79 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (315617) TIMESTAMP: Unix: 1706172873
+I (315627) findmy_modem: advertising started
+I (318137) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 7a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (318147) TIMESTAMP: Unix: 1706172876
+I (318147) findmy_modem: advertising started
+I (320677) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 7b 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (320677) TIMESTAMP: Unix: 1706172878
+I (320687) findmy_modem: advertising started
+I (323197) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 7c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (323207) TIMESTAMP: Unix: 1706172881
+I (323207) findmy_modem: advertising started
+I (325727) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 7d 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (325737) TIMESTAMP: Unix: 1706172883
+I (325737) findmy_modem: advertising started
+I (328267) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 7e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (328267) TIMESTAMP: Unix: 1706172886
+I (328277) findmy_modem: advertising started
+I (330787) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 7f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (330797) TIMESTAMP: Unix: 1706172889
+I (330797) findmy_modem: advertising started
+I (333307) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 80 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (333317) TIMESTAMP: Unix: 1706172891
+I (333317) findmy_modem: advertising started
+I (335867) findmy_modem:   pub key to use (3. try): ba be 81 00 81 13 00 02 00 00 00 81 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (335867) TIMESTAMP: Unix: 1706172894
+I (335877) findmy_modem: advertising started
+I (338387) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 82 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (338397) TIMESTAMP: Unix: 1706172896
+I (338397) findmy_modem: advertising started
+I (340927) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 83 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (340927) TIMESTAMP: Unix: 1706172899
+I (340937) findmy_modem: advertising started
+I (343487) findmy_modem:   pub key to use (3. try): ba be 81 00 81 13 00 02 00 00 00 84 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (343487) TIMESTAMP: Unix: 1706172901
+I (343497) findmy_modem: advertising started
+I (346067) findmy_modem:   pub key to use (4. try): ba be 81 00 81 13 00 03 00 00 00 85 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (346067) TIMESTAMP: Unix: 1706172904
+I (346077) findmy_modem: advertising started
+I (348587) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 86 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (348597) TIMESTAMP: Unix: 1706172906
+I (348597) findmy_modem: advertising started
+I (351107) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 87 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (351117) TIMESTAMP: Unix: 1706172909
+I (351117) findmy_modem: advertising started
+I (353627) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 88 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (353637) TIMESTAMP: Unix: 1706172911
+I (353637) findmy_modem: advertising started
+I (356177) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 89 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (356177) TIMESTAMP: Unix: 1706172914
+I (356187) findmy_modem: advertising started
+I (358717) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 8a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (358717) TIMESTAMP: Unix: 1706172916
+I (358727) findmy_modem: advertising started
+I (361237) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 8b 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (361247) TIMESTAMP: Unix: 1706172919
+I (361247) findmy_modem: advertising started
+I (363757) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 8c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (363767) TIMESTAMP: Unix: 1706172921
+I (363767) findmy_modem: advertising started
+I (366277) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 8d 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (366287) TIMESTAMP: Unix: 1706172924
+I (366287) findmy_modem: advertising started
+I (368827) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 8e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (368827) TIMESTAMP: Unix: 1706172927
+I (368837) findmy_modem: advertising started
+I (371367) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 8f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (371367) TIMESTAMP: Unix: 1706172929
+I (371377) findmy_modem: advertising started
+I (373887) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 90 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (373897) TIMESTAMP: Unix: 1706172932
+I (373897) findmy_modem: advertising started
+I (376477) findmy_modem:   pub key to use (4. try): ba be 81 00 81 13 00 03 00 00 00 91 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (376477) TIMESTAMP: Unix: 1706172934
+I (376487) findmy_modem: advertising started
+I (379037) findmy_modem:   pub key to use (3. try): ba be 81 00 81 13 00 02 00 00 00 92 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (379037) TIMESTAMP: Unix: 1706172937
+I (379047) findmy_modem: advertising started
+I (381617) findmy_modem:   pub key to use (4. try): ba be 81 00 81 13 00 03 00 00 00 93 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (381617) TIMESTAMP: Unix: 1706172939
+I (381627) findmy_modem: advertising started
+I (384137) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 94 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (384147) TIMESTAMP: Unix: 1706172942
+I (384147) findmy_modem: advertising started
+I (386707) findmy_modem:   pub key to use (3. try): ba be 81 00 81 13 00 02 00 00 00 95 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (386707) TIMESTAMP: Unix: 1706172944
+I (386717) findmy_modem: advertising started
+I (389227) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 96 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (389237) TIMESTAMP: Unix: 1706172947
+I (389237) findmy_modem: advertising started
+I (391747) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 97 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (391757) TIMESTAMP: Unix: 1706172949
+I (391757) findmy_modem: advertising started
+I (394277) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 98 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (394287) TIMESTAMP: Unix: 1706172952
+I (394287) findmy_modem: advertising started
+I (396867) findmy_modem:   pub key to use (4. try): ba be 81 00 81 13 00 03 00 00 00 99 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (396867) TIMESTAMP: Unix: 1706172955
+I (396877) findmy_modem: advertising started
+I (399427) findmy_modem:   pub key to use (3. try): ba be 81 00 81 13 00 02 00 00 00 9a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (399427) TIMESTAMP: Unix: 1706172957
+I (399437) findmy_modem: advertising started
+I (401947) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 9b 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (401957) TIMESTAMP: Unix: 1706172960
+I (401957) findmy_modem: advertising started
+I (404467) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 9c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (404477) TIMESTAMP: Unix: 1706172962
+I (404477) findmy_modem: advertising started
+I (406997) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 9d 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (407007) TIMESTAMP: Unix: 1706172965
+I (407007) findmy_modem: advertising started
+I (409517) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 9e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (409527) TIMESTAMP: Unix: 1706172967
+I (409527) findmy_modem: advertising started
+I (412037) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 9f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (412047) TIMESTAMP: Unix: 1706172970
+I (412047) findmy_modem: advertising started
+I (414577) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 a0 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (414577) TIMESTAMP: Unix: 1706172972
+I (414587) findmy_modem: advertising started
+I (417117) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 a1 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (417117) TIMESTAMP: Unix: 1706172975
+I (417127) findmy_modem: advertising started
+I (419637) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 a2 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (419647) TIMESTAMP: Unix: 1706172977
+I (419647) findmy_modem: advertising started
+I (422177) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 a3 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (422177) TIMESTAMP: Unix: 1706172980
+I (422187) findmy_modem: advertising started
+I (424717) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 a4 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (424717) TIMESTAMP: Unix: 1706172982
+I (424727) findmy_modem: advertising started
+I (427237) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 a5 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (427247) TIMESTAMP: Unix: 1706172985
+I (427247) findmy_modem: advertising started
+I (429787) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 a6 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (429787) TIMESTAMP: Unix: 1706172988
+I (429797) findmy_modem: advertising started
+I (432307) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 a7 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (432317) TIMESTAMP: Unix: 1706172990
+I (432317) findmy_modem: advertising started
+I (434867) findmy_modem:   pub key to use (3. try): ba be 81 00 81 13 00 02 00 00 00 a8 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (434867) TIMESTAMP: Unix: 1706172993
+I (434877) findmy_modem: advertising started
+I (437427) findmy_modem:   pub key to use (3. try): ba be 81 00 81 13 00 02 00 00 00 a9 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (437427) TIMESTAMP: Unix: 1706172995
+I (437437) findmy_modem: advertising started
+I (439967) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 aa 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (439967) TIMESTAMP: Unix: 1706172998
+I (439977) findmy_modem: advertising started
+I (442507) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 ab 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (442507) TIMESTAMP: Unix: 1706173000
+I (442517) findmy_modem: advertising started
+I (445107) findmy_modem:   pub key to use (5. try): ba be 81 00 81 13 00 04 00 00 00 ac 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (445107) TIMESTAMP: Unix: 1706173003
+I (445117) findmy_modem: advertising started
+I (447627) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 ad 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (447637) TIMESTAMP: Unix: 1706173005
+I (447637) findmy_modem: advertising started
+I (450167) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 ae 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (450167) TIMESTAMP: Unix: 1706173008
+I (450177) findmy_modem: advertising started
+I (452687) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 af 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (452697) TIMESTAMP: Unix: 1706173010
+I (452697) findmy_modem: advertising started
+I (455207) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 b0 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (455217) TIMESTAMP: Unix: 1706173013
+I (455217) findmy_modem: advertising started
+I (457797) findmy_modem:   pub key to use (4. try): ba be 81 00 81 13 00 03 00 00 00 b1 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (457797) TIMESTAMP: Unix: 1706173016
+I (457807) findmy_modem: advertising started
+I (460407) findmy_modem:   pub key to use (6. try): ba be 81 00 81 13 00 05 00 00 00 b2 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (460417) TIMESTAMP: Unix: 1706173018
+I (460417) findmy_modem: advertising started
+I (462957) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 b3 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (462957) TIMESTAMP: Unix: 1706173021
+I (462967) findmy_modem: advertising started
+I (465497) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 b4 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (465497) TIMESTAMP: Unix: 1706173023
+I (465507) findmy_modem: advertising started
+I (468037) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 b5 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (468037) TIMESTAMP: Unix: 1706173026
+I (468047) findmy_modem: advertising started
+I (470597) findmy_modem:   pub key to use (3. try): ba be 81 00 81 13 00 02 00 00 00 b6 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (470597) TIMESTAMP: Unix: 1706173028
+I (470607) findmy_modem: advertising started
+I (473137) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 b7 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (473137) TIMESTAMP: Unix: 1706173031
+I (473147) findmy_modem: advertising started
+I (475657) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 b8 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (475667) TIMESTAMP: Unix: 1706173033
+I (475667) findmy_modem: advertising started
+I (478177) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 b9 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (478187) TIMESTAMP: Unix: 1706173036
+I (478187) findmy_modem: advertising started
+I (480697) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 ba 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (480707) TIMESTAMP: Unix: 1706173038
+I (480707) findmy_modem: advertising started
+I (483247) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 bb 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (483247) TIMESTAMP: Unix: 1706173041
+I (483257) findmy_modem: advertising started
+I (485767) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 bc 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (485777) TIMESTAMP: Unix: 1706173044
+I (485777) findmy_modem: advertising started
+I (488327) findmy_modem:   pub key to use (3. try): ba be 81 00 81 13 00 02 00 00 00 bd 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (488327) TIMESTAMP: Unix: 1706173046
+I (488337) findmy_modem: advertising started
+I (490847) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 be 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (490857) TIMESTAMP: Unix: 1706173049
+I (490857) findmy_modem: advertising started
+I (493397) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 bf 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (493397) TIMESTAMP: Unix: 1706173051
+I (493407) findmy_modem: advertising started
+I (495937) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 c0 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (495937) TIMESTAMP: Unix: 1706173054
+I (495947) findmy_modem: advertising started
+I (498477) findmy_modem:   pub key to use (2. try): ba be 81 00 81 13 00 01 00 00 00 c1 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (498477) TIMESTAMP: Unix: 1706173056
+I (498487) findmy_modem: advertising started
+I (501057) findmy_modem:   pub key to use (4. try): ba be 81 00 81 13 00 03 00 00 00 c2 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (501057) TIMESTAMP: Unix: 1706173059
+I (501067) findmy_modem: advertising started
+I (503657) findmy_modem:   pub key to use (5. try): ba be 81 00 81 13 00 04 00 00 00 c3 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (503657) TIMESTAMP: Unix: 1706173061
+I (503667) findmy_modem: advertising started
+I (506177) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 c4 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (506187) TIMESTAMP: Unix: 1706173064
+I (506187) findmy_modem: advertising started
+I (508697) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 c5 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (508707) TIMESTAMP: Unix: 1706173066
+I (508707) findmy_modem: advertising started
+I (511277) findmy_modem:   pub key to use (4. try): ba be 81 00 81 13 00 03 00 00 00 c6 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (511277) TIMESTAMP: Unix: 1706173069
+I (511287) findmy_modem: advertising started
+I (513797) findmy_modem:   pub key to use (1. try): ba be 81 00 81 13 00 00 00 00 00 c7 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (513807) TIMESTAMP: Unix: 1706173072
+I (513807) findmy_modem: advertising started
+I (516317) TIMESTAMP: Unix: 1706173074
+I (516317) wifi:state: run -> init (0)
+I (516317) wifi:pm stop, total sleep time: 389779335 us / 512123684 us
+
+I (516317) wifi:<ba-del>idx:0, tid:0
+I (516317) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (516327) WIFI: retry to connect to the AP
+I (516327) WIFI: connect to the AP fail
+I (516337) wifi:flush txq
+I (516337) wifi:stop sw txq
+I (516337) wifi:lmac stop hw txq
+I (516347) main_task: Returned from app_main()
