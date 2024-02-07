@@ -306,38 +306,34 @@ void copy_2b_big_endian(uint8_t *dst, uint8_t *src) {
     dst[0] = src[1]; dst[1] = src[0];
 }
 
-// Only works up to 8 bits per advert
+// Only work from 1 byte to 16 bytes, in intervals of 1 byte
 // [2 byte magic] [4 byte modem_id] [2 byte tweak] [4 byte message id] [16 byte payload]
-void set_addr_and_payload_for_byte(uint32_t index, uint32_t msg_id, uint32_t val, uint32_t chunk_len) {
+void set_addr_and_payload_for_byte(uint32_t index, uint32_t msg_id, uint8_t* val, uint32_t chunk_len_bytes, uint32_t bytes_to_copy) {
     uint16_t valid_key_counter = 0;
     static uint8_t public_key[28] = {0};
+
     public_key[0] = 0xBA; // magic value
     public_key[1] = 0xBE;
+
     copy_4b_big_endian(&public_key[2], &modem_id);
     public_key[6] = 0x00;
     public_key[7] = 0x00;
+
     copy_4b_big_endian(&public_key[8], &msg_id);
+
     if (index) {
         memcpy(&public_key[12], &curr_addr, 16);
     } else {
         memcpy(&public_key[12], &start_addr, 16);
     }
 
-    uint32_t bit_index = index * chunk_len;
-    uint32_t byte_index = bit_index/8;
-    
-    uint32_t start_byte = byte_index % 16;
-    uint32_t next_byte = (start_byte + 1) % 16;
-    
-    uint32_t start_offset = bit_index % 8;
-    
-    if ((8- start_offset) >= chunk_len) {
-        // Fill only first bytes
-        public_key[27 - start_byte] ^= val << start_offset;
-    } else {
-        // Fill both bytes
-        public_key[27 - start_byte] ^= val << start_offset;
-        public_key[27 - next_byte] ^= val >> (8 - start_offset);
+    uint32_t byte_index = (index * chunk_len_bytes) % 16;
+
+    // Copy bytes from val to public_key array, wrapping around if necessary
+    for (int i = 0; i < bytes_to_copy; i++) {
+        printf("val: %2x\n", val[i]);
+        printf("location: %d\n", 27 - ((byte_index + i) % 16));
+        public_key[27 - ((byte_index + i) % 16)] ^= val[i];
     }
 
     memcpy(&curr_addr, &public_key[12], 16);
@@ -349,8 +345,8 @@ void set_addr_and_payload_for_byte(uint32_t index, uint32_t msg_id, uint32_t val
 
     ESP_LOGI(LOG_TAG, "  pub key to use (%d. try): %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x", valid_key_counter, public_key[0], public_key[1], public_key[2], public_key[3], public_key[4], public_key[5], public_key[6], public_key[7], public_key[8], public_key[9], public_key[10], public_key[11], public_key[12], public_key[13],public_key[14], public_key[15],public_key[16],public_key[17],public_key[18], public_key[19], public_key[20], public_key[21], public_key[22], public_key[23], public_key[24], public_key[25], public_key[26],  public_key[27]);
 
-    set_addr_from_key(rnd_addr, public_key);
-    set_payload_from_key(adv_data, public_key);
+    // set_addr_from_key(rnd_addr, public_key);
+    // set_payload_from_key(adv_data, public_key);
 }
 
 
@@ -410,41 +406,24 @@ void log_current_unix_time() {
     ESP_LOGI("TIMESTAMP", "Unix: %ld", (long) current_time);
 }
 
-void send_data_once_blocking(uint8_t* data_to_send, uint32_t len, uint32_t chunk_len, uint32_t msg_id) {
-    uint32_t num_chunks = len * 8 / chunk_len;
-    if (len * 8 % chunk_len) {
+void send_data_once_blocking(uint8_t* data_to_send, uint32_t len, uint32_t chunk_len_bytes, uint32_t msg_id) {
+    uint32_t num_chunks = len / chunk_len_bytes;
+    if (len % chunk_len_bytes) {
         num_chunks++;
     }
     
     for (uint32_t chunk_i = 0; chunk_i < num_chunks; chunk_i++) {       
-        uint32_t chunk_value = 0;
-        
-        uint32_t start_bit = chunk_i * chunk_len;
-        uint32_t end_bit = start_bit + chunk_len;
-        
-        // Calculate the byte and bit positions for start
-        uint32_t start_byte = start_bit / 8;
-        uint32_t start_bit_offset = start_bit % 8;
-    
-        // Number of bits to extract in the first byte
-        uint32_t bits_in_first_byte = (8 - start_bit_offset) < chunk_len ? (8 - start_bit_offset) : chunk_len;
-    
-        // Extract bits from the start byte
-        chunk_value = (data_to_send[start_byte] >> start_bit_offset) & ((1U << bits_in_first_byte) - 1);
-    
-        // Remaining bits to extract
-        uint32_t remaining_bits = chunk_len - bits_in_first_byte;
-    
-        // Extract bits from the subsequent bytes
-        while (remaining_bits > 0) {
-            start_byte++;
-            uint32_t bits_to_extract = (remaining_bits < 8) ? remaining_bits : 8;
-            chunk_value |= ((uint32_t)data_to_send[start_byte] & ((1U << bits_to_extract) - 1)) << bits_in_first_byte;
-            bits_in_first_byte += bits_to_extract;
-            remaining_bits -= bits_to_extract;
-        }
+        uint8_t chunk_value[chunk_len_bytes];
 
-        set_addr_and_payload_for_byte(chunk_i, msg_id, chunk_value, chunk_len);
+        // Calculate starting index of data for this chunk
+        uint32_t start_index = chunk_i * chunk_len_bytes;
+        
+        // Calculate the number of bytes to copy for this chunk
+        uint32_t bytes_to_copy = (len - start_index < chunk_len_bytes) ? (len - start_index) : chunk_len_bytes;
+        
+        memcpy(chunk_value, &data_to_send[start_index], bytes_to_copy);
+
+        set_addr_and_payload_for_byte(chunk_i, msg_id, chunk_value, chunk_len_bytes, bytes_to_copy);
         log_current_unix_time();
         ESP_LOGD(LOG_TAG, "    resetting. Will now use device address: %02x %02x %02x %02x %02x %02x", rnd_addr[0], rnd_addr[1], rnd_addr[2], rnd_addr[3], rnd_addr[4], rnd_addr[5]);
         reset_advertising();
@@ -455,7 +434,7 @@ void send_data_once_blocking(uint8_t* data_to_send, uint32_t len, uint32_t chunk
 
 void app_main(void)
 {
-    const int NUM_MESSAGES = 200;
+    const int NUM_MESSAGES = 1;
     const int REPEAT_MESSAGE_TIMES = 1;
     const int MESSAGE_DELAY = 100;
 
@@ -488,7 +467,7 @@ void app_main(void)
     // Send Message
     uint32_t current_message_id = 0;
 
-    static uint8_t data_to_send[] = "A";
+    static uint8_t data_to_send[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     printf("Bytes: ");
     for (int i = 0; i < sizeof(data_to_send); i++) {
@@ -500,7 +479,7 @@ void app_main(void)
         // generateAlphaSequence(i, data_to_send);
         current_message_id++;
         for (int j = 0; j < REPEAT_MESSAGE_TIMES; j++) {
-            send_data_once_blocking(data_to_send, sizeof(data_to_send) - 1, 8, current_message_id);
+            send_data_once_blocking(data_to_send, sizeof(data_to_send) - 1, 3, current_message_id);
             vTaskDelay(MESSAGE_DELAY);
         }
         vTaskDelay(MESSAGE_DELAY);
