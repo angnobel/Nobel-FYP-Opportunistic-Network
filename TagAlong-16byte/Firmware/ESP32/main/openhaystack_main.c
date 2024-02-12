@@ -72,6 +72,7 @@
 #define ESP_WIFI_SCAN_AUTH_MODE_THRESHOLD WIFI_AUTH_WAPI_PSK
 #endif
 
+//WIFI
 static EventGroupHandle_t s_wifi_event_group;
 #define WIFI_CONNECTED_BIT BIT0
 #define WIFI_FAIL_BIT      BIT1
@@ -331,8 +332,6 @@ void set_addr_and_payload_for_byte(uint32_t index, uint32_t msg_id, uint8_t* val
 
     // Copy bytes from val to public_key array, wrapping around if necessary
     for (int i = 0; i < bytes_to_copy; i++) {
-        printf("val: %2x\n", val[i]);
-        printf("location: %d\n", 27 - ((byte_index + i) % 16));
         public_key[27 - ((byte_index + i) % 16)] ^= val[i];
     }
 
@@ -345,8 +344,8 @@ void set_addr_and_payload_for_byte(uint32_t index, uint32_t msg_id, uint8_t* val
 
     ESP_LOGI(LOG_TAG, "  pub key to use (%d. try): %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x", valid_key_counter, public_key[0], public_key[1], public_key[2], public_key[3], public_key[4], public_key[5], public_key[6], public_key[7], public_key[8], public_key[9], public_key[10], public_key[11], public_key[12], public_key[13],public_key[14], public_key[15],public_key[16],public_key[17],public_key[18], public_key[19], public_key[20], public_key[21], public_key[22], public_key[23], public_key[24], public_key[25], public_key[26],  public_key[27]);
 
-    // set_addr_from_key(rnd_addr, public_key);
-    // set_payload_from_key(adv_data, public_key);
+    set_addr_from_key(rnd_addr, public_key);
+    set_payload_from_key(adv_data, public_key);
 }
 
 
@@ -435,7 +434,7 @@ void send_data_once_blocking(uint8_t* data_to_send, uint32_t len, uint32_t chunk
 void app_main(void)
 {
     const int NUM_MESSAGES = 1;
-    const int REPEAT_MESSAGE_TIMES = 1;
+    const int REPEAT_MESSAGE_TIMES = 10;
     const int MESSAGE_DELAY = 100;
 
 
@@ -467,7 +466,7 @@ void app_main(void)
     // Send Message
     uint32_t current_message_id = 0;
 
-    static uint8_t data_to_send[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    static uint8_t data_to_send[] = "AAAAAAAAAAAAAAAC";
 
     printf("Bytes: ");
     for (int i = 0; i < sizeof(data_to_send); i++) {
@@ -479,7 +478,11 @@ void app_main(void)
         // generateAlphaSequence(i, data_to_send);
         current_message_id++;
         for (int j = 0; j < REPEAT_MESSAGE_TIMES; j++) {
-            send_data_once_blocking(data_to_send, sizeof(data_to_send) - 1, 3, current_message_id);
+            uint64_t before_time = esp_timer_get_time();
+            send_data_once_blocking(data_to_send, sizeof(data_to_send) - 1, 16, current_message_id);
+            uint64_t after_time = esp_timer_get_time();
+
+            ESP_LOGE(LOG_TAG, "Time to send message: %llu", after_time - before_time);
             vTaskDelay(MESSAGE_DELAY);
         }
         vTaskDelay(MESSAGE_DELAY);
