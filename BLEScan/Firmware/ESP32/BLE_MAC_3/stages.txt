@@ -1,0 +1,6 @@
+off: 0 - 20
+Lockscreen: 33 - 53 
+home-wifi: 60 - 100
+home-no-wifi: 111 - 151
+sleep: 162 - 179
+Shutdown: 189 - end

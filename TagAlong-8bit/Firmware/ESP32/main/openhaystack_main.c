@@ -169,7 +169,7 @@ void wifi_init_sta(void)
 
 
 // Set custom modem id before flashing:
-static const uint32_t modem_id = 0x82008006;
+static const uint32_t modem_id = 0x80008000;
 
 static const char* LOG_TAG = "findmy_modem";
 
@@ -448,7 +448,7 @@ void send_data_once_blocking(uint8_t* data_to_send, uint32_t len, uint32_t chunk
         log_current_unix_time();
         ESP_LOGD(LOG_TAG, "    resetting. Will now use device address: %02x %02x %02x %02x %02x %02x", rnd_addr[0], rnd_addr[1], rnd_addr[2], rnd_addr[3], rnd_addr[4], rnd_addr[5]);
         reset_advertising();
-        vTaskDelay(50);    
+        vTaskDelay(100);    
     }
     esp_ble_gap_stop_advertising();
 }
@@ -456,8 +456,8 @@ void send_data_once_blocking(uint8_t* data_to_send, uint32_t len, uint32_t chunk
 void app_main(void)
 {
     const int NUM_MESSAGES = 1;
-    const int REPEAT_MESSAGE_TIMES = 4;
-    const int MESSAGE_DELAY = 0;
+    const int REPEAT_MESSAGE_TIMES = 100;
+    const int MESSAGE_DELAY = 50;
 
 
     // Init Flash and BT
@@ -470,23 +470,23 @@ void app_main(void)
     esp_bluedroid_enable();
 
     // Init WIFI
-    ESP_LOGI(WIFI_TAG, "ESP_WIFI_MODE_STA");
-    wifi_init_sta();
+    // ESP_LOGI(WIFI_TAG, "ESP_WIFI_MODE_STA");
+    // wifi_init_sta();
 
-    esp_err_t status;
-    //register the scan callback function to the gap module
-    if ((status = esp_ble_gap_register_callback(esp_gap_cb)) != ESP_OK) {
-        ESP_LOGE(LOG_TAG, "gap register error: %s", esp_err_to_name(status));
-        return;
-    }
+    // esp_err_t status;
+    // //register the scan callback function to the gap module
+    // if ((status = esp_ble_gap_register_callback(esp_gap_cb)) != ESP_OK) {
+    //     ESP_LOGE(LOG_TAG, "gap register error: %s", esp_err_to_name(status));
+    //     return;
+    // }
 
-    // Sync time
-    initialize_sntp();
-    wait_for_sntp_sync();
+    // // Sync time
+    // initialize_sntp();
+    // wait_for_sntp_sync();
 
     
     // Send Message
-    uint32_t current_message_id = 1;
+    uint32_t current_message_id = 0;
 
     static uint8_t data_to_send[] = "A";
 

@@ -1,0 +1,48 @@
+Scan stopped
+Apple BLE packets found: 0
+Scan parameters set, start scanning for 10 seconds...
+Scan stopped
+Apple BLE packets found: 0
+Scan parameters set, start scanning for 10 seconds...
+Scan stopped
+Apple BLE packets found: 0
+Scan parameters set, start scanning for 10 seconds...
+1E FF 4C 00 12 19 33 98 4A 41 83 E3 0D 98 F5 A3 9F 9A 49 0B 11 22 D9 71 A3 3E BF 1F A8 01 
+1E FF 4C 00 12 19 33 98 4A 41 83 E3 0D 98 F5 A3 9F 9A 49 0B 11 22 D9 71 A3 3E BF 1F A8 01 
+1E FF 4C 00 12 19 33 98 4A 41 83 E3 0D 98 F5 A3 9F 9A 49 0B 11 22 D9 71 A3 3E BF 1F A8 01 
+1E FF 4C 00 12 19 33 98 4A 41 83 E3 0D 98 F5 A3 9F 9A 49 0B 11 22 D9 71 A3 3E BF 1F A8 01 
+1E FF 4C 00 12 19 33 98 4A 41 83 E3 0D 98 F5 A3 9F 9A 49 0B 11 22 D9 71 A3 3E BF 1F A8 01 
+1E FF 4C 00 12 19 33 98 4A 41 83 E3 0D 98 F5 A3 9F 9A 49 0B 11 22 D9 71 A3 3E BF 1F A8 01 
+Scan stopped
+Apple BLE packets found: 6
+Scan parameters set, start scanning for 10 seconds...
+Scan stopped
+Apple BLE packets found: 0
+Scan parameters set, start scanning for 10 seconds...
+Scan stopped
+Apple BLE packets found: 0
+Scan parameters set, start scanning for 10 seconds...
+0A FF 4C 00 10 05 06 1C 3B 20 
+Scan stopped
+Apple BLE packets found: 1
+Scan parameters set, start scanning for 10 seconds...
+Scan stopped
+Apple BLE packets found: 0
+Scan parameters set, start scanning for 10 seconds...
+0C FF 4C 00 10 07 71 1F A6 73 4F 91 
+Scan stopped
+Apple BLE packets found: 1
+Scan parameters set, start scanning for 10 seconds...
+0C FF 4C 00 10 07 71 1F A6 73 4F 91 
+Scan stopped
+Apple BLE packets found: 1
+Scan parameters set, start scanning for 10 seconds...
+Scan stopped
+Apple BLE packets found: 0
+Scan parameters set, start scanning for 10 seconds...
+Scan stopped
+Apple BLE packets found: 0
+Scan parameters set, start scanning for 10 seconds...
+Scan stopped
+Apple BLE packets found: 0
+Scan parameters set, start scanning for 10 seconds...

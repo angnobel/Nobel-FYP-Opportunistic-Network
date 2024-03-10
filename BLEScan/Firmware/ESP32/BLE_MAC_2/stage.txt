@@ -1,0 +1,13 @@
+start: 4 - 10
+homescreen WIFI: 26 - 37
+home screen no wifi: 38 - 49
+lock screen: 52 - 68
+web browsing: 71 - 92
+mail: 96 - 107
+Mail Idle: 109 - 123
+Notes: 126 - 139
+Note Idle: 142 - 155
+Idle to Screen Save: 160 - 165
+screen saver to screen off: 166 - 172 
+screen off:  174 - 184
+All off: 187 - 197

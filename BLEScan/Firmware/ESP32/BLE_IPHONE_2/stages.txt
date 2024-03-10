@@ -1,0 +1,11 @@
+off: 0 - 20
+On lockscreen 5G:30 -50
+Home wifi: 59 - 92
+Home 5G: 96 - 125
+Home no connections: 129 - 162 
+Home low power mode WIFI: 180 - 205
+Home low power 5G: 209 - 232 
+Lock low power mode WIFI: 236 - 270
+Screen off low power mode WIFI: 273 - 283
+Off: 295 - 305
+62%

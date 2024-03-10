@@ -1,0 +1,108 @@
+MAC Address: 49:8F:E9:16:CF:FB: | Manufacturer data: 0B FF 4C 00 10 06 0C 1D 40 87 7E 38 
+MAC Address: 43:62:01:5B:FA:B0: | Manufacturer data: 0B FF 4C 00 10 06 03 19 58 82 CF 38 
+MAC Address: 7B:2C:C4:11:7C:E7: | Manufacturer data: 0A FF 4C 00 10 05 03 1C 9A CE 00 
+MAC Address: 51:AB:ED:90:6B:86: | Manufacturer data: 0A FF 4C 00 10 05 26 98 DC 65 9C 
+MAC Address: 4C:E7:F5:44:F0:2F: | Manufacturer data: 0B FF 4C 00 10 06 4B 1D 52 38 FB 68 
+MAC Address: 68:9C:28:52:31:73: | Manufacturer data: 0B FF 4C 00 10 06 4B 1D 52 38 FB 68
+MAC Address: 52:AD:17:2B:13:0B: | Manufacturer data: 0C FF 4C 00 10 07 7F 1F DE 03 59 FE 58 
+MAC Address: 55:4F:2E:22:6D:9F: | Manufacturer data: 0B FF 4C 00 10 06 0B 19 55 AD D9 68
+MAC Address: 65:17:F2:1F:C5:57: | Manufacturer data: 0B FF 4C 00 10 06 17 1D 25 35 D3 38 
+MAC Address: 72:55:03:D3:32:65: | Manufacturer data: 0B FF 4C 00 10 06 33 19 62 F6 0F 18 
+MAC Address: 57:7A:73:F2:06:1D: | Manufacturer data: 0A FF 4C 00 10 05 25 18 5E C0 62 
+MAC Address: 78:7A:A1:5C:44:2F: | Manufacturer data: 0C FF 4C 00 10 07 6A 1F AE 21 27 D3 C8
+MAC Address: 68:0B:43:17:AD:0D: | Manufacturer data: 0B FF 4C 00 10 06 47 1D F1 23 C8 28 
+MAC Address: 6C:91:B9:18:31:EF: | Manufacturer data: 0B FF 4C 00 10 06 03 1D 28 5D 7F 28
+MAC Address: 69:23:3D:04:04:ED: | Manufacturer data: 0C FF 4C 00 10 07 7D 1F EE 5F 9E DF 18 
+MAC Address: 7B:2C:C4:11:7C:E7: | Manufacturer data: 0A FF 4C 00 10 05 03 1C 9A CE 00 
+MAC Address: 45:C0:7A:9B:F2:44: | Manufacturer data: 0B FF 4C 00 10 06 1B 1D 8D 4A 64 48
+MAC Address: 5E:D6:FA:C2:C5:4E: | Manufacturer data: 0A FF 4C 00 10 05 3B 1C 5D 5B 16 
+MAC Address: 79:01:70:74:71:E1: | Manufacturer data: 07 FF 4C 00 10 02 03 00
+MAC Address: 7D:2D:42:19:E1:9B: | Manufacturer data: 0C FF 4C 00 10 07 33 1F 48 B0 1F 60 48 
+MAC Address: 71:D3:C5:1F:10:BF: | Manufacturer data: 0B FF 4C 00 10 06 4D 1D 8C DD 57 38
+MAC Address: 55:06:4A:35:43:59: | Manufacturer data: 0A FF 4C 00 10 05 4D 18 E7 79 C1 
+MAC Address: 66:21:94:CA:BA:96: | Manufacturer data: 0A FF 4C 00 10 05 2D 18 F5 E7 2C
+MAC Address: 4C:E7:F5:44:F0:2F: | Manufacturer data: 0B FF 4C 00 10 06 4B 1D 52 38 FB 68 
+MAC Address: 55:4F:2E:22:6D:9F: | Manufacturer data: 0B FF 4C 00 10 06 0B 19 55 AD D9 68 
+MAC Address: 46:4E:2E:E9:D1:DE: | Manufacturer data: 0A FF 4C 00 10 05 27 98 A9 A9 E9
+MAC Address: 5B:C6:4C:89:68:D8: | Manufacturer data: 0C FF 4C 00 10 07 6D 1F 1A BF C6 05 58 
+MAC Address: 72:55:03:D3:32:65: | Manufacturer data: 0B FF 4C 00 10 06 33 19 62 F6 0F 18
+MAC Address: 68:0B:43:17:AD:0D: | Manufacturer data: 0B FF 4C 00 10 06 47 1D F1 23 C8 28 
+MAC Address: 69:23:3D:04:04:ED: | Manufacturer data: 0C FF 4C 00 10 07 7D 1F EE 5F 9E DF 18
+MAC Address: 49:8F:E9:16:CF:FB: | Manufacturer data: 0B FF 4C 00 10 06 0C 1D 40 87 7E 38 
+MAC Address: 6C:91:B9:18:31:EF: | Manufacturer data: 0B FF 4C 00 10 06 03 1D 28 5D 7F 28
+MAC Address: 66:21:94:CA:BA:96: | Manufacturer data: 0A FF 4C 00 10 05 2D 18 F5 E7 2C 
+MAC Address: 75:18:B1:7C:96:39: | Manufacturer data: 0A FF 4C 00 10 05 7B 1C 19 B3 86
+MAC Address: 68:74:54:FA:05:31: | Manufacturer data: 07 FF 4C 00 10 02 03 00
+MAC Address: 7B:2C:C4:11:7C:E7: | Manufacturer data: 0A FF 4C 00 10 05 03 1C 9A CE 00 
+MAC Address: 79:01:70:74:71:E1: | Manufacturer data: 07 FF 4C 00 10 02 03 00
+MAC Address: 51:AB:ED:90:6B:86: | Manufacturer data: 0A FF 4C 00 10 05 26 98 DC 65 9C 
+MAC Address: 55:4F:2E:22:6D:9F: | Manufacturer data: 0B FF 4C 00 10 06 0B 19 55 AD D9 68 
+MAC Address: 4C:E7:F5:44:F0:2F: | Manufacturer data: 0B FF 4C 00 10 06 4B 1D 52 38 FB 68
+MAC Address: 65:17:F2:1F:C5:57: | Manufacturer data: 0B FF 4C 00 10 06 17 1D 25 35 D3 38
+MAC Address: 55:06:4A:35:43:59: | Manufacturer data: 0A FF 4C 00 10 05 4D 18 E7 79 C1 
+MAC Address: 72:55:03:D3:32:65: | Manufacturer data: 0B FF 4C 00 10 06 33 19 62 F6 0F 18 
+MAC Address: 57:7A:73:F2:06:1D: | Manufacturer data: 0A FF 4C 00 10 05 25 18 5E C0 62 
+MAC Address: 69:23:3D:04:04:ED: | Manufacturer data: 0C FF 4C 00 10 07 7D 1F EE 5F 9E DF 18
+MAC Address: 48:D2:70:39:01:68: | Manufacturer data: 0B FF 4C 00 10 06 2A 1D 2B 1C 7C 28 
+MAC Address: 55:D7:A5:BC:21:DE: | Manufacturer data: 0B FF 4C 00 10 06 03 1D 28 5D 7F 28
+MAC Address: 72:4A:4A:28:73:AC: | Manufacturer data: 0A FF 4C 00 10 05 20 98 B8 6D FF
+MAC Address: 47:F7:C7:3C:69:D8: | Manufacturer data: 0B FF 4C 00 10 06 00 1D 3B 8E 72 68 
+MAC Address: 7B:2C:C4:11:7C:E7: | Manufacturer data: 0A FF 4C 00 10 05 03 1C 9A CE 00 
+MAC Address: 5B:36:B1:AD:D4:5A: | Manufacturer data: 0B FF 4C 00 10 06 49 1D 17 2F B8 78 
+MAC Address: 65:F3:E6:41:C8:26: | Manufacturer data: 0A FF 4C 00 10 05 1D 18 A1 9B 77 
+MAC Address: 5E:3D:F2:72:7F:CD: | Manufacturer data: 0B FF 4C 00 10 06 07 19 B8 0D 08 68 
+MAC Address: 54:98:49:B5:4F:90: | Manufacturer data: 0B FF 4C 00 10 06 42 1D F3 4F F3 08
+MAC Address: 4C:E7:F5:44:F0:2F: | Manufacturer data: 0B FF 4C 00 10 06 4B 1D 52 38 FB 68 
+MAC Address: 68:9C:28:52:31:73: | Manufacturer data: 0B FF 4C 00 10 06 4B 1D 52 38 FB 68
+MAC Address: 72:55:03:D3:32:65: | Manufacturer data: 0B FF 4C 00 10 06 33 19 62 F6 0F 18 
+MAC Address: 68:0B:43:17:AD:0D: | Manufacturer data: 0B FF 4C 00 10 06 47 1D F1 23 C8 28
+MAC Address: 48:D2:70:39:01:68: | Manufacturer data: 0B FF 4C 00 10 06 2A 1D 2B 1C 7C 28
+MAC Address: 69:23:3D:04:04:ED: | Manufacturer data: 0C FF 4C 00 10 07 7D 1F EE 5F 9E DF 18 
+MAC Address: 49:8F:E9:16:CF:FB: | Manufacturer data: 0B FF 4C 00 10 06 0C 1D 40 87 7E 38 
+MAC Address: 4F:B8:30:C9:C7:0C: | Manufacturer data: 0A FF 4C 00 10 05 26 98 68 D5 76 
+MAC Address: 55:06:4A:35:43:59: | Manufacturer data: 0A FF 4C 00 10 05 4D 18 E7 79 C1
+MAC Address: 61:12:E4:42:3A:8C: | Manufacturer data: 0C FF 4C 00 10 07 7C 1F 5C 76 51 AA B8 
+MAC Address: 65:F3:E6:41:C8:26: | Manufacturer data: 0A FF 4C 00 10 05 1D 18 A1 9B 77 
+MAC Address: 7F:84:B1:02:52:BF: | Manufacturer data: 0A FF 4C 00 10 05 06 98 BA 33 93 
+MAC Address: 47:E1:36:43:F4:DC: | Manufacturer data: 0C FF 4C 00 10 07 71 1F B9 19 98 3E 08 
+MAC Address: 55:4F:2E:22:6D:9F: | Manufacturer data: 0B FF 4C 00 10 06 0B 19 55 AD D9 68
+MAC Address: 52:AD:17:2B:13:0B: | Manufacturer data: 0C FF 4C 00 10 07 7F 1F DE 03 59 FE 58
+MAC Address: 66:21:94:CA:BA:96: | Manufacturer data: 0A FF 4C 00 10 05 2D 18 F5 E7 2C 
+MAC Address: 5E:3D:F2:72:7F:CD: | Manufacturer data: 0B FF 4C 00 10 06 07 19 B8 0D 08 68
+MAC Address: 4C:E7:F5:44:F0:2F: | Manufacturer data: 0B FF 4C 00 10 06 4B 1D 52 38 FB 68 
+MAC Address: 57:7A:73:F2:06:1D: | Manufacturer data: 0A FF 4C 00 10 05 25 18 5E C0 62
+MAC Address: 68:9C:28:52:31:73: | Manufacturer data: 0B FF 4C 00 10 06 4B 1D 52 38 FB 68 
+MAC Address: 4F:B8:30:C9:C7:0C: | Manufacturer data: 0A FF 4C 00 10 05 26 98 68 D5 76
+MAC Address: 61:12:E4:42:3A:8C: | Manufacturer data: 0C FF 4C 00 10 07 7C 1F 5C 76 51 AA B8 
+MAC Address: 68:74:54:FA:05:31: | Manufacturer data: 07 FF 4C 00 10 02 03 00
+MAC Address: 7B:2C:C4:11:7C:E7: | Manufacturer data: 0A FF 4C 00 10 05 03 1C 9A CE 00 
+MAC Address: 45:C0:7A:9B:F2:44: | Manufacturer data: 0B FF 4C 00 10 06 1B 1D 8D 4A 64 48
+MAC Address: 79:01:70:74:71:E1: | Manufacturer data: 07 FF 4C 00 10 02 03 00 
+MAC Address: 55:06:4A:35:43:59: | Manufacturer data: 0A FF 4C 00 10 05 4D 18 E7 79 C1
+MAC Address: 71:D3:C5:1F:10:BF: | Manufacturer data: 0B FF 4C 00 10 06 4D 1D 8C DD 57 38 
+MAC Address: 52:AD:17:2B:13:0B: | Manufacturer data: 0C FF 4C 00 10 07 7F 1F DE 03 59 FE 58 
+MAC Address: 45:C2:EC:0C:07:02: | Manufacturer data: 0C FF 4C 00 10 07 0D 1B 00 16 20 B2 18
+MAC Address: 54:98:49:B5:4F:90: | Manufacturer data: 0B FF 4C 00 10 06 42 1D F3 4F F3 08 
+MAC Address: 57:7A:73:F2:06:1D: | Manufacturer data: 0A FF 4C 00 10 05 25 18 5E C0 62
+MAC Address: 49:8F:E9:16:CF:FB: | Manufacturer data: 0B FF 4C 00 10 06 0C 1D 40 87 7E 38 
+MAC Address: 53:34:0C:74:D2:A4: | Manufacturer data: 0B FF 4C 00 10 06 07 19 B8 0D 08 68
+MAC Address: 69:23:3D:04:04:ED: | Manufacturer data: 0C FF 4C 00 10 07 7D 1F EE 5F 9E DF 18 
+MAC Address: 4C:E7:F5:44:F0:2F: | Manufacturer data: 0B FF 4C 00 10 06 4B 1D 52 38 FB 68
+MAC Address: 68:9C:28:52:31:73: | Manufacturer data: 0B FF 4C 00 10 06 4B 1D 52 38 FB 68
+MAC Address: 43:62:01:5B:FA:B0: | Manufacturer data: 0B FF 4C 00 10 06 03 19 58 82 CF 38 
+MAC Address: 6A:A9:6C:A3:C0:7F: | Manufacturer data: 07 FF 4C 00 10 02 03 00 
+MAC Address: 5B:36:B1:AD:D4:5A: | Manufacturer data: 0B FF 4C 00 10 06 49 1D 17 2F B8 78 
+MAC Address: 55:68:50:94:FA:EF: | Manufacturer data: 0B FF 4C 00 10 06 07 19 59 DB 25 78 
+MAC Address: 42:9C:2B:3E:C7:5C: | Manufacturer data: 0A FF 4C 00 10 05 4D 1C 58 8A BB 
+MAC Address: 45:FA:C9:0F:CC:32: | Manufacturer data: 07 FF 4C 00 10 02 02 00 
+MAC Address: 7C:70:79:A3:89:A4: | Manufacturer data: 0B FF 4C 00 10 06 42 1D F3 4F F3 08 
+MAC Address: 52:AD:17:2B:13:0B: | Manufacturer data: 0C FF 4C 00 10 07 7F 1F DE 03 59 FE 58 
+MAC Address: 55:4F:2E:22:6D:9F: | Manufacturer data: 0B FF 4C 00 10 06 0B 19 55 AD D9 68 
+MAC Address: 72:55:03:D3:32:65: | Manufacturer data: 0B FF 4C 00 10 06 33 19 62 F6 0F 18 
+MAC Address: 66:21:94:CA:BA:96: | Manufacturer data: 0A FF 4C 00 10 05 2D 18 F5 E7 2C
+MAC Address: 57:7A:73:F2:06:1D: | Manufacturer data: 0A FF 4C 00 10 05 25 18 5E C0 62 
+MAC Address: 43:62:01:5B:FA:B0: | Manufacturer data: 0B FF 4C 00 10 06 03 19 58 82 CF 38
+MAC Address: 4F:B8:30:C9:C7:0C: | Manufacturer data: 0A FF 4C 00 10 05 26 98 68 D5 76 
+MAC Address: 7B:2C:C4:11:7C:E7: | Manufacturer data: 0A FF 4C 00 10 05 03 1C 9A CE 00 
+MAC Address: 75:18:B1:7C:96:39: | Manufacturer data: 0A FF 4C 00 10 05 7B 1C 19 B3 86
+MAC Address: 45:C0:7A:9B:F2:44: | Manufacturer data: 0B FF 4C 00 10 06 1B 1D 8D 4A 64 48

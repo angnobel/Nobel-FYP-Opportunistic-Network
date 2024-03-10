@@ -1,0 +1,11 @@
+off: 15 - 21
+Locked: 23 - 33
+Home WIFI: 35 - 47
+Use WIFI: 48 - 60
+Home 4G: 62 - 72
+Locked 4G: 73 - 83
+Low power home: 86 - 98
+Low power lock: 99 - 112
+End: 114 - 119
+
+39% battery

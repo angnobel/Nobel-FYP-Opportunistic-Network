@@ -1,0 +1,493 @@
+MAC Address: 69:12:25:55:A9:91: | Flag data: 02 01 1A  | Manufacturer data: 1B FF 4C 00 0C 0E 00 1A 4B FA D0 84 F6 0B 28 D1 2D D9 34 10 10 06 6C 1D 3D E3 5A 38  | Device type: BLE | Address type: Random
+MAC Address: 42:58:3E:CF:EC:94: | Flag data: 02 01 1A  | Manufacturer data: 0C FF 4C 00 10 07 3D 1F AF F4 3E 8C 38  | Device type: BLE | Address type: Random
+MAC Address: 69:12:25:55:A9:91: | Flag data: 02 01 1A  | Manufacturer data: 1B FF 4C 00 0C 0E 00 1A 4B FA D0 84 F6 0B 28 D1 2D D9 34 10 10 06 6C 1D 3D E3 5A 38  | Device type: BLE | Address type: Random
+MAC Address: 69:12:25:55:A9:91: | Flag data: 02 01 1A  | Manufacturer data: 1B FF 4C 00 0C 0E 00 1A 4B FA D0 84 F6 0B 28 D1 2D D9 34 10 10 06 6C 1D 3D E3 5A 38  | Device type: BLE | Address type: Random
+MAC Address: 69:12:25:55:A9:91: | Flag data: 02 01 1A  | Manufacturer data: 1B FF 4C 00 0C 0E 00 1A 4B FA D0 84 F6 0B 28 D1 2D D9 34 10 10 06 6C 1D 3D E3 5A 38  | Device type: BLE | Address type: Random
+MAC Address: 69:12:25:55:A9:91: | Flag data: 02 01 1A  | Manufacturer data: 1B FF 4C 00 0C 0E 00 1A 4B FA D0 84 F6 0B 28 D1 2D D9 34 10 10 06 6C 1D 3D E3 5A 38  | Device type: BLE | Address type: Random
+Scan stopped
+Apple BLE packets found: 9
+Run Count: 0
+Scan parameters set, start scanning for 5 seconds...
+MAC Address: F6:1F:6F:8B:AF:F8: | No Flag | Manufacturer data: 07 FF 4C 00 12 02 00 03  | Device type: BLE | Address type: Random
+MAC Address: 69:12:25:55:A9:91: | Flag data: 02 01 1A  | Manufacturer data: 1B FF 4C 00 0C 0E 00 1A 4B FA D0 84 F6 0B 28 D1 2D D9 34 10 10 06 6C 1D 3D E3 5A 38  | Device type: BLE | Address type: Random
+MAC Address: 42:58:3E:CF:EC:94: | Flag data: 02 01 1A  | Manufacturer data: 0C FF 4C 00 10 07 3D 1F AF F4 3E 8C 38  | Device type: BLE | Address type: Random
+MAC Address: 69:12:25:55:A9:91: | Flag data: 02 01 1A  | Manufacturer data: 1B FF 4C 00 0C 0E 00 1A 4B FA D0 84 F6 0B 28 D1 2D D9 34 10 10 06 6C 1D 3D E3 5A 38  | Device type: BLE | Address type: Random
+MAC Address: 69:12:25:55:A9:91: | Flag data: 02 01 1A  | Manufacturer data: 1B FF 4C 00 0C 0E 00 1A 4B FA D0 84 F6 0B 28 D1 2D D9 34 10 10 06 6C 1D 3D E3 5A 38  | Device type: BLE | Address type: Random
+MAC Address: 42:58:3E:CF:EC:94: | Flag data: 02 01 1A  | Manufacturer data: 0C FF 4C 00 10 07 3D 1F AF F4 3E 8C 38  | Device type: BLE | Address type: Random
+MAC Address: 69:12:25:55:A9:91: | Flag data: 02 01 1A  | Manufacturer data: 1B FF 4C 00 0C 0E 00 1A 4B FA D0 84 F6 0B 28 D1 2D D9 34 10 10 06 6C 1D 3D E3 5A 38  | Device type: BLE | Address type: Random
+MAC Address: 69:12:25:55:A9:91: | Flag data: 02 01 1A  | Manufacturer data: 1B FF 4C 00 0C 0E 00 1A 4B FA D0 84 F6 0B 28 D1 2D D9 34 10 10 06 6C 1D 3D E3 5A 38  | Device type: BLE | Address type: Random
+MAC Address: 69:12:25:55:A9:91: | Flag data: 02 01 1A  | Manufacturer data: 1B FF 4C 00 0C 0E 00 1A 4B FA D0 84 F6 0B 28 D1 2D D9 34 10 10 06 6C 1D 3D E3 5A 38  | Device type: BLE | Address type: Random
+MAC Address: 69:12:25:55:A9:91: | Flag data: 02 01 1A  | Manufacturer data: 1B FF 4C 00 0C 0E 00 1A 4B FA D0 84 F6 0B 28 D1 2D D9 34 10 10 06 6C 1D 3D E3 5A 38  | Device type: BLE | Address type: Random
+MAC Address: 69:12:25:55:A9:91: | Flag data: 02 01 1A  | Manufacturer data: 1B FF 4C 00 0C 0E 00 1A 4B FA D0 84 F6 0B 28 D1 2D D9 34 10 10 06 6C 1D 3D E3 5A 38  | Device type: BLE | Address type: Random
+MAC Address: 69:12:25:55:A9:91: | Flag data: 02 01 1A  | Manufacturer data: 1B FF 4C 00 0C 0E 00 1A 4B FA D0 84 F6 0B 28 D1 2D D9 34 10 10 06 6C 1D 3D E3 5A 38  | Device type: BLE | Address type: Random
+Scan stopped
+Apple BLE packets found: 12
+Run Count: 1
+Scan parameters set, start scanning for 5 seconds...
+MAC Address: 69:12:25:55:A9:91: | Flag data: 02 01 1A  | Manufacturer data: 1B FF 4C 00 0C 0E 00 1A 4B FA D0 84 F6 0B 28 D1 2D D9 34 10 10 06 6C 1D 3D E3 5A 38  | Device type: BLE | Address type: Random
+Scan stopped
+Apple BLE packets found: 1
+Run Count: 2
+Scan parameters set, start scanning for 5 seconds...
+Scan stopped
+Apple BLE packets found: 0
+Run Count: 3
+Scan parameters set, start scanning for 5 seconds...
+Scan stopped
+Apple BLE packets found: 0
+Run Count: 4
+Scan parameters set, start scanning for 5 seconds...
+Scan stopped
+Apple BLE packets found: 0
+Run Count: 5
+Scan parameters set, start scanning for 5 seconds...
+Scan stopped
+Apple BLE packets found: 0
+Run Count: 6
+Scan parameters set, start scanning for 5 seconds...
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 18 00 00 09 FD 29 FC F6 EE BB 78 9B 4A 49 4A 16 41 90 58  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+Scan stopped
+Apple BLE packets found: 8
+Run Count: 7
+Scan parameters set, start scanning for 5 seconds...
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+Scan stopped
+Apple BLE packets found: 26
+Run Count: 8
+Scan parameters set, start scanning for 5 seconds...
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+Scan stopped
+Apple BLE packets found: 27
+Run Count: 9
+Scan parameters set, start scanning for 5 seconds...
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 11 00 00 60 5A 88 46 B9 7B C9 7B 22 24 2F D4 60 F1 E4 CB  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 0A 4B BB 72 58 0A A9 49 5D 05 B0 57 F8 8D 2D 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 0A 4B BB 72 58 0A A9 49 5D 05 B0 57 F8 8D 2D 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 0A 4B BB 72 58 0A A9 49 5D 05 B0 57 F8 8D 2D 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 0A 4B BB 72 58 0A A9 49 5D 05 B0 57 F8 8D 2D 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 0A 4B BB 72 58 0A A9 49 5D 05 B0 57 F8 8D 2D 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 0A 4B BB 72 58 0A A9 49 5D 05 B0 57 F8 8D 2D 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 0A 4B BB 72 58 0A A9 49 5D 05 B0 57 F8 8D 2D 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 0A 4B BB 72 58 0A A9 49 5D 05 B0 57 F8 8D 2D 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 0A 4B BB 72 58 0A A9 49 5D 05 B0 57 F8 8D 2D 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 0A 4B BB 72 58 0A A9 49 5D 05 B0 57 F8 8D 2D 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 0A 4B BB 72 58 0A A9 49 5D 05 B0 57 F8 8D 2D 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 0A 4B BB 72 58 0A A9 49 5D 05 B0 57 F8 8D 2D 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 0A 4B BB 72 58 0A A9 49 5D 05 B0 57 F8 8D 2D 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 0A 4B BB 72 58 0A A9 49 5D 05 B0 57 F8 8D 2D 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 0A 4B BB 72 58 0A A9 49 5D 05 B0 57 F8 8D 2D 86  | Device type: BLE | Address type: Random
+Scan stopped
+Apple BLE packets found: 17
+Run Count: 10
+Scan parameters set, start scanning for 5 seconds...
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 0A 4B BB 72 58 0A A9 49 5D 05 B0 57 F8 8D 2D 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 0A 4B BB 72 58 0A A9 49 5D 05 B0 57 F8 8D 2D 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+Scan stopped
+Apple BLE packets found: 15
+Run Count: 11
+Scan parameters set, start scanning for 5 seconds...
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+Scan stopped
+Apple BLE packets found: 17
+Run Count: 12
+Scan parameters set, start scanning for 5 seconds...
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+Scan stopped
+Apple BLE packets found: 18
+Run Count: 13
+Scan parameters set, start scanning for 5 seconds...
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+Scan stopped
+Apple BLE packets found: 17
+Run Count: 14
+Scan parameters set, start scanning for 5 seconds...
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+Scan stopped
+Apple BLE packets found: 15
+Run Count: 15
+Scan parameters set, start scanning for 5 seconds...
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 C2 22 DF 3C 57 02 7A E2 A4 D1 E9 8A 8F EF 64 BF  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+Scan stopped
+Apple BLE packets found: 16
+Run Count: 16
+Scan parameters set, start scanning for 5 seconds...
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+Scan stopped
+Apple BLE packets found: 15
+Run Count: 17
+Scan parameters set, start scanning for 5 seconds...
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+Scan stopped
+Apple BLE packets found: 14
+Run Count: 18
+Scan parameters set, start scanning for 5 seconds...
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+Scan stopped
+Apple BLE packets found: 16
+Run Count: 19
+Scan parameters set, start scanning for 5 seconds...
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+Scan stopped
+Apple BLE packets found: 15
+Run Count: 20
+Scan parameters set, start scanning for 5 seconds...
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+Scan stopped
+Apple BLE packets found: 17
+Run Count: 21
+Scan parameters set, start scanning for 5 seconds...
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 53 02 D6 DD DC 8D CC B6 5A CC 05 C8 97 D8 1C 7C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 51 7B FE 9D 3C 7D 22 09 D2 8B 86 55 EB A4 85 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 51 7B FE 9D 3C 7D 22 09 D2 8B 86 55 EB A4 85 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 51 7B FE 9D 3C 7D 22 09 D2 8B 86 55 EB A4 85 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 51 7B FE 9D 3C 7D 22 09 D2 8B 86 55 EB A4 85 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 51 7B FE 9D 3C 7D 22 09 D2 8B 86 55 EB A4 85 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 51 7B FE 9D 3C 7D 22 09 D2 8B 86 55 EB A4 85 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 51 7B FE 9D 3C 7D 22 09 D2 8B 86 55 EB A4 85 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 51 7B FE 9D 3C 7D 22 09 D2 8B 86 55 EB A4 85 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 51 7B FE 9D 3C 7D 22 09 D2 8B 86 55 EB A4 85 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 51 7B FE 9D 3C 7D 22 09 D2 8B 86 55 EB A4 85 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 51 7B FE 9D 3C 7D 22 09 D2 8B 86 55 EB A4 85 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 51 7B FE 9D 3C 7D 22 09 D2 8B 86 55 EB A4 85 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 51 7B FE 9D 3C 7D 22 09 D2 8B 86 55 EB A4 85 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 51 7B FE 9D 3C 7D 22 09 D2 8B 86 55 EB A4 85 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 51 7B FE 9D 3C 7D 22 09 D2 8B 86 55 EB A4 85 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 51 7B FE 9D 3C 7D 22 09 D2 8B 86 55 EB A4 85 86  | Device type: BLE | Address type: Random
+Scan stopped
+Apple BLE packets found: 19
+Run Count: 22
+Scan parameters set, start scanning for 5 seconds...
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 51 7B FE 9D 3C 7D 22 09 D2 8B 86 55 EB A4 85 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 51 7B FE 9D 3C 7D 22 09 D2 8B 86 55 EB A4 85 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 51 7B FE 9D 3C 7D 22 09 D2 8B 86 55 EB A4 85 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 51 7B FE 9D 3C 7D 22 09 D2 8B 86 55 EB A4 85 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 51 7B FE 9D 3C 7D 22 09 D2 8B 86 55 EB A4 85 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 51 7B FE 9D 3C 7D 22 09 D2 8B 86 55 EB A4 85 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 51 7B FE 9D 3C 7D 22 09 D2 8B 86 55 EB A4 85 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 00 FA 8F 01 00 00 51 7B FE 9D 3C 7D 22 09 D2 8B 86 55 EB A4 85 86  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 9F 01 00 00 AA 41 B8 80 0F C5 A8 F6 E1 C3 C7 FE 57 3E FA 8C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 9F 01 00 00 AA 41 B8 80 0F C5 A8 F6 E1 C3 C7 FE 57 3E FA 8C  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+Scan stopped
+Apple BLE packets found: 20
+Run Count: 23
+Scan parameters set, start scanning for 5 seconds...
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+Scan stopped
+Apple BLE packets found: 28
+Run Count: 24
+Scan parameters set, start scanning for 5 seconds...
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 32 00 00 87 E6 FF 75 FD 1A 3C DB 7F 6D 34 FC 32 A5 B5 51  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 3A 00 00 1A 79 E1 DC 26 2D 92 D0 B3 94 AF FC DF 2E BF 3F  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 3A 00 00 1A 79 E1 DC 26 2D 92 D0 B3 94 AF FC DF 2E BF 3F  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 3A 00 00 1A 79 E1 DC 26 2D 92 D0 B3 94 AF FC DF 2E BF 3F  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 3A 00 00 1A 79 E1 DC 26 2D 92 D0 B3 94 AF FC DF 2E BF 3F  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 3A 00 00 1A 79 E1 DC 26 2D 92 D0 B3 94 AF FC DF 2E BF 3F  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 3A 00 00 1A 79 E1 DC 26 2D 92 D0 B3 94 AF FC DF 2E BF 3F  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 3A 00 00 1A 79 E1 DC 26 2D 92 D0 B3 94 AF FC DF 2E BF 3F  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 3A 00 00 1A 79 E1 DC 26 2D 92 D0 B3 94 AF FC DF 2E BF 3F  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 3A 00 00 1A 79 E1 DC 26 2D 92 D0 B3 94 AF FC DF 2E BF 3F  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 3A 00 00 1A 79 E1 DC 26 2D 92 D0 B3 94 AF FC DF 2E BF 3F  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 3A 00 00 1A 79 E1 DC 26 2D 92 D0 B3 94 AF FC DF 2E BF 3F  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 3A 00 00 1A 79 E1 DC 26 2D 92 D0 B3 94 AF FC DF 2E BF 3F  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 3A 00 00 1A 79 E1 DC 26 2D 92 D0 B3 94 AF FC DF 2E BF 3F  | Device type: BLE | Address type: Random
+Scan stopped
+Apple BLE packets found: 26
+Run Count: 25
+Scan parameters set, start scanning for 5 seconds...
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 3A 00 00 1A 79 E1 DC 26 2D 92 D0 B3 94 AF FC DF 2E BF 3F  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 3A 00 00 1A 79 E1 DC 26 2D 92 D0 B3 94 AF FC DF 2E BF 3F  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 3A 00 00 1A 79 E1 DC 26 2D 92 D0 B3 94 AF FC DF 2E BF 3F  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 3A 00 00 1A 79 E1 DC 26 2D 92 D0 B3 94 AF FC DF 2E BF 3F  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 3A 00 00 1A 79 E1 DC 26 2D 92 D0 B3 94 AF FC DF 2E BF 3F  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 3A 00 00 1A 79 E1 DC 26 2D 92 D0 B3 94 AF FC DF 2E BF 3F  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 3A 00 00 1A 79 E1 DC 26 2D 92 D0 B3 94 AF FC DF 2E BF 3F  | Device type: BLE | Address type: Random
+MAC Address: 6F:14:43:CD:8E:43: | No Flag | Manufacturer data: 1E FF 4C 00 07 19 01 13 20 04 FA 97 3A 00 00 1A 79 E1 DC 26 2D 92 D0 B3 94 AF FC DF 2E BF 3F  | Device type: BLE | Address type: Random
+Scan stopped
+Apple BLE packets found: 8
+Run Count: 26
+Scan parameters set, start scanning for 5 seconds...
+Scan stopped
+Apple BLE packets found: 0
+Run Count: 27
+Scan parameters set, start scanning for 5 seconds...
+Scan stopped
+Apple BLE packets found: 0
+Run Count: 28
+Scan parameters set, start scanning for 5 seconds...
+Scan stopped
+Apple BLE packets found: 0
+Run Count: 29
+Scan parameters set, start scanning for 5 seconds...
