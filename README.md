@@ -1,7 +1,7 @@
 # TagAlong - Modified, 8 bit
 
 The application consists of two parts:
-- Firmware: An ESP32 firmware that turns the microcontroller into a serial (upload only) modem
+- Firmware: An ESP32 firmware that sends out BLE advertisment which will be picked up by Apple Find My devices
 - DataFetcher: A macOS application used to retrieve, decode and display the uploaded data
 
 Both are based on [OpenHaystack](https://github.com/seemoo-lab/openhaystack), an open source implementation of the Find My Offline Finding protocol.
