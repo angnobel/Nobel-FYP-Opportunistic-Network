@@ -1,0 +1,86 @@
+I (292) cpu_start: Compile time:     Mar 10 2024 17:29:30
+I (298) cpu_start: ELF file SHA256:  25129d0025ca397d...
+I (304) cpu_start: ESP-IDF:          v5.1.1
+I (309) cpu_start: Min chip rev:     v0.3
+I (314) cpu_start: Max chip rev:     v0.99
+I (319) cpu_start: Chip rev:         v0.4
+I (324) heap_init: Initializing. RAM available for dynamic allocation:
+I (331) heap_init: At 3FC9E590 len 0003E180 (248 KiB): DRAM
+I (337) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM
+I (344) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM
+I (351) spi_flash: detected chip: generic
+I (355) spi_flash: flash io: dio
+I (359) sleep: Configure to isolate all GPIO pins in sleep state
+I (365) sleep: Enable automatic switching of GPIO sleep configuration
+I (372) coexist: coex firmware version: 80b0d89
+I (378) coexist: coexist rom version 9387209
+I (383) app_start: Starting scheduler on CPU0
+I (388) main_task: Started on CPU0
+I (388) main_task: Calling app_main()
+I (398) BLE_INIT: BT controller compile version [963cad4]
+I (398) phy_init: phy_version 970,1856f88,May 10 2023,17:44:12
+I (448) BLE_INIT: Bluetooth MAC: 34:85:18:20:62:22
+
+I (468) WIFI: ESP_WIFI_MODE_STA
+I (468) pp: pp rom version: 9387209
+I (468) net80211: net80211 rom version: 9387209
+I (478) wifi:wifi driver task: 3fcb492c, prio:23, stack:6656, core=0
+I (478) wifi:wifi firmware version: ce9244d
+I (478) wifi:wifi certification version: v7.0
+I (478) wifi:config NVS flash: enabled
+I (488) wifi:config nano formating: disabled
+I (488) wifi:Init data frame dynamic rx buffer num: 32
+I (498) wifi:Init management frame dynamic rx buffer num: 32
+I (498) wifi:Init management short buffer num: 32
+I (508) wifi:Init dynamic tx buffer num: 32
+I (508) wifi:Init static tx FG buffer num: 2
+I (508) wifi:Init static rx buffer size: 1600
+I (518) wifi:Init static rx buffer num: 10
+I (518) wifi:Init dynamic rx buffer num: 32
+I (528) wifi_init: rx ba win: 6
+I (528) wifi_init: tcpip mbox: 32
+I (528) wifi_init: udp mbox: 6
+I (538) wifi_init: tcp mbox: 6
+I (538) wifi_init: tcp tx win: 5744
+I (548) wifi_init: tcp rx win: 5744
+I (548) wifi_init: tcp mss: 1440
+I (548) wifi_init: WiFi IRAM OP enabled
+I (558) wifi_init: WiFi RX IRAM OP enabled
+I (558) wifi:mode : sta (34:85:18:20:62:20)
+I (568) wifi:enable tsf
+I (568) WIFI: wifi_init_sta finished.
+I (588) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (588) wifi:state: init -> auth (b0)
+I (598) wifi:state: auth -> assoc (0)
+I (618) wifi:state: assoc -> run (10)
+I (648) wifi:connected with Galaxy A53 5G 1935, aid = 1, channel 11, BW20, bssid = 4a:76:3a:af:43:ac
+I (648) wifi:security: WPA2-PSK, phy: bgn, rssi: -41
+I (648) wifi:pm start, type: 1
+
+I (658) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000
+I (668) wifi:<ba-add>idx:0 (ifx:0, 4a:76:3a:af:43:ac), tid:0, ssn:0, winSize:64
+I (858) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (1668) esp_netif_handlers: sta ip: 192.168.191.115, mask: 255.255.255.0, gw: 192.168.191.206
+I (1668) WIFI: got ip:192.168.191.115
+I (1668) WIFI: connected to ap SSID:Galaxy A53 5G 1935 password:ixvo3528
+Bytes: 43 00 
+I (4688) findmy_modem:   pub key to use (1. try): ba be 80 00 80 22 00 00 00 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 43
+I (4698) TIMESTAMP: Unix: 1711090391
+I (4698) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 22
+I (4708) findmy_modem: advertising stopped
+I (4718) findmy_modem: advertising started
+I (5718) findmy_modem: advertising stopped
+E (5718) findmy_modem: Time to send message: 1041175
+I (5718) TIMESTAMP: Unix: 1711090392
+I (5718) findmy_modem: advertising stopped
+I (5728) wifi:state: run -> init (0)
+I (5728) wifi:pm stop, total sleep time: 3317218 us / 5072242 us
+
+I (5728) wifi:<ba-del>idx:0, tid:0
+I (5738) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (5748) WIFI: retry to connect to the AP
+I (5748) WIFI: connect to the AP fail
+I (5748) wifi:flush txq
+I (5748) wifi:stop sw txq
+I (5758) wifi:lmac stop hw txq
+I (5758) main_task: Returned from app_main()

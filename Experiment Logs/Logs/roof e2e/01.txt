@@ -1,0 +1,46 @@
+I (518) wifi_init: rx ba win: 6
+I (518) wifi_init: tcpip mbox: 32
+I (528) wifi_init: udp mbox: 6
+I (528) wifi_init: tcp mbox: 6
+I (528) wifi_init: tcp tx win: 5744
+I (538) wifi_init: tcp rx win: 5744
+I (538) wifi_init: tcp mss: 1440
+I (548) wifi_init: WiFi IRAM OP enabled
+I (548) wifi_init: WiFi RX IRAM OP enabled
+I (558) wifi:mode : sta (34:85:18:20:62:20)
+I (558) wifi:enable tsf
+I (558) WIFI: wifi_init_sta finished.
+I (578) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (578) wifi:state: init -> auth (b0)
+I (588) wifi:state: auth -> assoc (0)
+I (608) wifi:state: assoc -> run (10)
+I (638) wifi:connected with Galaxy A53 5G 1935, aid = 1, channel 11, BW20, bssid = 4a:76:3a:af:43:ac
+I (638) wifi:security: WPA2-PSK, phy: bgn, rssi: -21
+I (638) wifi:pm start, type: 1
+
+I (638) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000
+I (648) wifi:<ba-add>idx:0 (ifx:0, 4a:76:3a:af:43:ac), tid:0, ssn:0, winSize:64
+I (758) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (1658) esp_netif_handlers: sta ip: 192.168.191.115, mask: 255.255.255.0, gw: 192.168.191.206
+I (1658) WIFI: got ip:192.168.191.115
+I (1658) WIFI: connected to ap SSID:Galaxy A53 5G 1935 password:ixvo3528
+Bytes: 41 00 
+I (4678) findmy_modem:   pub key to use (1. try): ba be 80 00 80 22 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (4688) TIMESTAMP: Unix: 1711087028
+I (4688) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 22
+I (4698) findmy_modem: advertising stopped
+I (4708) findmy_modem: advertising started
+I (5708) findmy_modem: advertising stopped
+E (5708) findmy_modem: Time to send message: 1041173
+I (5708) TIMESTAMP: Unix: 1711087029
+I (5708) findmy_modem: advertising stopped
+I (5718) wifi:state: run -> init (0)
+I (5718) wifi:pm stop, total sleep time: 3432788 us / 5076160 us
+
+I (5718) wifi:<ba-del>idx:0, tid:0
+I (5728) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (5728) WIFI: connect to the AP fail
+I (5738) wifi:flush txq
+I (5738) wifi:stop sw txq
+I (5738) wifi:lmac stop hw txq
+I (5748) main_task: Returned from app_main()

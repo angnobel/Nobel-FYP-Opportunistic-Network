@@ -12,7 +12,8 @@
 #define TAG "BLE_SCAN"
 
 #define MAX_UNIQUE_MACS 100
-#define MIN_PACKET_COUNT 1
+#define MIN_PACKET_COUNT 0
+#define SCAN_TIME 10
 
 static esp_ble_scan_params_t ble_scan_params = {
     .scan_type              = BLE_SCAN_TYPE_ACTIVE,
@@ -64,7 +65,7 @@ static void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *par
     switch (event) {
         case ESP_GAP_BLE_SCAN_PARAM_SET_COMPLETE_EVT: {
             if (param->scan_param_cmpl.status == ESP_BT_STATUS_SUCCESS) {
-                printf("Scan parameters set, start scanning for 5 seconds...\n");
+                printf("Scan parameters set, start scanning for %d seconds...\n", SCAN_TIME);
                 esp_ble_gap_start_scanning(10);
             } else {
                 printf("Unable to set scan parameters, error code %d\n", param->scan_param_cmpl.status);
@@ -262,7 +263,7 @@ void app_main() {
             return;
         }
     // Wait for 2 seconds
-    vTaskDelay(6000 / portTICK_PERIOD_MS);
+    vTaskDelay(2000 / portTICK_PERIOD_MS);
     esp_ble_gap_stop_scanning();
 
 
@@ -285,6 +286,7 @@ void app_main() {
         }
     }
 
+    printf("Total number of Apple BLE advertistments: %d\n", (applePacketCount));
     printf("Number of unique MAC FF 4C 00 09: %d\n", (int) unique_macs_09_count);
     printf("Number of unique MAC FF 4C 00 10: %d\n", (int) unique_macs_10_count);
     printf("Number of unique MAC FF 4C 00 16: %d\n", (int) unique_macs_16_count);

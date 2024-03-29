@@ -1,0 +1,23 @@
+Bytes: 41 00 
+I (4828) findmy_modem:   pub key to use (2. try): ba be 80 00 80 20 00 01 00 00 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (4828) TIMESTAMP: Unix: 1711083780
+I (4838) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 20
+I (4848) findmy_modem: advertising stopped
+I (4848) findmy_modem: advertising started
+I (5858) findmy_modem: advertising stopped
+E (5858) findmy_modem: Time to send message: 1061191
+I (5858) TIMESTAMP: Unix: 1711083781
+I (5858) findmy_modem: advertising stopped
+I (5868) wifi:state: run -> init (0)
+I (5868) wifi:pm stop, total sleep time: 3190770 us / 5085483 us
+
+I (5868) wifi:<ba-del>idx:0, tid:0
+I (5878) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (5878) WIFI: connect to the AP fail
+W (10888) wifi:TX Q not empty: 500, TXQ_BLOCK=ff1000
+W (10888) wifi:force witi stop
+I (10888) wifi:flush txq
+I (10888) wifi:stop sw txq
+I (10888) wifi:lmac stop hw txq
+W (10888) wifi:sw txq[0] state(1) is not idle, potential error!
+I (10898) main_task: Returned from app_main()

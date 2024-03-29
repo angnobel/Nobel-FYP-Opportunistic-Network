@@ -1,0 +1,1407 @@
+Bytes: 41 00 
+[0;32mI (11268) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (11278) TIMESTAMP: Unix: 11[0m
+[0;32mI (11278) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (11288) findmy_modem: advertising stopped[0m
+[0;32mI (11298) findmy_modem: advertising started[0m
+[0;32mI (11498) findmy_modem: advertising stopped[0m
+[0;31mE (11498) findmy_modem: Time to send message: 241128[0m
+[0;32mI (11588) findmy_modem:   pub key to use (5. try): ba be 80 00 80 12 00 04 00 00 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (11588) TIMESTAMP: Unix: 11[0m
+[0;32mI (11588) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (11598) findmy_modem: advertising stopped[0m
+[0;32mI (11608) findmy_modem: advertising started[0m
+[0;32mI (11808) findmy_modem: advertising stopped[0m
+[0;31mE (11808) findmy_modem: Time to send message: 309790[0m
+[0;32mI (11818) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (11828) TIMESTAMP: Unix: 11[0m
+[0;32mI (11828) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (11838) findmy_modem: advertising stopped[0m
+[0;32mI (11848) findmy_modem: advertising started[0m
+[0;32mI (12048) findmy_modem: advertising stopped[0m
+[0;31mE (12048) findmy_modem: Time to send message: 239786[0m
+[0;32mI (12068) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (12068) TIMESTAMP: Unix: 11[0m
+[0;32mI (12068) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (12078) findmy_modem: advertising stopped[0m
+[0;32mI (12088) findmy_modem: advertising started[0m
+[0;32mI (12288) findmy_modem: advertising stopped[0m
+[0;31mE (12288) findmy_modem: Time to send message: 239816[0m
+[0;32mI (12308) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 05 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (12308) TIMESTAMP: Unix: 12[0m
+[0;32mI (12308) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (12318) findmy_modem: advertising stopped[0m
+[0;32mI (12328) findmy_modem: advertising started[0m
+[0;32mI (12528) findmy_modem: advertising stopped[0m
+[0;31mE (12528) findmy_modem: Time to send message: 239829[0m
+[0;32mI (12558) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 06 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (12568) TIMESTAMP: Unix: 12[0m
+[0;32mI (12568) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (12578) findmy_modem: advertising stopped[0m
+[0;32mI (12588) findmy_modem: advertising started[0m
+[0;32mI (12788) findmy_modem: advertising stopped[0m
+[0;31mE (12788) findmy_modem: Time to send message: 259784[0m
+[0;32mI (12808) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 07 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (12808) TIMESTAMP: Unix: 12[0m
+[0;32mI (12808) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (12818) findmy_modem: advertising stopped[0m
+[0;32mI (12828) findmy_modem: advertising started[0m
+[0;32mI (13028) findmy_modem: advertising stopped[0m
+[0;31mE (13028) findmy_modem: Time to send message: 239811[0m
+[0;32mI (13038) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (13048) TIMESTAMP: Unix: 12[0m
+[0;32mI (13048) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (13058) findmy_modem: advertising stopped[0m
+[0;32mI (13068) findmy_modem: advertising started[0m
+[0;32mI (13268) findmy_modem: advertising stopped[0m
+[0;31mE (13268) findmy_modem: Time to send message: 239798[0m
+[0;32mI (13298) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 09 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (13308) TIMESTAMP: Unix: 13[0m
+[0;32mI (13308) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (13318) findmy_modem: advertising stopped[0m
+[0;32mI (13328) findmy_modem: advertising started[0m
+[0;32mI (13528) findmy_modem: advertising stopped[0m
+[0;31mE (13528) findmy_modem: Time to send message: 259849[0m
+[0;32mI (13538) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (13548) TIMESTAMP: Unix: 13[0m
+[0;32mI (13548) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (13558) findmy_modem: advertising stopped[0m
+[0;32mI (13568) findmy_modem: advertising started[0m
+[0;32mI (13768) findmy_modem: advertising stopped[0m
+[0;31mE (13768) findmy_modem: Time to send message: 239759[0m
+[0;32mI (13778) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 0b 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (13788) TIMESTAMP: Unix: 13[0m
+[0;32mI (13788) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (13798) findmy_modem: advertising stopped[0m
+[0;32mI (13808) findmy_modem: advertising started[0m
+[0;32mI (14008) findmy_modem: advertising stopped[0m
+[0;31mE (14008) findmy_modem: Time to send message: 239817[0m
+[0;32mI (14038) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 0c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (14048) TIMESTAMP: Unix: 13[0m
+[0;32mI (14048) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (14058) findmy_modem: advertising stopped[0m
+[0;32mI (14068) findmy_modem: advertising started[0m
+[0;32mI (14268) findmy_modem: advertising stopped[0m
+[0;31mE (14268) findmy_modem: Time to send message: 259788[0m
+[0;32mI (14318) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 0d 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (14318) TIMESTAMP: Unix: 14[0m
+[0;32mI (14328) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (14338) findmy_modem: advertising stopped[0m
+[0;32mI (14338) findmy_modem: advertising started[0m
+[0;32mI (14548) findmy_modem: advertising stopped[0m
+[0;31mE (14548) findmy_modem: Time to send message: 279835[0m
+[0;32mI (14598) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 0e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (14598) TIMESTAMP: Unix: 14[0m
+[0;32mI (14608) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (14618) findmy_modem: advertising stopped[0m
+[0;32mI (14618) findmy_modem: advertising started[0m
+[0;32mI (14828) findmy_modem: advertising stopped[0m
+[0;31mE (14828) findmy_modem: Time to send message: 279789[0m
+[0;32mI (14838) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (14848) TIMESTAMP: Unix: 14[0m
+[0;32mI (14848) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (14858) findmy_modem: advertising stopped[0m
+[0;32mI (14868) findmy_modem: advertising started[0m
+[0;32mI (15068) findmy_modem: advertising stopped[0m
+[0;31mE (15068) findmy_modem: Time to send message: 239789[0m
+[0;32mI (15078) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (15088) TIMESTAMP: Unix: 14[0m
+[0;32mI (15088) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (15098) findmy_modem: advertising stopped[0m
+[0;32mI (15108) findmy_modem: advertising started[0m
+[0;32mI (15308) findmy_modem: advertising stopped[0m
+[0;31mE (15308) findmy_modem: Time to send message: 239823[0m
+[0;32mI (15338) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 11 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (15338) TIMESTAMP: Unix: 15[0m
+[0;32mI (15348) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (15358) findmy_modem: advertising stopped[0m
+[0;32mI (15368) findmy_modem: advertising started[0m
+[0;32mI (15568) findmy_modem: advertising stopped[0m
+[0;31mE (15568) findmy_modem: Time to send message: 259813[0m
+[0;32mI (15578) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 12 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (15588) TIMESTAMP: Unix: 15[0m
+[0;32mI (15588) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (15598) findmy_modem: advertising stopped[0m
+[0;32mI (15608) findmy_modem: advertising started[0m
+[0;32mI (15808) findmy_modem: advertising stopped[0m
+[0;31mE (15808) findmy_modem: Time to send message: 239787[0m
+[0;32mI (15858) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 13 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (15858) TIMESTAMP: Unix: 15[0m
+[0;32mI (15868) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (15878) findmy_modem: advertising stopped[0m
+[0;32mI (15878) findmy_modem: advertising started[0m
+[0;32mI (16088) findmy_modem: advertising stopped[0m
+[0;31mE (16088) findmy_modem: Time to send message: 279830[0m
+[0;32mI (16118) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 14 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (16128) TIMESTAMP: Unix: 15[0m
+[0;32mI (16128) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (16138) findmy_modem: advertising stopped[0m
+[0;32mI (16148) findmy_modem: advertising started[0m
+[0;32mI (16348) findmy_modem: advertising stopped[0m
+[0;31mE (16348) findmy_modem: Time to send message: 259792[0m
+[0;32mI (16398) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 15 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (16398) TIMESTAMP: Unix: 16[0m
+[0;32mI (16408) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (16418) findmy_modem: advertising stopped[0m
+[0;32mI (16418) findmy_modem: advertising started[0m
+[0;32mI (16628) findmy_modem: advertising stopped[0m
+[0;31mE (16628) findmy_modem: Time to send message: 279819[0m
+[0;32mI (16678) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 16 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (16678) TIMESTAMP: Unix: 16[0m
+[0;32mI (16688) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (16698) findmy_modem: advertising stopped[0m
+[0;32mI (16698) findmy_modem: advertising started[0m
+[0;32mI (16908) findmy_modem: advertising stopped[0m
+[0;31mE (16908) findmy_modem: Time to send message: 279780[0m
+[0;32mI (16918) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 17 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (16928) TIMESTAMP: Unix: 16[0m
+[0;32mI (16928) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (16938) findmy_modem: advertising stopped[0m
+[0;32mI (16948) findmy_modem: advertising started[0m
+[0;32mI (17148) findmy_modem: advertising stopped[0m
+[0;31mE (17148) findmy_modem: Time to send message: 239789[0m
+[0;32mI (17198) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 18 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (17198) TIMESTAMP: Unix: 16[0m
+[0;32mI (17208) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (17218) findmy_modem: advertising stopped[0m
+[0;32mI (17218) findmy_modem: advertising started[0m
+[0;32mI (17428) findmy_modem: advertising stopped[0m
+[0;31mE (17428) findmy_modem: Time to send message: 279876[0m
+[0;32mI (17498) findmy_modem:   pub key to use (4. try): ba be 80 00 80 12 00 03 00 00 00 19 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (17498) TIMESTAMP: Unix: 17[0m
+[0;32mI (17508) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (17518) findmy_modem: advertising stopped[0m
+[0;32mI (17518) findmy_modem: advertising started[0m
+[0;32mI (17718) findmy_modem: advertising stopped[0m
+[0;31mE (17718) findmy_modem: Time to send message: 289755[0m
+[0;32mI (17748) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 1a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (17748) TIMESTAMP: Unix: 17[0m
+[0;32mI (17758) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (17768) findmy_modem: advertising stopped[0m
+[0;32mI (17778) findmy_modem: advertising started[0m
+[0;32mI (17978) findmy_modem: advertising stopped[0m
+[0;31mE (17978) findmy_modem: Time to send message: 259804[0m
+[0;32mI (17988) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 1b 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (17998) TIMESTAMP: Unix: 17[0m
+[0;32mI (17998) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (18008) findmy_modem: advertising stopped[0m
+[0;32mI (18018) findmy_modem: advertising started[0m
+[0;32mI (18218) findmy_modem: advertising stopped[0m
+[0;31mE (18218) findmy_modem: Time to send message: 239813[0m
+[0;32mI (18228) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 1c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (18238) TIMESTAMP: Unix: 17[0m
+[0;32mI (18238) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (18248) findmy_modem: advertising stopped[0m
+[0;32mI (18258) findmy_modem: advertising started[0m
+[0;32mI (18458) findmy_modem: advertising stopped[0m
+[0;31mE (18458) findmy_modem: Time to send message: 239795[0m
+[0;32mI (18478) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 1d 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (18478) TIMESTAMP: Unix: 18[0m
+[0;32mI (18478) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (18488) findmy_modem: advertising stopped[0m
+[0;32mI (18498) findmy_modem: advertising started[0m
+[0;32mI (18698) findmy_modem: advertising stopped[0m
+[0;31mE (18698) findmy_modem: Time to send message: 239807[0m
+[0;32mI (18728) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 1e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (18738) TIMESTAMP: Unix: 18[0m
+[0;32mI (18738) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (18748) findmy_modem: advertising stopped[0m
+[0;32mI (18758) findmy_modem: advertising started[0m
+[0;32mI (18958) findmy_modem: advertising stopped[0m
+[0;31mE (18958) findmy_modem: Time to send message: 259808[0m
+[0;32mI (19008) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 1f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (19008) TIMESTAMP: Unix: 18[0m
+[0;32mI (19018) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (19028) findmy_modem: advertising stopped[0m
+[0;32mI (19028) findmy_modem: advertising started[0m
+[0;32mI (19238) findmy_modem: advertising stopped[0m
+[0;31mE (19238) findmy_modem: Time to send message: 279792[0m
+[0;32mI (19308) findmy_modem:   pub key to use (4. try): ba be 80 00 80 12 00 03 00 00 00 20 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (19308) TIMESTAMP: Unix: 19[0m
+[0;32mI (19318) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (19328) findmy_modem: advertising stopped[0m
+[0;32mI (19328) findmy_modem: advertising started[0m
+[0;32mI (19528) findmy_modem: advertising stopped[0m
+[0;31mE (19528) findmy_modem: Time to send message: 289848[0m
+[0;32mI (19548) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 21 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (19548) TIMESTAMP: Unix: 19[0m
+[0;32mI (19548) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (19558) findmy_modem: advertising stopped[0m
+[0;32mI (19568) findmy_modem: advertising started[0m
+[0;32mI (19768) findmy_modem: advertising stopped[0m
+[0;31mE (19768) findmy_modem: Time to send message: 239773[0m
+[0;32mI (19778) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 22 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (19788) TIMESTAMP: Unix: 19[0m
+[0;32mI (19788) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (19798) findmy_modem: advertising stopped[0m
+[0;32mI (19808) findmy_modem: advertising started[0m
+[0;32mI (20008) findmy_modem: advertising stopped[0m
+[0;31mE (20008) findmy_modem: Time to send message: 239806[0m
+[0;32mI (20018) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 23 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (20028) TIMESTAMP: Unix: 19[0m
+[0;32mI (20028) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (20038) findmy_modem: advertising stopped[0m
+[0;32mI (20048) findmy_modem: advertising started[0m
+[0;31mE (20248) findmy_modem: Time to send message: 238955[0m
+[0;32mI (20248) findmy_modem: advertising stopped[0m
+[0;32mI (20278) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 24 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (20288) TIMESTAMP: Unix: 20[0m
+[0;32mI (20288) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (20298) findmy_modem: advertising stopped[0m
+[0;32mI (20308) findmy_modem: advertising started[0m
+[0;32mI (20508) findmy_modem: advertising stopped[0m
+[0;31mE (20508) findmy_modem: Time to send message: 259760[0m
+[0;32mI (20528) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 25 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (20528) TIMESTAMP: Unix: 20[0m
+[0;32mI (20528) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (20538) findmy_modem: advertising stopped[0m
+[0;32mI (20548) findmy_modem: advertising started[0m
+[0;32mI (20748) findmy_modem: advertising stopped[0m
+[0;31mE (20748) findmy_modem: Time to send message: 239750[0m
+[0;32mI (20778) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 26 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (20788) TIMESTAMP: Unix: 20[0m
+[0;32mI (20788) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (20798) findmy_modem: advertising stopped[0m
+[0;32mI (20808) findmy_modem: advertising started[0m
+[0;32mI (21008) findmy_modem: advertising stopped[0m
+[0;31mE (21008) findmy_modem: Time to send message: 259819[0m
+[0;32mI (21028) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 27 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (21028) TIMESTAMP: Unix: 20[0m
+[0;32mI (21028) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (21038) findmy_modem: advertising stopped[0m
+[0;32mI (21048) findmy_modem: advertising started[0m
+[0;32mI (21248) findmy_modem: advertising stopped[0m
+[0;31mE (21248) findmy_modem: Time to send message: 239791[0m
+[0;32mI (21268) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 28 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (21268) TIMESTAMP: Unix: 20[0m
+[0;32mI (21268) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (21278) findmy_modem: advertising stopped[0m
+[0;32mI (21288) findmy_modem: advertising started[0m
+[0;32mI (21488) findmy_modem: advertising stopped[0m
+[0;31mE (21488) findmy_modem: Time to send message: 239856[0m
+[0;32mI (21518) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 29 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (21528) TIMESTAMP: Unix: 21[0m
+[0;32mI (21528) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (21538) findmy_modem: advertising stopped[0m
+[0;32mI (21548) findmy_modem: advertising started[0m
+[0;32mI (21748) findmy_modem: advertising stopped[0m
+[0;31mE (21748) findmy_modem: Time to send message: 259758[0m
+[0;32mI (21798) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 2a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (21798) TIMESTAMP: Unix: 21[0m
+[0;32mI (21808) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (21818) findmy_modem: advertising stopped[0m
+[0;32mI (21818) findmy_modem: advertising started[0m
+[0;32mI (22028) findmy_modem: advertising stopped[0m
+[0;31mE (22028) findmy_modem: Time to send message: 279819[0m
+[0;32mI (22038) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 2b 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (22048) TIMESTAMP: Unix: 21[0m
+[0;32mI (22048) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (22058) findmy_modem: advertising stopped[0m
+[0;32mI (22068) findmy_modem: advertising started[0m
+[0;32mI (22268) findmy_modem: advertising stopped[0m
+[0;31mE (22268) findmy_modem: Time to send message: 239809[0m
+[0;32mI (22298) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 2c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (22298) TIMESTAMP: Unix: 22[0m
+[0;32mI (22308) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (22318) findmy_modem: advertising stopped[0m
+[0;32mI (22328) findmy_modem: advertising started[0m
+[0;32mI (22528) findmy_modem: advertising stopped[0m
+[0;31mE (22528) findmy_modem: Time to send message: 259841[0m
+[0;32mI (22538) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 2d 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (22548) TIMESTAMP: Unix: 22[0m
+[0;32mI (22548) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (22558) findmy_modem: advertising stopped[0m
+[0;32mI (22568) findmy_modem: advertising started[0m
+[0;31mE (22768) findmy_modem: Time to send message: 238929[0m
+[0;32mI (22768) findmy_modem: advertising stopped[0m
+[0;32mI (22818) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 2e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (22818) TIMESTAMP: Unix: 22[0m
+[0;32mI (22828) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (22838) findmy_modem: advertising stopped[0m
+[0;32mI (22838) findmy_modem: advertising started[0m
+[0;32mI (23048) findmy_modem: advertising stopped[0m
+[0;31mE (23048) findmy_modem: Time to send message: 280405[0m
+[0;32mI (23068) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 2f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (23068) TIMESTAMP: Unix: 22[0m
+[0;32mI (23068) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (23078) findmy_modem: advertising stopped[0m
+[0;32mI (23088) findmy_modem: advertising started[0m
+[0;32mI (23288) findmy_modem: advertising stopped[0m
+[0;31mE (23288) findmy_modem: Time to send message: 239806[0m
+[0;32mI (23308) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 30 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (23308) TIMESTAMP: Unix: 23[0m
+[0;32mI (23308) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (23318) findmy_modem: advertising stopped[0m
+[0;32mI (23328) findmy_modem: advertising started[0m
+[0;32mI (23528) findmy_modem: advertising stopped[0m
+[0;31mE (23528) findmy_modem: Time to send message: 239841[0m
+[0;32mI (23538) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 31 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (23548) TIMESTAMP: Unix: 23[0m
+[0;32mI (23548) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (23558) findmy_modem: advertising stopped[0m
+[0;32mI (23568) findmy_modem: advertising started[0m
+[0;32mI (23768) findmy_modem: advertising stopped[0m
+[0;31mE (23768) findmy_modem: Time to send message: 239773[0m
+[0;32mI (23778) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 32 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (23788) TIMESTAMP: Unix: 23[0m
+[0;32mI (23788) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (23798) findmy_modem: advertising stopped[0m
+[0;32mI (23808) findmy_modem: advertising started[0m
+[0;32mI (24008) findmy_modem: advertising stopped[0m
+[0;31mE (24008) findmy_modem: Time to send message: 239813[0m
+[0;32mI (24058) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 33 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (24058) TIMESTAMP: Unix: 23[0m
+[0;32mI (24068) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (24078) findmy_modem: advertising stopped[0m
+[0;32mI (24078) findmy_modem: advertising started[0m
+[0;32mI (24278) findmy_modem: advertising stopped[0m
+[0;31mE (24278) findmy_modem: Time to send message: 269784[0m
+[0;32mI (24308) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 34 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (24318) TIMESTAMP: Unix: 24[0m
+[0;32mI (24318) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (24328) findmy_modem: advertising stopped[0m
+[0;32mI (24338) findmy_modem: advertising started[0m
+[0;32mI (24538) findmy_modem: advertising stopped[0m
+[0;31mE (24538) findmy_modem: Time to send message: 259841[0m
+[0;32mI (24558) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 35 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (24558) TIMESTAMP: Unix: 24[0m
+[0;32mI (24558) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (24568) findmy_modem: advertising stopped[0m
+[0;32mI (24578) findmy_modem: advertising started[0m
+[0;32mI (24778) findmy_modem: advertising stopped[0m
+[0;31mE (24778) findmy_modem: Time to send message: 239764[0m
+[0;32mI (24788) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 36 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (24798) TIMESTAMP: Unix: 24[0m
+[0;32mI (24798) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (24808) findmy_modem: advertising stopped[0m
+[0;32mI (24818) findmy_modem: advertising started[0m
+[0;32mI (25018) findmy_modem: advertising stopped[0m
+[0;31mE (25018) findmy_modem: Time to send message: 239812[0m
+[0;32mI (25038) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 37 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (25038) TIMESTAMP: Unix: 24[0m
+[0;32mI (25038) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (25048) findmy_modem: advertising stopped[0m
+[0;32mI (25058) findmy_modem: advertising started[0m
+[0;31mE (25258) findmy_modem: Time to send message: 238958[0m
+[0;32mI (25258) findmy_modem: advertising stopped[0m
+[0;32mI (25278) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 38 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (25278) TIMESTAMP: Unix: 25[0m
+[0;32mI (25278) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (25288) findmy_modem: advertising stopped[0m
+[0;32mI (25298) findmy_modem: advertising started[0m
+[0;32mI (25498) findmy_modem: advertising stopped[0m
+[0;31mE (25498) findmy_modem: Time to send message: 239747[0m
+[0;32mI (25638) findmy_modem:   pub key to use (8. try): ba be 80 00 80 12 00 07 00 00 00 39 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (25638) TIMESTAMP: Unix: 25[0m
+[0;32mI (25648) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (25658) findmy_modem: advertising stopped[0m
+[0;32mI (25668) findmy_modem: advertising started[0m
+[0;32mI (25868) findmy_modem: advertising stopped[0m
+[0;31mE (25868) findmy_modem: Time to send message: 369999[0m
+[0;32mI (25888) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 3a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (25888) TIMESTAMP: Unix: 25[0m
+[0;32mI (25888) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (25898) findmy_modem: advertising stopped[0m
+[0;32mI (25908) findmy_modem: advertising started[0m
+[0;32mI (26108) findmy_modem: advertising stopped[0m
+[0;31mE (26108) findmy_modem: Time to send message: 239796[0m
+[0;32mI (26128) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 3b 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (26128) TIMESTAMP: Unix: 25[0m
+[0;32mI (26128) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (26138) findmy_modem: advertising stopped[0m
+[0;32mI (26148) findmy_modem: advertising started[0m
+[0;32mI (26348) findmy_modem: advertising stopped[0m
+[0;31mE (26348) findmy_modem: Time to send message: 239575[0m
+[0;32mI (26358) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 3c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (26368) TIMESTAMP: Unix: 26[0m
+[0;32mI (26368) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (26378) findmy_modem: advertising stopped[0m
+[0;32mI (26388) findmy_modem: advertising started[0m
+[0;32mI (26588) findmy_modem: advertising stopped[0m
+[0;31mE (26588) findmy_modem: Time to send message: 239844[0m
+[0;32mI (26598) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 3d 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (26608) TIMESTAMP: Unix: 26[0m
+[0;32mI (26608) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (26618) findmy_modem: advertising stopped[0m
+[0;32mI (26628) findmy_modem: advertising started[0m
+[0;32mI (26828) findmy_modem: advertising stopped[0m
+[0;31mE (26828) findmy_modem: Time to send message: 239806[0m
+[0;32mI (26848) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 3e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (26848) TIMESTAMP: Unix: 26[0m
+[0;32mI (26848) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (26858) findmy_modem: advertising stopped[0m
+[0;32mI (26868) findmy_modem: advertising started[0m
+[0;32mI (27068) findmy_modem: advertising stopped[0m
+[0;31mE (27068) findmy_modem: Time to send message: 240089[0m
+[0;32mI (27208) findmy_modem:   pub key to use (8. try): ba be 80 00 80 12 00 07 00 00 00 3f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (27208) TIMESTAMP: Unix: 26[0m
+[0;32mI (27218) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (27228) findmy_modem: advertising stopped[0m
+[0;32mI (27238) findmy_modem: advertising started[0m
+[0;32mI (27438) findmy_modem: advertising stopped[0m
+[0;31mE (27438) findmy_modem: Time to send message: 369460[0m
+[0;32mI (27448) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 40 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (27458) TIMESTAMP: Unix: 27[0m
+[0;32mI (27458) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (27468) findmy_modem: advertising stopped[0m
+[0;32mI (27478) findmy_modem: advertising started[0m
+[0;32mI (27678) findmy_modem: advertising stopped[0m
+[0;31mE (27678) findmy_modem: Time to send message: 239855[0m
+[0;32mI (27728) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 41 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (27728) TIMESTAMP: Unix: 27[0m
+[0;32mI (27738) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (27748) findmy_modem: advertising stopped[0m
+[0;32mI (27748) findmy_modem: advertising started[0m
+[0;32mI (27958) findmy_modem: advertising stopped[0m
+[0;31mE (27958) findmy_modem: Time to send message: 279763[0m
+[0;32mI (27988) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 42 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (27998) TIMESTAMP: Unix: 27[0m
+[0;32mI (27998) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (28008) findmy_modem: advertising stopped[0m
+[0;32mI (28018) findmy_modem: advertising started[0m
+[0;32mI (28218) findmy_modem: advertising stopped[0m
+[0;31mE (28218) findmy_modem: Time to send message: 259810[0m
+[0;32mI (28248) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 43 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (28258) TIMESTAMP: Unix: 27[0m
+[0;32mI (28258) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (28268) findmy_modem: advertising stopped[0m
+[0;32mI (28278) findmy_modem: advertising started[0m
+[0;32mI (28478) findmy_modem: advertising stopped[0m
+[0;31mE (28478) findmy_modem: Time to send message: 259828[0m
+[0;32mI (28498) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 44 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (28498) TIMESTAMP: Unix: 28[0m
+[0;32mI (28498) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (28508) findmy_modem: advertising stopped[0m
+[0;32mI (28518) findmy_modem: advertising started[0m
+[0;32mI (28718) findmy_modem: advertising stopped[0m
+[0;31mE (28718) findmy_modem: Time to send message: 239786[0m
+[0;32mI (28748) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 45 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (28758) TIMESTAMP: Unix: 28[0m
+[0;32mI (28758) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (28768) findmy_modem: advertising stopped[0m
+[0;32mI (28778) findmy_modem: advertising started[0m
+[0;32mI (28978) findmy_modem: advertising stopped[0m
+[0;31mE (28978) findmy_modem: Time to send message: 259791[0m
+[0;32mI (28988) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (28998) TIMESTAMP: Unix: 28[0m
+[0;32mI (28998) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (29008) findmy_modem: advertising stopped[0m
+[0;32mI (29018) findmy_modem: advertising started[0m
+[0;32mI (29218) findmy_modem: advertising stopped[0m
+[0;31mE (29218) findmy_modem: Time to send message: 239817[0m
+[0;32mI (29228) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 47 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (29238) TIMESTAMP: Unix: 28[0m
+[0;32mI (29238) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (29248) findmy_modem: advertising stopped[0m
+[0;32mI (29258) findmy_modem: advertising started[0m
+[0;32mI (29458) findmy_modem: advertising stopped[0m
+[0;31mE (29458) findmy_modem: Time to send message: 239784[0m
+[0;32mI (29488) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 48 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (29498) TIMESTAMP: Unix: 29[0m
+[0;32mI (29498) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (29508) findmy_modem: advertising stopped[0m
+[0;32mI (29518) findmy_modem: advertising started[0m
+[0;31mE (29718) findmy_modem: Time to send message: 258995[0m
+[0;32mI (29718) findmy_modem: advertising stopped[0m
+[0;32mI (29748) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 49 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (29758) TIMESTAMP: Unix: 29[0m
+[0;32mI (29758) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (29768) findmy_modem: advertising stopped[0m
+[0;32mI (29778) findmy_modem: advertising started[0m
+[0;32mI (29978) findmy_modem: advertising stopped[0m
+[0;31mE (29978) findmy_modem: Time to send message: 260364[0m
+[0;32mI (30028) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 4a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (30028) TIMESTAMP: Unix: 29[0m
+[0;32mI (30038) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (30048) findmy_modem: advertising stopped[0m
+[0;32mI (30048) findmy_modem: advertising started[0m
+[0;32mI (30258) findmy_modem: advertising stopped[0m
+[0;31mE (30258) findmy_modem: Time to send message: 279884[0m
+[0;32mI (30278) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 4b 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (30278) TIMESTAMP: Unix: 30[0m
+[0;32mI (30278) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (30288) findmy_modem: advertising stopped[0m
+[0;32mI (30298) findmy_modem: advertising started[0m
+[0;32mI (30498) findmy_modem: advertising stopped[0m
+[0;31mE (30498) findmy_modem: Time to send message: 239762[0m
+[0;32mI (30518) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 4c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (30518) TIMESTAMP: Unix: 30[0m
+[0;32mI (30518) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (30528) findmy_modem: advertising stopped[0m
+[0;32mI (30538) findmy_modem: advertising started[0m
+[0;32mI (30738) findmy_modem: advertising stopped[0m
+[0;31mE (30738) findmy_modem: Time to send message: 239800[0m
+[0;32mI (30788) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 4d 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (30788) TIMESTAMP: Unix: 30[0m
+[0;32mI (30798) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (30808) findmy_modem: advertising stopped[0m
+[0;32mI (30808) findmy_modem: advertising started[0m
+[0;32mI (31018) findmy_modem: advertising stopped[0m
+[0;31mE (31018) findmy_modem: Time to send message: 279783[0m
+[0;32mI (31038) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 4e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (31038) TIMESTAMP: Unix: 30[0m
+[0;32mI (31038) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (31048) findmy_modem: advertising stopped[0m
+[0;32mI (31058) findmy_modem: advertising started[0m
+[0;32mI (31258) findmy_modem: advertising stopped[0m
+[0;31mE (31258) findmy_modem: Time to send message: 239801[0m
+[0;32mI (31288) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 4f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (31298) TIMESTAMP: Unix: 31[0m
+[0;32mI (31298) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (31308) findmy_modem: advertising stopped[0m
+[0;32mI (31318) findmy_modem: advertising started[0m
+[0;32mI (31518) findmy_modem: advertising stopped[0m
+[0;31mE (31518) findmy_modem: Time to send message: 259838[0m
+[0;32mI (31588) findmy_modem:   pub key to use (4. try): ba be 80 00 80 12 00 03 00 00 00 50 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (31588) TIMESTAMP: Unix: 31[0m
+[0;32mI (31598) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (31608) findmy_modem: advertising stopped[0m
+[0;32mI (31608) findmy_modem: advertising started[0m
+[0;32mI (31808) findmy_modem: advertising stopped[0m
+[0;31mE (31808) findmy_modem: Time to send message: 289799[0m
+[0;32mI (31828) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 51 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (31828) TIMESTAMP: Unix: 31[0m
+[0;32mI (31828) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (31838) findmy_modem: advertising stopped[0m
+[0;32mI (31848) findmy_modem: advertising started[0m
+[0;32mI (32048) findmy_modem: advertising stopped[0m
+[0;31mE (32048) findmy_modem: Time to send message: 239785[0m
+[0;32mI (32058) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 52 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (32068) TIMESTAMP: Unix: 31[0m
+[0;32mI (32068) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (32078) findmy_modem: advertising stopped[0m
+[0;32mI (32088) findmy_modem: advertising started[0m
+[0;32mI (32288) findmy_modem: advertising stopped[0m
+[0;31mE (32288) findmy_modem: Time to send message: 239805[0m
+[0;32mI (32358) findmy_modem:   pub key to use (4. try): ba be 80 00 80 12 00 03 00 00 00 53 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (32358) TIMESTAMP: Unix: 32[0m
+[0;32mI (32368) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (32378) findmy_modem: advertising stopped[0m
+[0;32mI (32378) findmy_modem: advertising started[0m
+[0;32mI (32578) findmy_modem: advertising stopped[0m
+[0;31mE (32578) findmy_modem: Time to send message: 289826[0m
+[0;32mI (32648) findmy_modem:   pub key to use (4. try): ba be 80 00 80 12 00 03 00 00 00 54 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (32648) TIMESTAMP: Unix: 32[0m
+[0;32mI (32658) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (32668) findmy_modem: advertising stopped[0m
+[0;32mI (32668) findmy_modem: advertising started[0m
+[0;32mI (32868) findmy_modem: advertising stopped[0m
+[0;31mE (32868) findmy_modem: Time to send message: 289797[0m
+[0;32mI (32898) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 55 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (32908) TIMESTAMP: Unix: 32[0m
+[0;32mI (32908) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (32918) findmy_modem: advertising stopped[0m
+[0;32mI (32928) findmy_modem: advertising started[0m
+[0;32mI (33128) findmy_modem: advertising stopped[0m
+[0;31mE (33128) findmy_modem: Time to send message: 259790[0m
+[0;32mI (33158) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 56 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (33158) TIMESTAMP: Unix: 32[0m
+[0;32mI (33168) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (33178) findmy_modem: advertising stopped[0m
+[0;32mI (33178) findmy_modem: advertising started[0m
+[0;32mI (33388) findmy_modem: advertising stopped[0m
+[0;31mE (33388) findmy_modem: Time to send message: 259801[0m
+[0;32mI (33408) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 57 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (33408) TIMESTAMP: Unix: 33[0m
+[0;32mI (33408) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (33418) findmy_modem: advertising stopped[0m
+[0;32mI (33428) findmy_modem: advertising started[0m
+[0;32mI (33628) findmy_modem: advertising stopped[0m
+[0;31mE (33628) findmy_modem: Time to send message: 239840[0m
+[0;32mI (33648) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 58 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (33648) TIMESTAMP: Unix: 33[0m
+[0;32mI (33648) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (33658) findmy_modem: advertising stopped[0m
+[0;32mI (33668) findmy_modem: advertising started[0m
+[0;32mI (33868) findmy_modem: advertising stopped[0m
+[0;31mE (33868) findmy_modem: Time to send message: 239766[0m
+[0;32mI (33898) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 59 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (33908) TIMESTAMP: Unix: 33[0m
+[0;32mI (33908) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (33918) findmy_modem: advertising stopped[0m
+[0;32mI (33928) findmy_modem: advertising started[0m
+[0;32mI (34128) findmy_modem: advertising stopped[0m
+[0;31mE (34128) findmy_modem: Time to send message: 259812[0m
+[0;32mI (34138) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 5a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (34148) TIMESTAMP: Unix: 33[0m
+[0;32mI (34148) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (34158) findmy_modem: advertising stopped[0m
+[0;32mI (34168) findmy_modem: advertising started[0m
+[0;32mI (34368) findmy_modem: advertising stopped[0m
+[0;31mE (34368) findmy_modem: Time to send message: 239796[0m
+[0;32mI (34398) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 5b 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (34408) TIMESTAMP: Unix: 34[0m
+[0;32mI (34408) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (34418) findmy_modem: advertising stopped[0m
+[0;32mI (34428) findmy_modem: advertising started[0m
+[0;32mI (34628) findmy_modem: advertising stopped[0m
+[0;31mE (34628) findmy_modem: Time to send message: 259834[0m
+[0;32mI (34678) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 5c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (34678) TIMESTAMP: Unix: 34[0m
+[0;32mI (34688) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (34698) findmy_modem: advertising stopped[0m
+[0;32mI (34698) findmy_modem: advertising started[0m
+[0;32mI (34908) findmy_modem: advertising stopped[0m
+[0;31mE (34908) findmy_modem: Time to send message: 279795[0m
+[0;32mI (34928) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 5d 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (34928) TIMESTAMP: Unix: 34[0m
+[0;32mI (34928) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (34938) findmy_modem: advertising stopped[0m
+[0;32mI (34948) findmy_modem: advertising started[0m
+[0;32mI (35148) findmy_modem: advertising stopped[0m
+[0;31mE (35148) findmy_modem: Time to send message: 239794[0m
+[0;32mI (35198) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 5e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (35198) TIMESTAMP: Unix: 34[0m
+[0;32mI (35208) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (35218) findmy_modem: advertising stopped[0m
+[0;32mI (35218) findmy_modem: advertising started[0m
+[0;32mI (35428) findmy_modem: advertising stopped[0m
+[0;31mE (35428) findmy_modem: Time to send message: 279877[0m
+[0;32mI (35458) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 5f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (35468) TIMESTAMP: Unix: 35[0m
+[0;32mI (35468) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (35478) findmy_modem: advertising stopped[0m
+[0;32mI (35488) findmy_modem: advertising started[0m
+[0;32mI (35688) findmy_modem: advertising stopped[0m
+[0;31mE (35688) findmy_modem: Time to send message: 259741[0m
+[0;32mI (35718) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 60 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (35728) TIMESTAMP: Unix: 35[0m
+[0;32mI (35728) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (35738) findmy_modem: advertising stopped[0m
+[0;32mI (35748) findmy_modem: advertising started[0m
+[0;32mI (35948) findmy_modem: advertising stopped[0m
+[0;31mE (35948) findmy_modem: Time to send message: 259806[0m
+[0;32mI (35958) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 61 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (35968) TIMESTAMP: Unix: 35[0m
+[0;32mI (35968) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (35978) findmy_modem: advertising stopped[0m
+[0;32mI (35988) findmy_modem: advertising started[0m
+[0;32mI (36188) findmy_modem: advertising stopped[0m
+[0;31mE (36188) findmy_modem: Time to send message: 239794[0m
+[0;32mI (36198) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 62 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (36208) TIMESTAMP: Unix: 35[0m
+[0;32mI (36208) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (36218) findmy_modem: advertising stopped[0m
+[0;32mI (36228) findmy_modem: advertising started[0m
+[0;31mE (36428) findmy_modem: Time to send message: 238974[0m
+[0;32mI (36428) findmy_modem: advertising stopped[0m
+[0;32mI (36478) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (36478) TIMESTAMP: Unix: 36[0m
+[0;32mI (36488) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (36498) findmy_modem: advertising stopped[0m
+[0;32mI (36498) findmy_modem: advertising started[0m
+[0;32mI (36708) findmy_modem: advertising stopped[0m
+[0;31mE (36708) findmy_modem: Time to send message: 280410[0m
+[0;32mI (36738) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 64 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (36748) TIMESTAMP: Unix: 36[0m
+[0;32mI (36748) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (36758) findmy_modem: advertising stopped[0m
+[0;32mI (36768) findmy_modem: advertising started[0m
+[0;32mI (36968) findmy_modem: advertising stopped[0m
+[0;31mE (36968) findmy_modem: Time to send message: 259818[0m
+[0;32mI (37018) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 65 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (37018) TIMESTAMP: Unix: 36[0m
+[0;32mI (37028) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (37038) findmy_modem: advertising stopped[0m
+[0;32mI (37038) findmy_modem: advertising started[0m
+[0;32mI (37248) findmy_modem: advertising stopped[0m
+[0;31mE (37248) findmy_modem: Time to send message: 279784[0m
+[0;32mI (37258) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 66 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (37268) TIMESTAMP: Unix: 36[0m
+[0;32mI (37268) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (37278) findmy_modem: advertising stopped[0m
+[0;32mI (37288) findmy_modem: advertising started[0m
+[0;32mI (37488) findmy_modem: advertising stopped[0m
+[0;31mE (37488) findmy_modem: Time to send message: 239832[0m
+[0;32mI (37518) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 67 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (37528) TIMESTAMP: Unix: 37[0m
+[0;32mI (37528) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (37538) findmy_modem: advertising stopped[0m
+[0;32mI (37548) findmy_modem: advertising started[0m
+[0;31mE (37748) findmy_modem: Time to send message: 258947[0m
+[0;32mI (37748) findmy_modem: advertising stopped[0m
+[0;32mI (37768) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 68 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (37768) TIMESTAMP: Unix: 37[0m
+[0;32mI (37768) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (37778) findmy_modem: advertising stopped[0m
+[0;32mI (37788) findmy_modem: advertising started[0m
+[0;32mI (37988) findmy_modem: advertising stopped[0m
+[0;31mE (37988) findmy_modem: Time to send message: 239723[0m
+[0;32mI (38038) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 69 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (38038) TIMESTAMP: Unix: 37[0m
+[0;32mI (38048) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (38058) findmy_modem: advertising stopped[0m
+[0;32mI (38058) findmy_modem: advertising started[0m
+[0;32mI (38268) findmy_modem: advertising stopped[0m
+[0;31mE (38268) findmy_modem: Time to send message: 279805[0m
+[0;32mI (38298) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 6a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (38308) TIMESTAMP: Unix: 38[0m
+[0;32mI (38308) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (38318) findmy_modem: advertising stopped[0m
+[0;32mI (38328) findmy_modem: advertising started[0m
+[0;32mI (38528) findmy_modem: advertising stopped[0m
+[0;31mE (38528) findmy_modem: Time to send message: 259837[0m
+[0;32mI (38548) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 6b 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (38548) TIMESTAMP: Unix: 38[0m
+[0;32mI (38548) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (38558) findmy_modem: advertising stopped[0m
+[0;32mI (38568) findmy_modem: advertising started[0m
+[0;32mI (38768) findmy_modem: advertising stopped[0m
+[0;31mE (38768) findmy_modem: Time to send message: 239752[0m
+[0;32mI (38788) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 6c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (38788) TIMESTAMP: Unix: 38[0m
+[0;32mI (38788) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (38798) findmy_modem: advertising stopped[0m
+[0;32mI (38808) findmy_modem: advertising started[0m
+[0;32mI (39008) findmy_modem: advertising stopped[0m
+[0;31mE (39008) findmy_modem: Time to send message: 239851[0m
+[0;32mI (39098) findmy_modem:   pub key to use (5. try): ba be 80 00 80 12 00 04 00 00 00 6d 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (39098) TIMESTAMP: Unix: 38[0m
+[0;32mI (39098) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (39108) findmy_modem: advertising stopped[0m
+[0;32mI (39118) findmy_modem: advertising started[0m
+[0;32mI (39318) findmy_modem: advertising stopped[0m
+[0;31mE (39318) findmy_modem: Time to send message: 309788[0m
+[0;32mI (39328) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 6e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (39338) TIMESTAMP: Unix: 39[0m
+[0;32mI (39338) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (39348) findmy_modem: advertising stopped[0m
+[0;32mI (39358) findmy_modem: advertising started[0m
+[0;32mI (39558) findmy_modem: advertising stopped[0m
+[0;31mE (39558) findmy_modem: Time to send message: 239811[0m
+[0;32mI (39578) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 6f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (39578) TIMESTAMP: Unix: 39[0m
+[0;32mI (39578) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (39588) findmy_modem: advertising stopped[0m
+[0;32mI (39598) findmy_modem: advertising started[0m
+[0;32mI (39798) findmy_modem: advertising stopped[0m
+[0;31mE (39798) findmy_modem: Time to send message: 239791[0m
+[0;32mI (39818) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 70 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (39818) TIMESTAMP: Unix: 39[0m
+[0;32mI (39818) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (39828) findmy_modem: advertising stopped[0m
+[0;32mI (39838) findmy_modem: advertising started[0m
+[0;32mI (40038) findmy_modem: advertising stopped[0m
+[0;31mE (40038) findmy_modem: Time to send message: 239799[0m
+[0;32mI (40048) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 71 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (40058) TIMESTAMP: Unix: 39[0m
+[0;32mI (40058) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (40068) findmy_modem: advertising stopped[0m
+[0;32mI (40078) findmy_modem: advertising started[0m
+[0;32mI (40278) findmy_modem: advertising stopped[0m
+[0;31mE (40278) findmy_modem: Time to send message: 239805[0m
+[0;32mI (40298) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 72 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (40298) TIMESTAMP: Unix: 40[0m
+[0;32mI (40298) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (40308) findmy_modem: advertising stopped[0m
+[0;32mI (40318) findmy_modem: advertising started[0m
+[0;32mI (40518) findmy_modem: advertising stopped[0m
+[0;31mE (40518) findmy_modem: Time to send message: 239831[0m
+[0;32mI (40588) findmy_modem:   pub key to use (4. try): ba be 80 00 80 12 00 03 00 00 00 73 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (40588) TIMESTAMP: Unix: 40[0m
+[0;32mI (40598) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (40608) findmy_modem: advertising stopped[0m
+[0;32mI (40608) findmy_modem: advertising started[0m
+[0;32mI (40808) findmy_modem: advertising stopped[0m
+[0;31mE (40808) findmy_modem: Time to send message: 289712[0m
+[0;32mI (40858) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 74 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (40858) TIMESTAMP: Unix: 40[0m
+[0;32mI (40868) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (40878) findmy_modem: advertising stopped[0m
+[0;32mI (40878) findmy_modem: advertising started[0m
+[0;32mI (41088) findmy_modem: advertising stopped[0m
+[0;31mE (41088) findmy_modem: Time to send message: 279866[0m
+[0;32mI (41098) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 75 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (41108) TIMESTAMP: Unix: 40[0m
+[0;32mI (41108) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (41118) findmy_modem: advertising stopped[0m
+[0;32mI (41128) findmy_modem: advertising started[0m
+[0;32mI (41328) findmy_modem: advertising stopped[0m
+[0;31mE (41328) findmy_modem: Time to send message: 239817[0m
+[0;32mI (41378) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 76 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (41378) TIMESTAMP: Unix: 41[0m
+[0;32mI (41388) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (41398) findmy_modem: advertising stopped[0m
+[0;32mI (41398) findmy_modem: advertising started[0m
+[0;32mI (41608) findmy_modem: advertising stopped[0m
+[0;31mE (41608) findmy_modem: Time to send message: 279818[0m
+[0;32mI (41678) findmy_modem:   pub key to use (4. try): ba be 80 00 80 12 00 03 00 00 00 77 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (41678) TIMESTAMP: Unix: 41[0m
+[0;32mI (41688) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (41698) findmy_modem: advertising stopped[0m
+[0;32mI (41698) findmy_modem: advertising started[0m
+[0;32mI (41898) findmy_modem: advertising stopped[0m
+[0;31mE (41898) findmy_modem: Time to send message: 289808[0m
+[0;32mI (41928) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 78 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (41938) TIMESTAMP: Unix: 41[0m
+[0;32mI (41938) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (41948) findmy_modem: advertising stopped[0m
+[0;32mI (41958) findmy_modem: advertising started[0m
+[0;32mI (42158) findmy_modem: advertising stopped[0m
+[0;31mE (42158) findmy_modem: Time to send message: 259789[0m
+[0;32mI (42178) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 79 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (42178) TIMESTAMP: Unix: 41[0m
+[0;32mI (42178) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (42188) findmy_modem: advertising stopped[0m
+[0;32mI (42198) findmy_modem: advertising started[0m
+[0;32mI (42398) findmy_modem: advertising stopped[0m
+[0;31mE (42398) findmy_modem: Time to send message: 239804[0m
+[0;32mI (42418) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 7a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (42418) TIMESTAMP: Unix: 42[0m
+[0;32mI (42418) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (42428) findmy_modem: advertising stopped[0m
+[0;32mI (42438) findmy_modem: advertising started[0m
+[0;32mI (42638) findmy_modem: advertising stopped[0m
+[0;31mE (42638) findmy_modem: Time to send message: 239820[0m
+[0;32mI (42688) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 7b 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (42688) TIMESTAMP: Unix: 42[0m
+[0;32mI (42698) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (42708) findmy_modem: advertising stopped[0m
+[0;32mI (42708) findmy_modem: advertising started[0m
+[0;32mI (42918) findmy_modem: advertising stopped[0m
+[0;31mE (42918) findmy_modem: Time to send message: 279785[0m
+[0;32mI (42928) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 7c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (42938) TIMESTAMP: Unix: 42[0m
+[0;32mI (42938) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (42948) findmy_modem: advertising stopped[0m
+[0;32mI (42958) findmy_modem: advertising started[0m
+[0;32mI (43158) findmy_modem: advertising stopped[0m
+[0;31mE (43158) findmy_modem: Time to send message: 239788[0m
+[0;32mI (43188) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 7d 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (43198) TIMESTAMP: Unix: 42[0m
+[0;32mI (43198) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (43208) findmy_modem: advertising stopped[0m
+[0;32mI (43218) findmy_modem: advertising started[0m
+[0;32mI (43418) findmy_modem: advertising stopped[0m
+[0;31mE (43418) findmy_modem: Time to send message: 259828[0m
+[0;32mI (43428) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 7e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (43438) TIMESTAMP: Unix: 43[0m
+[0;32mI (43438) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (43448) findmy_modem: advertising stopped[0m
+[0;32mI (43458) findmy_modem: advertising started[0m
+[0;32mI (43658) findmy_modem: advertising stopped[0m
+[0;31mE (43658) findmy_modem: Time to send message: 239825[0m
+[0;32mI (43798) findmy_modem:   pub key to use (8. try): ba be 80 00 80 12 00 07 00 00 00 7f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (43798) TIMESTAMP: Unix: 43[0m
+[0;32mI (43808) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (43818) findmy_modem: advertising stopped[0m
+[0;32mI (43828) findmy_modem: advertising started[0m
+[0;32mI (44028) findmy_modem: advertising stopped[0m
+[0;31mE (44028) findmy_modem: Time to send message: 369789[0m
+[0;32mI (44038) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 80 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (44048) TIMESTAMP: Unix: 43[0m
+[0;32mI (44048) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (44058) findmy_modem: advertising stopped[0m
+[0;32mI (44068) findmy_modem: advertising started[0m
+[0;32mI (44268) findmy_modem: advertising stopped[0m
+[0;31mE (44268) findmy_modem: Time to send message: 239782[0m
+[0;32mI (44278) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 81 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (44288) TIMESTAMP: Unix: 44[0m
+[0;32mI (44288) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (44298) findmy_modem: advertising stopped[0m
+[0;32mI (44308) findmy_modem: advertising started[0m
+[0;32mI (44508) findmy_modem: advertising stopped[0m
+[0;31mE (44508) findmy_modem: Time to send message: 239852[0m
+[0;32mI (44528) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 82 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (44528) TIMESTAMP: Unix: 44[0m
+[0;32mI (44528) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (44538) findmy_modem: advertising stopped[0m
+[0;32mI (44548) findmy_modem: advertising started[0m
+[0;32mI (44748) findmy_modem: advertising stopped[0m
+[0;31mE (44748) findmy_modem: Time to send message: 239770[0m
+[0;32mI (44758) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 83 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (44768) TIMESTAMP: Unix: 44[0m
+[0;32mI (44768) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (44778) findmy_modem: advertising stopped[0m
+[0;32mI (44788) findmy_modem: advertising started[0m
+[0;32mI (44988) findmy_modem: advertising stopped[0m
+[0;31mE (44988) findmy_modem: Time to send message: 239807[0m
+[0;32mI (44998) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 84 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (45008) TIMESTAMP: Unix: 44[0m
+[0;32mI (45008) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (45018) findmy_modem: advertising stopped[0m
+[0;32mI (45028) findmy_modem: advertising started[0m
+[0;32mI (45228) findmy_modem: advertising stopped[0m
+[0;31mE (45228) findmy_modem: Time to send message: 239821[0m
+[0;32mI (45278) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 85 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (45278) TIMESTAMP: Unix: 45[0m
+[0;32mI (45288) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (45298) findmy_modem: advertising stopped[0m
+[0;32mI (45298) findmy_modem: advertising started[0m
+[0;32mI (45508) findmy_modem: advertising stopped[0m
+[0;31mE (45508) findmy_modem: Time to send message: 279852[0m
+[0;32mI (45528) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 86 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (45528) TIMESTAMP: Unix: 45[0m
+[0;32mI (45528) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (45538) findmy_modem: advertising stopped[0m
+[0;32mI (45548) findmy_modem: advertising started[0m
+[0;32mI (45748) findmy_modem: advertising stopped[0m
+[0;31mE (45748) findmy_modem: Time to send message: 239809[0m
+[0;32mI (45798) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 87 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (45798) TIMESTAMP: Unix: 45[0m
+[0;32mI (45808) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (45818) findmy_modem: advertising stopped[0m
+[0;32mI (45818) findmy_modem: advertising started[0m
+[0;32mI (46028) findmy_modem: advertising stopped[0m
+[0;31mE (46028) findmy_modem: Time to send message: 279765[0m
+[0;32mI (46058) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 88 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (46068) TIMESTAMP: Unix: 45[0m
+[0;32mI (46068) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (46078) findmy_modem: advertising stopped[0m
+[0;32mI (46088) findmy_modem: advertising started[0m
+[0;32mI (46288) findmy_modem: advertising stopped[0m
+[0;31mE (46288) findmy_modem: Time to send message: 259780[0m
+[0;32mI (46298) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 89 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (46308) TIMESTAMP: Unix: 46[0m
+[0;32mI (46308) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (46318) findmy_modem: advertising stopped[0m
+[0;32mI (46328) findmy_modem: advertising started[0m
+[0;32mI (46528) findmy_modem: advertising stopped[0m
+[0;31mE (46528) findmy_modem: Time to send message: 239845[0m
+[0;32mI (46578) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 8a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (46578) TIMESTAMP: Unix: 46[0m
+[0;32mI (46588) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (46598) findmy_modem: advertising stopped[0m
+[0;32mI (46598) findmy_modem: advertising started[0m
+[0;32mI (46808) findmy_modem: advertising stopped[0m
+[0;31mE (46808) findmy_modem: Time to send message: 279762[0m
+[0;32mI (46838) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 8b 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (46848) TIMESTAMP: Unix: 46[0m
+[0;32mI (46848) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (46858) findmy_modem: advertising stopped[0m
+[0;32mI (46868) findmy_modem: advertising started[0m
+[0;32mI (47068) findmy_modem: advertising stopped[0m
+[0;31mE (47068) findmy_modem: Time to send message: 259834[0m
+[0;32mI (47098) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 8c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (47108) TIMESTAMP: Unix: 46[0m
+[0;32mI (47108) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (47118) findmy_modem: advertising stopped[0m
+[0;32mI (47128) findmy_modem: advertising started[0m
+[0;32mI (47328) findmy_modem: advertising stopped[0m
+[0;31mE (47328) findmy_modem: Time to send message: 259784[0m
+[0;32mI (47378) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 8d 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (47378) TIMESTAMP: Unix: 47[0m
+[0;32mI (47388) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (47398) findmy_modem: advertising stopped[0m
+[0;32mI (47398) findmy_modem: advertising started[0m
+[0;32mI (47608) findmy_modem: advertising stopped[0m
+[0;31mE (47608) findmy_modem: Time to send message: 279840[0m
+[0;32mI (47628) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 8e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (47628) TIMESTAMP: Unix: 47[0m
+[0;32mI (47628) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (47638) findmy_modem: advertising stopped[0m
+[0;32mI (47648) findmy_modem: advertising started[0m
+[0;32mI (47848) findmy_modem: advertising stopped[0m
+[0;31mE (47848) findmy_modem: Time to send message: 239766[0m
+[0;32mI (47898) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 8f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (47898) TIMESTAMP: Unix: 47[0m
+[0;32mI (47908) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (47918) findmy_modem: advertising stopped[0m
+[0;32mI (47918) findmy_modem: advertising started[0m
+[0;32mI (48128) findmy_modem: advertising stopped[0m
+[0;31mE (48128) findmy_modem: Time to send message: 279834[0m
+[0;32mI (48198) findmy_modem:   pub key to use (4. try): ba be 80 00 80 12 00 03 00 00 00 90 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (48198) TIMESTAMP: Unix: 47[0m
+[0;32mI (48208) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (48218) findmy_modem: advertising stopped[0m
+[0;32mI (48218) findmy_modem: advertising started[0m
+[0;32mI (48418) findmy_modem: advertising stopped[0m
+[0;31mE (48418) findmy_modem: Time to send message: 289939[0m
+[0;32mI (48428) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 91 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (48438) TIMESTAMP: Unix: 48[0m
+[0;32mI (48438) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (48448) findmy_modem: advertising stopped[0m
+[0;32mI (48458) findmy_modem: advertising started[0m
+[0;32mI (48658) findmy_modem: advertising stopped[0m
+[0;31mE (48658) findmy_modem: Time to send message: 239667[0m
+[0;32mI (48668) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 92 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (48678) TIMESTAMP: Unix: 48[0m
+[0;32mI (48678) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (48688) findmy_modem: advertising stopped[0m
+[0;32mI (48698) findmy_modem: advertising started[0m
+[0;32mI (48898) findmy_modem: advertising stopped[0m
+[0;31mE (48898) findmy_modem: Time to send message: 239772[0m
+[0;32mI (48948) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 93 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (48948) TIMESTAMP: Unix: 48[0m
+[0;32mI (48958) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (48968) findmy_modem: advertising stopped[0m
+[0;32mI (48968) findmy_modem: advertising started[0m
+[0;32mI (49178) findmy_modem: advertising stopped[0m
+[0;31mE (49178) findmy_modem: Time to send message: 280087[0m
+[0;32mI (49228) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 94 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (49228) TIMESTAMP: Unix: 48[0m
+[0;32mI (49238) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (49248) findmy_modem: advertising stopped[0m
+[0;32mI (49248) findmy_modem: advertising started[0m
+[0;32mI (49458) findmy_modem: advertising stopped[0m
+[0;31mE (49458) findmy_modem: Time to send message: 279548[0m
+[0;32mI (49488) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 95 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (49498) TIMESTAMP: Unix: 49[0m
+[0;32mI (49498) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (49508) findmy_modem: advertising stopped[0m
+[0;32mI (49518) findmy_modem: advertising started[0m
+[0;32mI (49718) findmy_modem: advertising stopped[0m
+[0;31mE (49718) findmy_modem: Time to send message: 260136[0m
+[0;32mI (49768) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 96 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (49768) TIMESTAMP: Unix: 49[0m
+[0;32mI (49778) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (49788) findmy_modem: advertising stopped[0m
+[0;32mI (49788) findmy_modem: advertising started[0m
+[0;32mI (49998) findmy_modem: advertising stopped[0m
+[0;31mE (49998) findmy_modem: Time to send message: 279486[0m
+[0;32mI (50048) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 97 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (50048) TIMESTAMP: Unix: 49[0m
+[0;32mI (50058) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (50068) findmy_modem: advertising stopped[0m
+[0;32mI (50068) findmy_modem: advertising started[0m
+[0;32mI (50278) findmy_modem: advertising stopped[0m
+[0;31mE (50278) findmy_modem: Time to send message: 280157[0m
+[0;32mI (50328) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 98 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (50328) TIMESTAMP: Unix: 50[0m
+[0;32mI (50338) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (50348) findmy_modem: advertising stopped[0m
+[0;32mI (50348) findmy_modem: advertising started[0m
+[0;32mI (50558) findmy_modem: advertising stopped[0m
+[0;31mE (50558) findmy_modem: Time to send message: 279431[0m
+[0;32mI (50628) findmy_modem:   pub key to use (4. try): ba be 80 00 80 12 00 03 00 00 00 99 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (50628) TIMESTAMP: Unix: 50[0m
+[0;32mI (50638) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (50648) findmy_modem: advertising stopped[0m
+[0;32mI (50648) findmy_modem: advertising started[0m
+[0;32mI (50848) findmy_modem: advertising stopped[0m
+[0;31mE (50848) findmy_modem: Time to send message: 289776[0m
+[0;32mI (50878) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 9a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (50888) TIMESTAMP: Unix: 50[0m
+[0;32mI (50888) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (50898) findmy_modem: advertising stopped[0m
+[0;32mI (50908) findmy_modem: advertising started[0m
+[0;31mE (51108) findmy_modem: Time to send message: 258985[0m
+[0;32mI (51108) findmy_modem: advertising stopped[0m
+[0;32mI (51128) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 9b 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (51128) TIMESTAMP: Unix: 50[0m
+[0;32mI (51128) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (51138) findmy_modem: advertising stopped[0m
+[0;32mI (51148) findmy_modem: advertising started[0m
+[0;32mI (51348) findmy_modem: advertising stopped[0m
+[0;31mE (51348) findmy_modem: Time to send message: 239714[0m
+[0;32mI (51358) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 9c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (51368) TIMESTAMP: Unix: 51[0m
+[0;32mI (51368) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (51378) findmy_modem: advertising stopped[0m
+[0;32mI (51388) findmy_modem: advertising started[0m
+[0;32mI (51588) findmy_modem: advertising stopped[0m
+[0;31mE (51588) findmy_modem: Time to send message: 239822[0m
+[0;32mI (51608) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 9d 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (51608) TIMESTAMP: Unix: 51[0m
+[0;32mI (51608) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (51618) findmy_modem: advertising stopped[0m
+[0;32mI (51628) findmy_modem: advertising started[0m
+[0;32mI (51828) findmy_modem: advertising stopped[0m
+[0;31mE (51828) findmy_modem: Time to send message: 239782[0m
+[0;32mI (51898) findmy_modem:   pub key to use (4. try): ba be 80 00 80 12 00 03 00 00 00 9e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (51898) TIMESTAMP: Unix: 51[0m
+[0;32mI (51908) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (51908) findmy_modem: advertising stopped[0m
+[0;32mI (51918) findmy_modem: advertising started[0m
+[0;32mI (52118) findmy_modem: advertising stopped[0m
+[0;31mE (52118) findmy_modem: Time to send message: 289910[0m
+[0;32mI (52138) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 9f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (52138) TIMESTAMP: Unix: 51[0m
+[0;32mI (52138) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (52148) findmy_modem: advertising stopped[0m
+[0;32mI (52158) findmy_modem: advertising started[0m
+[0;32mI (52358) findmy_modem: advertising stopped[0m
+[0;31mE (52358) findmy_modem: Time to send message: 239676[0m
+[0;32mI (52468) findmy_modem:   pub key to use (6. try): ba be 80 00 80 12 00 05 00 00 00 a0 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (52468) TIMESTAMP: Unix: 52[0m
+[0;32mI (52468) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (52478) findmy_modem: advertising stopped[0m
+[0;32mI (52488) findmy_modem: advertising started[0m
+[0;31mE (52688) findmy_modem: Time to send message: 329025[0m
+[0;32mI (52688) findmy_modem: advertising stopped[0m
+[0;32mI (52718) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 a1 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (52728) TIMESTAMP: Unix: 52[0m
+[0;32mI (52728) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (52738) findmy_modem: advertising stopped[0m
+[0;32mI (52748) findmy_modem: advertising started[0m
+[0;32mI (52948) findmy_modem: advertising stopped[0m
+[0;31mE (52948) findmy_modem: Time to send message: 260331[0m
+[0;32mI (52958) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 a2 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (52968) TIMESTAMP: Unix: 52[0m
+[0;32mI (52968) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (52978) findmy_modem: advertising stopped[0m
+[0;32mI (52988) findmy_modem: advertising started[0m
+[0;32mI (53188) findmy_modem: advertising stopped[0m
+[0;31mE (53188) findmy_modem: Time to send message: 239853[0m
+[0;32mI (53258) findmy_modem:   pub key to use (4. try): ba be 80 00 80 12 00 03 00 00 00 a3 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (53258) TIMESTAMP: Unix: 52[0m
+[0;32mI (53268) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (53268) findmy_modem: advertising stopped[0m
+[0;32mI (53278) findmy_modem: advertising started[0m
+[0;32mI (53478) findmy_modem: advertising stopped[0m
+[0;31mE (53478) findmy_modem: Time to send message: 289812[0m
+[0;32mI (53508) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 a4 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (53518) TIMESTAMP: Unix: 53[0m
+[0;32mI (53518) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (53528) findmy_modem: advertising stopped[0m
+[0;32mI (53538) findmy_modem: advertising started[0m
+[0;32mI (53738) findmy_modem: advertising stopped[0m
+[0;31mE (53738) findmy_modem: Time to send message: 259786[0m
+[0;32mI (53788) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 a5 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (53788) TIMESTAMP: Unix: 53[0m
+[0;32mI (53798) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (53808) findmy_modem: advertising stopped[0m
+[0;32mI (53808) findmy_modem: advertising started[0m
+[0;32mI (54018) findmy_modem: advertising stopped[0m
+[0;31mE (54018) findmy_modem: Time to send message: 279854[0m
+[0;32mI (54038) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 a6 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (54038) TIMESTAMP: Unix: 53[0m
+[0;32mI (54038) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (54048) findmy_modem: advertising stopped[0m
+[0;32mI (54058) findmy_modem: advertising started[0m
+[0;32mI (54258) findmy_modem: advertising stopped[0m
+[0;31mE (54258) findmy_modem: Time to send message: 239740[0m
+[0;32mI (54308) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 a7 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (54308) TIMESTAMP: Unix: 54[0m
+[0;32mI (54318) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (54328) findmy_modem: advertising stopped[0m
+[0;32mI (54328) findmy_modem: advertising started[0m
+[0;32mI (54538) findmy_modem: advertising stopped[0m
+[0;31mE (54538) findmy_modem: Time to send message: 279847[0m
+[0;32mI (54628) findmy_modem:   pub key to use (5. try): ba be 80 00 80 12 00 04 00 00 00 a8 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (54628) TIMESTAMP: Unix: 54[0m
+[0;32mI (54628) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (54638) findmy_modem: advertising stopped[0m
+[0;32mI (54648) findmy_modem: advertising started[0m
+[0;32mI (54848) findmy_modem: advertising stopped[0m
+[0;31mE (54848) findmy_modem: Time to send message: 309772[0m
+[0;32mI (54858) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 a9 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (54868) TIMESTAMP: Unix: 54[0m
+[0;32mI (54868) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (54878) findmy_modem: advertising stopped[0m
+[0;32mI (54888) findmy_modem: advertising started[0m
+[0;31mE (55088) findmy_modem: Time to send message: 238976[0m
+[0;32mI (55088) findmy_modem: advertising stopped[0m
+[0;32mI (55108) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 aa 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (55108) TIMESTAMP: Unix: 54[0m
+[0;32mI (55108) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (55118) findmy_modem: advertising stopped[0m
+[0;32mI (55128) findmy_modem: advertising started[0m
+[0;32mI (55328) findmy_modem: advertising stopped[0m
+[0;31mE (55328) findmy_modem: Time to send message: 239745[0m
+[0;32mI (55338) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 ab 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (55348) TIMESTAMP: Unix: 55[0m
+[0;32mI (55348) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (55358) findmy_modem: advertising stopped[0m
+[0;32mI (55368) findmy_modem: advertising started[0m
+[0;32mI (55568) findmy_modem: advertising stopped[0m
+[0;31mE (55568) findmy_modem: Time to send message: 239795[0m
+[0;32mI (55588) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 ac 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (55588) TIMESTAMP: Unix: 55[0m
+[0;32mI (55588) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (55598) findmy_modem: advertising stopped[0m
+[0;32mI (55608) findmy_modem: advertising started[0m
+[0;32mI (55808) findmy_modem: advertising stopped[0m
+[0;31mE (55808) findmy_modem: Time to send message: 239784[0m
+[0;32mI (55828) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 ad 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (55828) TIMESTAMP: Unix: 55[0m
+[0;32mI (55828) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (55838) findmy_modem: advertising stopped[0m
+[0;32mI (55848) findmy_modem: advertising started[0m
+[0;32mI (56048) findmy_modem: advertising stopped[0m
+[0;31mE (56048) findmy_modem: Time to send message: 239832[0m
+[0;32mI (56138) findmy_modem:   pub key to use (5. try): ba be 80 00 80 12 00 04 00 00 00 ae 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (56138) TIMESTAMP: Unix: 55[0m
+[0;32mI (56138) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (56148) findmy_modem: advertising stopped[0m
+[0;32mI (56158) findmy_modem: advertising started[0m
+[0;32mI (56358) findmy_modem: advertising stopped[0m
+[0;31mE (56358) findmy_modem: Time to send message: 309772[0m
+[0;32mI (56368) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 af 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (56378) TIMESTAMP: Unix: 56[0m
+[0;32mI (56378) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (56388) findmy_modem: advertising stopped[0m
+[0;32mI (56398) findmy_modem: advertising started[0m
+[0;32mI (56598) findmy_modem: advertising stopped[0m
+[0;31mE (56598) findmy_modem: Time to send message: 239838[0m
+[0;32mI (56628) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 b0 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (56638) TIMESTAMP: Unix: 56[0m
+[0;32mI (56638) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (56648) findmy_modem: advertising stopped[0m
+[0;32mI (56658) findmy_modem: advertising started[0m
+[0;32mI (56858) findmy_modem: advertising stopped[0m
+[0;31mE (56858) findmy_modem: Time to send message: 259786[0m
+[0;32mI (56888) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 b1 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (56898) TIMESTAMP: Unix: 56[0m
+[0;32mI (56898) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (56908) findmy_modem: advertising stopped[0m
+[0;32mI (56918) findmy_modem: advertising started[0m
+[0;32mI (57118) findmy_modem: advertising stopped[0m
+[0;31mE (57118) findmy_modem: Time to send message: 259820[0m
+[0;32mI (57138) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 b2 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (57138) TIMESTAMP: Unix: 56[0m
+[0;32mI (57138) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (57148) findmy_modem: advertising stopped[0m
+[0;32mI (57158) findmy_modem: advertising started[0m
+[0;32mI (57358) findmy_modem: advertising stopped[0m
+[0;31mE (57358) findmy_modem: Time to send message: 239779[0m
+[0;32mI (57368) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 b3 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (57378) TIMESTAMP: Unix: 57[0m
+[0;32mI (57378) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (57388) findmy_modem: advertising stopped[0m
+[0;32mI (57398) findmy_modem: advertising started[0m
+[0;32mI (57598) findmy_modem: advertising stopped[0m
+[0;31mE (57598) findmy_modem: Time to send message: 239840[0m
+[0;32mI (57628) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 b4 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (57638) TIMESTAMP: Unix: 57[0m
+[0;32mI (57638) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (57648) findmy_modem: advertising stopped[0m
+[0;32mI (57658) findmy_modem: advertising started[0m
+[0;32mI (57858) findmy_modem: advertising stopped[0m
+[0;31mE (57858) findmy_modem: Time to send message: 259785[0m
+[0;32mI (57888) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 b5 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (57898) TIMESTAMP: Unix: 57[0m
+[0;32mI (57898) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (57908) findmy_modem: advertising stopped[0m
+[0;32mI (57918) findmy_modem: advertising started[0m
+[0;32mI (58118) findmy_modem: advertising stopped[0m
+[0;31mE (58118) findmy_modem: Time to send message: 259827[0m
+[0;32mI (58138) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 b6 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (58138) TIMESTAMP: Unix: 57[0m
+[0;32mI (58138) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (58148) findmy_modem: advertising stopped[0m
+[0;32mI (58158) findmy_modem: advertising started[0m
+[0;32mI (58358) findmy_modem: advertising stopped[0m
+[0;31mE (58358) findmy_modem: Time to send message: 239774[0m
+[0;32mI (58388) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 b7 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (58398) TIMESTAMP: Unix: 58[0m
+[0;32mI (58398) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (58408) findmy_modem: advertising stopped[0m
+[0;32mI (58418) findmy_modem: advertising started[0m
+[0;32mI (58618) findmy_modem: advertising stopped[0m
+[0;31mE (58618) findmy_modem: Time to send message: 259842[0m
+[0;32mI (58728) findmy_modem:   pub key to use (6. try): ba be 80 00 80 12 00 05 00 00 00 b8 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (58728) TIMESTAMP: Unix: 58[0m
+[0;32mI (58728) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (58738) findmy_modem: advertising stopped[0m
+[0;32mI (58748) findmy_modem: advertising started[0m
+[0;32mI (58948) findmy_modem: advertising stopped[0m
+[0;31mE (58948) findmy_modem: Time to send message: 329769[0m
+[0;32mI (58978) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 b9 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (58988) TIMESTAMP: Unix: 58[0m
+[0;32mI (58988) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (58998) findmy_modem: advertising stopped[0m
+[0;32mI (59008) findmy_modem: advertising started[0m
+[0;32mI (59208) findmy_modem: advertising stopped[0m
+[0;31mE (59208) findmy_modem: Time to send message: 259868[0m
+[0;32mI (59258) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 ba 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (59258) TIMESTAMP: Unix: 58[0m
+[0;32mI (59268) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (59278) findmy_modem: advertising stopped[0m
+[0;32mI (59278) findmy_modem: advertising started[0m
+[0;32mI (59488) findmy_modem: advertising stopped[0m
+[0;31mE (59488) findmy_modem: Time to send message: 279773[0m
+[0;32mI (59518) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 bb 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (59528) TIMESTAMP: Unix: 59[0m
+[0;32mI (59528) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (59538) findmy_modem: advertising stopped[0m
+[0;32mI (59548) findmy_modem: advertising started[0m
+[0;32mI (59748) findmy_modem: advertising stopped[0m
+[0;31mE (59748) findmy_modem: Time to send message: 259785[0m
+[0;32mI (59798) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 bc 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (59798) TIMESTAMP: Unix: 59[0m
+[0;32mI (59808) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (59818) findmy_modem: advertising stopped[0m
+[0;32mI (59818) findmy_modem: advertising started[0m
+[0;32mI (60028) findmy_modem: advertising stopped[0m
+[0;31mE (60028) findmy_modem: Time to send message: 279798[0m
+[0;32mI (60038) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 bd 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (60048) TIMESTAMP: Unix: 59[0m
+[0;32mI (60048) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (60058) findmy_modem: advertising stopped[0m
+[0;32mI (60068) findmy_modem: advertising started[0m
+[0;32mI (60268) findmy_modem: advertising stopped[0m
+[0;31mE (60268) findmy_modem: Time to send message: 239788[0m
+[0;32mI (60298) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 be 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (60308) TIMESTAMP: Unix: 60[0m
+[0;32mI (60308) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (60318) findmy_modem: advertising stopped[0m
+[0;32mI (60328) findmy_modem: advertising started[0m
+[0;32mI (60528) findmy_modem: advertising stopped[0m
+[0;31mE (60528) findmy_modem: Time to send message: 259854[0m
+[0;32mI (60558) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 bf 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (60568) TIMESTAMP: Unix: 60[0m
+[0;32mI (60568) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (60578) findmy_modem: advertising stopped[0m
+[0;32mI (60588) findmy_modem: advertising started[0m
+[0;32mI (60788) findmy_modem: advertising stopped[0m
+[0;31mE (60788) findmy_modem: Time to send message: 259774[0m
+[0;32mI (60818) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 c0 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (60828) TIMESTAMP: Unix: 60[0m
+[0;32mI (60828) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (60838) findmy_modem: advertising stopped[0m
+[0;32mI (60848) findmy_modem: advertising started[0m
+[0;32mI (61048) findmy_modem: advertising stopped[0m
+[0;31mE (61048) findmy_modem: Time to send message: 259820[0m
+[0;32mI (61058) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 c1 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (61068) TIMESTAMP: Unix: 60[0m
+[0;32mI (61068) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (61078) findmy_modem: advertising stopped[0m
+[0;32mI (61088) findmy_modem: advertising started[0m
+[0;32mI (61288) findmy_modem: advertising stopped[0m
+[0;31mE (61288) findmy_modem: Time to send message: 239782[0m
+[0;32mI (61298) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 c2 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (61308) TIMESTAMP: Unix: 61[0m
+[0;32mI (61308) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (61318) findmy_modem: advertising stopped[0m
+[0;32mI (61328) findmy_modem: advertising started[0m
+[0;32mI (61528) findmy_modem: advertising stopped[0m
+[0;31mE (61528) findmy_modem: Time to send message: 239838[0m
+[0;32mI (61618) findmy_modem:   pub key to use (5. try): ba be 80 00 80 12 00 04 00 00 00 c3 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (61618) TIMESTAMP: Unix: 61[0m
+[0;32mI (61618) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (61628) findmy_modem: advertising stopped[0m
+[0;32mI (61638) findmy_modem: advertising started[0m
+[0;32mI (61838) findmy_modem: advertising stopped[0m
+[0;31mE (61838) findmy_modem: Time to send message: 309788[0m
+[0;32mI (61868) findmy_modem:   pub key to use (2. try): ba be 80 00 80 12 00 01 00 00 00 c4 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (61878) TIMESTAMP: Unix: 61[0m
+[0;32mI (61878) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (61888) findmy_modem: advertising stopped[0m
+[0;32mI (61898) findmy_modem: advertising started[0m
+[0;31mE (62098) findmy_modem: Time to send message: 258969[0m
+[0;32mI (62098) findmy_modem: advertising stopped[0m
+[0;32mI (62148) findmy_modem:   pub key to use (3. try): ba be 80 00 80 12 00 02 00 00 00 c5 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (62148) TIMESTAMP: Unix: 61[0m
+[0;32mI (62158) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (62168) findmy_modem: advertising stopped[0m
+[0;32mI (62168) findmy_modem: advertising started[0m
+[0;32mI (62378) findmy_modem: advertising stopped[0m
+[0;31mE (62378) findmy_modem: Time to send message: 280358[0m
+[0;32mI (62398) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 c6 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (62398) TIMESTAMP: Unix: 62[0m
+[0;32mI (62398) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (62408) findmy_modem: advertising stopped[0m
+[0;32mI (62418) findmy_modem: advertising started[0m
+[0;32mI (62618) findmy_modem: advertising stopped[0m
+[0;31mE (62618) findmy_modem: Time to send message: 239866[0m
+[0;32mI (62638) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 c7 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (62638) TIMESTAMP: Unix: 62[0m
+[0;32mI (62638) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (62648) findmy_modem: advertising stopped[0m
+[0;32mI (62658) findmy_modem: advertising started[0m
+[0;32mI (62858) findmy_modem: advertising stopped[0m
+[0;31mE (62858) findmy_modem: Time to send message: 239777[0m
+[0;32mI (62868) findmy_modem:   pub key to use (1. try): ba be 80 00 80 12 00 00 00 00 00 c8 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (62878) TIMESTAMP: Unix: 62[0m
+[0;32mI (62878) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 12[0m
+[0;32mI (62888) findmy_modem: advertising stopped[0m
+[0;32mI (62898) findmy_modem: advertising started[0m
+[0;31mE (63098) findmy_modem: Time to send message: 239011[0m
+[0;32mI (63098) TIMESTAMP: Unix: 62[0m
+[0;32mI (63098) findmy_modem: advertising stopped[0m
+[0;32mI (63098) findmy_modem: advertising stopped[0m
+I (63108) wifi:flush txq
+I (63108) wifi:stop sw txq
+I (63108) wifi:lmac stop hw txq
+[0;32mI (63108) main_task: Returned from app_main()[0m

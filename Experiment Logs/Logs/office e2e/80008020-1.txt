@@ -1,0 +1,26 @@
+I (1258) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000
+I (1268) wifi:<ba-add>idx:0 (ifx:0, 4a:76:3a:af:43:ac), tid:0, ssn:0, winSize:64
+I (1308) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (2268) esp_netif_handlers: sta ip: 192.168.191.115, mask: 255.255.255.0, gw: 192.168.191.206
+I (2268) WIFI: got ip:192.168.191.115
+I (2268) WIFI: connected to ap SSID:Galaxy A53 5G 1935 password:ixvo3528
+Bytes: 41 00 
+I (3388) findmy_modem:   pub key to use (1. try): ba be 80 00 80 20 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+I (3388) TIMESTAMP: Unix: 1711082350
+I (3388) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 20
+I (3398) findmy_modem: advertising stopped
+I (3408) findmy_modem: advertising started
+I (3908) findmy_modem: advertising stopped
+E (3908) findmy_modem: Time to send message: 1031175
+I (3908) TIMESTAMP: Unix: 1711083266
+I (3908) findmy_modem: advertising stopped
+I (3908) wifi:state: run -> init (0)
+I (3918) wifi:pm stop, total sleep time: 1274072 us / 2659533 us
+
+I (3918) wifi:<ba-del>idx:0, tid:0
+I (3928) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (3928) WIFI: connect to the AP fail
+I (3938) wifi:flush txq
+I (3938) wifi:stop sw txq
+I (3938) wifi:lmac stop hw txq
+I (3938) main_task: Returned from app_main()

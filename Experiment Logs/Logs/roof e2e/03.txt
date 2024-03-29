@@ -1,0 +1,66 @@
+I (458) WIFI: ESP_WIFI_MODE_STA
+I (458) pp: pp rom version: 9387209
+I (458) net80211: net80211 rom version: 9387209
+I (468) wifi:wifi driver task: 3fcb492c, prio:23, stack:6656, core=0
+I (468) wifi:wifi firmware version: ce9244d
+I (468) wifi:wifi certification version: v7.0
+I (478) wifi:config NVS flash: enabled
+I (478) wifi:config nano formating: disabled
+I (478) wifi:Init data frame dynamic rx buffer num: 32
+I (488) wifi:Init management frame dynamic rx buffer num: 32
+I (488) wifi:Init management short buffer num: 32
+I (498) wifi:Init dynamic tx buffer num: 32
+I (498) wifi:Init static tx FG buffer num: 2
+I (508) wifi:Init static rx buffer size: 1600
+I (508) wifi:Init static rx buffer num: 10
+I (508) wifi:Init dynamic rx buffer num: 32
+I (518) wifi_init: rx ba win: 6
+I (518) wifi_init: tcpip mbox: 32
+I (528) wifi_init: udp mbox: 6
+I (528) wifi_init: tcp mbox: 6
+I (528) wifi_init: tcp tx win: 5744
+I (538) wifi_init: tcp rx win: 5744
+I (538) wifi_init: tcp mss: 1440
+I (538) wifi_init: WiFi IRAM OP enabled
+I (548) wifi_init: WiFi RX IRAM OP enabled
+I (558) wifi:mode : sta (34:85:18:20:62:20)
+I (558) wifi:enable tsf
+I (558) WIFI: wifi_init_sta finished.
+I (568) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (568) wifi:state: init -> auth (b0)
+I (588) wifi:state: auth -> assoc (0)
+I (598) wifi:state: assoc -> run (10)
+I (638) wifi:connected with Galaxy A53 5G 1935, aid = 1, channel 11, BW20, bssid = 4a:76:3a:af:43:ac
+I (638) wifi:security: WPA2-PSK, phy: bgn, rssi: -51
+I (648) wifi:pm start, type: 1
+
+I (648) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000
+I (658) wifi:<ba-add>idx:0 (ifx:0, 4a:76:3a:af:43:ac), tid:0, ssn:0, winSize:64
+I (1058) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (1668) esp_netif_handlers: sta ip: 192.168.191.115, mask: 255.255.255.0, gw: 192.168.191.206
+I (1668) WIFI: got ip:192.168.191.115
+I (1668) WIFI: connected to ap SSID:Galaxy A53 5G 1935 password:ixvo3528
+Bytes: 42 00 
+I (3748) findmy_modem:   pub key to use (4. try): ba be 80 00 80 22 00 03 00 00 00 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 42
+I (3748) TIMESTAMP: Unix: 1711088858
+I (3758) findmy_modem:     resetting. Will now use device address: fa be 80 00 80 22
+I (3758) findmy_modem: advertising stopped
+I (3768) findmy_modem: advertising started
+I (4768) findmy_modem: advertising stopped
+E (4768) findmy_modem: Time to send message: 1091195
+I (4768) TIMESTAMP: Unix: 1711088859
+I (4768) findmy_modem: advertising stopped
+I (4778) wifi:state: run -> init (0)
+I (4778) wifi:pm stop, total sleep time: 2475739 us / 4129197 us
+
+I (4778) wifi:<ba-del>idx:0, tid:0
+I (4788) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (4788) WIFI: connect to the AP fail
+W (9798) wifi:TX Q not empty: 500, TXQ_BLOCK=ff1000
+W (9798) wifi:force witi stop
+I (9798) wifi:flush txq
+I (9798) wifi:stop sw txq
+I (9798) wifi:lmac stop hw txq
+W (9798) wifi:sw txq[0] state(1) is not idle, potential error!
+I (9798) wifi:int: state=0 i=0
+I (9808) main_task: Returned from app_main()

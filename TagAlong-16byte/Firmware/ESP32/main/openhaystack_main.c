@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <time.h>
 
+
 #include "nvs_flash.h"
 #include "esp_partition.h"
 #include "esp_bt.h"
@@ -39,10 +40,13 @@
 
 #define BUF_SIZE (1024)
 
+#define SEND_TIME (2)
+#define INTERVAL_TIME (0x0020)
+
 // For WIFI
 #define EXAMPLE_ESP_WIFI_SSID      CONFIG_ESP_WIFI_SSID
 #define EXAMPLE_ESP_WIFI_PASS      CONFIG_ESP_WIFI_PASSWORD
-#define EXAMPLE_ESP_MAXIMUM_RETRY  CONFIG_ESP_MAXIMUM_RETRY
+#define EXAMPLE_ESP_MAXIMUM_RETRY  2
 
 #if CONFIG_ESP_WPA3_SAE_PWE_HUNT_AND_PECK
 #define ESP_WIFI_SAE_MODE WPA3_SAE_PWE_HUNT_AND_PECK
@@ -170,7 +174,7 @@ void wifi_init_sta(void)
 
 
 // Set custom modem id before flashing:
-static const uint32_t modem_id = 0x81008104;
+static const uint32_t modem_id = 0x90009005;
 
 static const char* LOG_TAG = "findmy_modem";
 
@@ -178,7 +182,7 @@ static const char* LOG_TAG = "findmy_modem";
 static void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param);
 
 /** Random device address */
-static esp_bd_addr_t rnd_addr = { 0xFF, 0xBB, 0xCC, 0xDD, 0xEE, 0xFF };
+static esp_bd_addr_t rnd_addr = { 0xFF, 0xBA, 0xCA, 0xDA, 0xEA, 0xFF };
 
 /** Advertisement payload */
 static uint8_t adv_data[31] = {
@@ -215,12 +219,12 @@ static esp_ble_adv_params_t ble_adv_params = {
     // Minimum advertising interval for undirected and low duty cycle
     // directed advertising. Range: 0x0020 to 0x4000 Default: N = 0x0800
     // (1.28 second) Time = N * 0.625 msec Time Range: 20 ms to 10.24 sec
-    .adv_int_min        = 0x0640, 
+    .adv_int_min        = INTERVAL_TIME, 
     // Advertising max interval:
     // Maximum advertising interval for undirected and low duty cycle
     // directed advertising. Range: 0x0020 to 0x4000 Default: N = 0x0800
     // (1.28 second) Time = N * 0.625 msec Time Range: 20 ms to 10.24 sec
-    .adv_int_max        = 0x0C80, 
+    .adv_int_max        = INTERVAL_TIME, 
     // Advertisement type
     .adv_type           = ADV_TYPE_NONCONN_IND,
     // Use the random address
@@ -254,7 +258,7 @@ static void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *par
                 ESP_LOGE(LOG_TAG, "adv stop failed: %s", esp_err_to_name(err));
             }
             else {
-                // ESP_LOGI(LOG_TAG, "advertising stopped");
+                ESP_LOGI(LOG_TAG, "advertising stopped");
             }
             break;
         default:
@@ -393,9 +397,9 @@ void wait_for_sntp_sync() {
 }
 
 void initialize_sntp() {
-    sntp_setoperatingmode(SNTP_OPMODE_POLL);
-    sntp_setservername(0, "pool.ntp.org"); // You can use other NTP servers as well
-    sntp_init();
+    esp_sntp_setoperatingmode(SNTP_OPMODE_POLL);
+    esp_sntp_setservername(0, "pool.ntp.org"); // You can use other NTP servers as well
+    esp_sntp_init();
 }
 
 void log_current_unix_time() {
@@ -424,18 +428,18 @@ void send_data_once_blocking(uint8_t* data_to_send, uint32_t len, uint32_t chunk
 
         set_addr_and_payload_for_byte(chunk_i, msg_id, chunk_value, chunk_len_bytes, bytes_to_copy);
         log_current_unix_time();
-        ESP_LOGD(LOG_TAG, "    resetting. Will now use device address: %02x %02x %02x %02x %02x %02x", rnd_addr[0], rnd_addr[1], rnd_addr[2], rnd_addr[3], rnd_addr[4], rnd_addr[5]);
+        ESP_LOGI(LOG_TAG, "    resetting. Will now use device address: %02x %02x %02x %02x %02x %02x", rnd_addr[0], rnd_addr[1], rnd_addr[2], rnd_addr[3], rnd_addr[4], rnd_addr[5]);
         reset_advertising();
-        vTaskDelay(50);    
+        vTaskDelay(SEND_TIME);
     }
     esp_ble_gap_stop_advertising();
 }
 
 void app_main(void)
 {
-    const int NUM_MESSAGES = 1;
-    const int REPEAT_MESSAGE_TIMES = 10;
-    const int MESSAGE_DELAY = 100;
+    const int NUM_MESSAGES = 200;
+    const int REPEAT_MESSAGE_TIMES = 1;
+    const int MESSAGE_DELAY = 0;
 
 
     // Init Flash and BT
@@ -466,7 +470,7 @@ void app_main(void)
     // Send Message
     uint32_t current_message_id = 0;
 
-    static uint8_t data_to_send[] = "AAAAAAAAAAAAAAAC";
+    static uint8_t data_to_send[] = "A";
 
     printf("Bytes: ");
     for (int i = 0; i < sizeof(data_to_send); i++) {
@@ -476,16 +480,17 @@ void app_main(void)
 
     for (uint32_t i = 0; i < NUM_MESSAGES; i++) {
         // generateAlphaSequence(i, data_to_send);
-        current_message_id++;
+        
         for (int j = 0; j < REPEAT_MESSAGE_TIMES; j++) {
             uint64_t before_time = esp_timer_get_time();
-            send_data_once_blocking(data_to_send, sizeof(data_to_send) - 1, 16, current_message_id);
+            send_data_once_blocking(data_to_send, sizeof(data_to_send) - 1, 1, current_message_id);
             uint64_t after_time = esp_timer_get_time();
 
             ESP_LOGE(LOG_TAG, "Time to send message: %llu", after_time - before_time);
             vTaskDelay(MESSAGE_DELAY);
         }
         vTaskDelay(MESSAGE_DELAY);
+        current_message_id++;
     }
 
     // Wrap up and end
