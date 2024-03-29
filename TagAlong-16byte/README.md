@@ -1,8 +1,8 @@
-# TagAlong - Modified, 8 bit
+# TagAlong - Modified, 16 byte
 
 The application consists of two parts:
-- Firmware: An ESP32 firmware that turns the microcontroller into a serial (upload only) modem
-- DataFetcher: A macOS application used to retrieve, decode and display the uploaded data
+- Firmware: An ESP32 firmware that sends out BLE advertisment which will be picked up by Apple Find My devices
+NOTE: The data fetcher is not implemented for the 16 byte version. The 8-bit data fetcher can be used to fetch messages with 1 byte per advertistment.
 
 Both are based on [OpenHaystack](https://github.com/seemoo-lab/openhaystack), an open source implementation of the Find My Offline Finding protocol.
 
@@ -13,14 +13,7 @@ ESP32 Firmware
 * Add Timer
 * Add Logging
 
-The firmware can write up to 8 bits per advertistment, starting from the LSB. If the data to send is more than the number of bits per advertistment, the program will send another message with the next fragement of data in the next avaliable position in the public key. If the whole data segment of the public key is used up, the new data fragment will wrap around to the LSB and XOR with the existing data.
-
-Datafetcher
-* Add logging to file
-* Add retrieval of multiple messages and fixed interval repeated reterival
-* Improved performance of data fetching
-
-Datafetcher is fixed to allow fetching of 8 bits per message.
+The firmware can write up to 16 bytes per advertistment, starting from the LSB. If the data to send is more than the number of bits per advertistment, the program will send another message with the next fragement of data in the next avaliable position in the public key. If the whole data segment of the public key is used up, the new data fragment will wrap around to the LSB and XOR with the existing data.
 
 
 # How to use
