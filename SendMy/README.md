@@ -3,7 +3,7 @@
 Send My allows you to to upload abritrary data from devices without an internet connection by (ab)using Apple's Find My network. The data is broadcasted via Bluetooth Low Energy and forwarded by nearby Apple devices.
 
 The application consists of two parts:
-- Firmware: An ESP32 firmware that turns the microcontroller into a serial (upload only) modem
+- Firmware: An ESP32 firmware that sends out BLE advertisment which will be picked up by Apple Find My devices
 - DataFetcher: A macOS application used to retrieve, decode and display the uploaded data
 
 Both are based on [OpenHaystack](https://github.com/seemoo-lab/openhaystack), an open source implementation of the Find My Offline Finding protocol.
