@@ -1,14 +1,50 @@
-# Connecting IoT devices to edge and cloud devices 
+# TagAlong - Modified, 8 bit
 
-This repo contains the code and experiment logs used for the final year project, conduted in National University of Singapore, under the WEISER group.
-The code is modified from SendMy from Positive Security https://github.com/positive-security/send-my, TagAlong from PatLab UCSD https://github.com/patlab-ucsd/tagalong, and OpenHaystack from Seemoo Labs https://github.com/seemoo-lab/openhaystack.
+The application consists of two parts:
+- Firmware: An ESP32 firmware that turns the microcontroller into a serial (upload only) modem
+- DataFetcher: A macOS application used to retrieve, decode and display the uploaded data
 
-The code base is in ESP-IDF, designed for the ESP32C3, and Swift for Mac OS 13
+Both are based on [OpenHaystack](https://github.com/seemoo-lab/openhaystack), an open source implementation of the Find My Offline Finding protocol.
 
-This repo contains 6 folders
-1. BLEScan - ESP32 Firmware to scan for Apple BLE advertistments
-2. Experiment Logs - Logs for experiments conducted under the FYP
-3. OpenHaystack - Modified OpenHaystack code and compiled program to work with MacOS 13
-4. SendMy - SendMy program, modified with WIFI and time stamping
-5. TagAlong 8bit - Modifed Tagalong code, with WIFI time stamping. Allows up to 8 bits to be sent per message.
-6. TagAlong 16byte - Modified  Tagalong code, with WIFI time stamping. Allows up to 16 byytes to be sent per message. Note Fetcher program is not modified for this segment
+
+This repo is a modified version of the original TagAlong protocol. It makes the following changes.
+ESP32 Firmware
+* Add WIFI capability and NTP time synchronisation
+* Add Timer
+* Add Logging
+
+The firmware can write up to 8 bits per advertistment, starting from the LSB. If the data to send is more than the number of bits per advertistment, the program will send another message with the next fragement of data in the next avaliable position in the public key. If the whole data segment of the public key is used up, the new data fragment will wrap around to the LSB and XOR with the existing data.
+
+Datafetcher
+* Add logging to file
+* Add retrieval of multiple messages and fixed interval repeated reterival
+* Improved performance of data fetching
+
+Datafetcher is fixed to allow fetching of 8 bits per message.
+
+
+# How to use
+
+## ESP32C3 Firmware
+
+1. Install ESP-IDF https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/
+2. Mofidy the firmware by changing the `modem_id`, `current_message_id` and `data_to_send`
+3. Connect the ESP32C3
+4. Run "Select port to use (COM, tty, usbserial)" and select the port for the ESP32C3
+5. Run "Set Espressif device target" and select ESP32C3 and via built-in USB-JTAG
+6. Run "menuconfig" and change the following parameters
+* Enable Bluetooth, Bluetooth 4.2 and Bluetooth Low Energy
+* Change the partition to 'partitions.csv' and set the flash size to automatically detect
+6. Run "Build, Flash and Start Monitor"
+
+
+
+## The DataFetcher
+
+1. Install OpenHaystack including the AppleMail plugin as explained https://github.com/seemoo-lab/openhaystack#installation
+2. Run OpenHaystack and ensure that the AppleMail plugin indicator is green
+3. Run the DataFetcher OFFetchReport application
+4. Insert the 4 byte `modem_id` previously set in the ESP firmware as hex digits
+5. Set the number of messages, message to start from and repeat fetch timing (0s if refetch is not needed)
+6. Select a folder to set the log file, the file name will be automatically generated
+7. Fetch uploaded messages
