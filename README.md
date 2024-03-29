@@ -1,4 +1,4 @@
-#Connecting IoT devices to edge and cloud devices 
+# Connecting IoT devices to edge and cloud devices 
 
 This repo contains the code and experiment logs used for the final year project, conduted in National University of Singapore, under the WEISER group.
 The code is modified from SendMy from Positive Security https://github.com/positive-security/send-my, TagAlong from PatLab UCSD https://github.com/patlab-ucsd/tagalong, and OpenHaystack from Seemoo Labs https://github.com/seemoo-lab/openhaystack.
