@@ -1,0 +1,17 @@
+Bytes: 41 00 
+[0;32mI (4658) findmy_modem:   pub key to use (1. try): ba be 90 00 90 07 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (4668) TIMESTAMP: Unix: 1712120160[0m
+[0;32mI (4668) findmy_modem:     resetting. Will now use device address: fa be 90 00 90 07[0m
+[0;32mI (4678) findmy_modem: advertising stopped[0m
+[0;32mI (4688) findmy_modem: advertising started[0m
+[0;32mI (4708) findmy_modem: advertising stopped[0m
+[0;31mE (4708) findmy_modem: Time to send message: 60977[0m
+[0;32mI (4708) TIMESTAMP: Unix: 1712120160[0m
+[0;32mI (4708) findmy_modem: advertising stopped[0m
+I (4708) wifi:state: run -> init (0)
+I (4718) wifi:pm stop, total sleep time: 2837493 us / 4096455 us
+
+I (4718) wifi:<ba-del>idx:0, tid:0
+I (4728) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (4728) WIFI: retry to connect to the AP[0m
+[0;32mI (4738) WIFI: connect to the AP fail[0m

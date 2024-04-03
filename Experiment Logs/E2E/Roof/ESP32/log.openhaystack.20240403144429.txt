@@ -1,0 +1,37 @@
+[0;32mI (2258) WIFI: retry to connect to the AP[0m
+[0;32mI (2258) WIFI: connect to the AP fail[0m
+I (2368) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (2368) wifi:state: init -> auth (b0)
+I (2368) wifi:state: auth -> assoc (0)
+I (2378) wifi:state: assoc -> run (10)
+I (2398) wifi:connected with Galaxy A53 5G 1935, aid = 1, channel 6, BW20, bssid = 4a:76:3a:af:43:ac
+I (2398) wifi:security: WPA2-PSK, phy: bgn, rssi: -37
+I (2398) wifi:pm start, type: 1
+
+I (2398) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000
+I (2418) wifi:<ba-add>idx:0 (ifx:0, 4a:76:3a:af:43:ac), tid:0, ssn:0, winSize:64
+I (2768) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (3408) esp_netif_handlers: sta ip: 192.168.122.115, mask: 255.255.255.0, gw: 192.168.122.161[0m
+[0;32mI (3408) WIFI: got ip:192.168.122.115[0m
+[0;32mI (3408) WIFI: connected to ap SSID:Galaxy A53 5G 1935 password:ixvo3528[0m
+Bytes: 41 00 
+[0;32mI (6468) findmy_modem:   pub key to use (3. try): ba be 90 00 90 07 00 02 00 00 00 07 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41[0m
+[0;32mI (6468) TIMESTAMP: Unix: 1712126713[0m
+[0;32mI (6478) findmy_modem:     resetting. Will now use device address: fa be 90 00 90 07[0m
+[0;32mI (6488) findmy_modem: advertising stopped[0m
+[0;32mI (6488) findmy_modem: advertising started[0m
+[0;32mI (7498) findmy_modem: advertising stopped[0m
+[0;31mE (7498) findmy_modem: Time to send message: 1081163[0m
+[0;32mI (7498) TIMESTAMP: Unix: 1712126714[0m
+[0;32mI (7498) findmy_modem: advertising stopped[0m
+I (7508) wifi:state: run -> init (0)
+I (7508) wifi:pm stop, total sleep time: 2084932 us / 5104542 us
+
+I (7508) wifi:<ba-del>idx:0, tid:0
+I (7518) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (7528) WIFI: retry to connect to the AP[0m
+[0;32mI (7528) WIFI: connect to the AP fail[0m
+I (7528) wifi:flush txq
+I (7528) wifi:stop sw txq
+I (7538) wifi:lmac stop hw txq
+[0;32mI (7538) main_task: Returned from app_main()[0m

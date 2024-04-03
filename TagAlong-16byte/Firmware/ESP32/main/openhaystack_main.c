@@ -40,7 +40,7 @@
 
 #define BUF_SIZE (1024)
 
-#define SEND_TIME (2)
+#define SEND_TIME (100)
 #define INTERVAL_TIME (0x0020)
 
 // For WIFI
@@ -174,7 +174,7 @@ void wifi_init_sta(void)
 
 
 // Set custom modem id before flashing:
-static const uint32_t modem_id = 0x90009005;
+static const uint32_t modem_id = 0x90009007;
 
 static const char* LOG_TAG = "findmy_modem";
 
@@ -437,7 +437,7 @@ void send_data_once_blocking(uint8_t* data_to_send, uint32_t len, uint32_t chunk
 
 void app_main(void)
 {
-    const int NUM_MESSAGES = 200;
+    const int NUM_MESSAGES = 1;
     const int REPEAT_MESSAGE_TIMES = 1;
     const int MESSAGE_DELAY = 0;
 
@@ -468,7 +468,7 @@ void app_main(void)
 
     
     // Send Message
-    uint32_t current_message_id = 0;
+    uint32_t current_message_id = 10;
 
     static uint8_t data_to_send[] = "A";
 
